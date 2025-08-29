@@ -1,0 +1,22 @@
+[
+  {
+    "name":"Maip macrothorax",
+    "year":2022,
+    "country":"Argentina",
+    "type":"Theropoda",
+    "highlight":"Depredador de 10 m con garra letal de >30 cm.",
+    "source":"paper or news link",
+    "images":["maip.jpg"],
+    "tags":["LACEV","Patagonia"]
+  },
+  {
+    "name":"Taurovenator violantei",
+    "year":2016,
+    "country":"Argentina",
+    "type":"Carcharodontosauridae",
+    "highlight":"Esqueleto casi completo, rival del T. rex.",
+    "source":"link",
+    "tags":["LACEV"]
+  }
+
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "title":"Carnívoro con tejidos blandos",
+    "brief":"Primera evidencia de músculos y sangre en dinosaurios de Sudamérica.",
+    "eta":"Fines de 2025",
+    "tags":["Patagonia","Terópodo"],
+    "image":"imgDibujosDinosaurios/pngwing.com.png"
+  },
+  {
+    "title":"Nuevo raptor de alta latitud",
+    "brief":"Claves sobre ecosistemas patagónicos y adaptación al frío.",
+    "tags":["Raptor","Patagonia"],
+    "image":"imgDibujosDinosaurios/pngwing.com (3).png"
+  },
+  {
+    "title":"Marsupial dientes de sable",
+    "brief":"Del tamaño de un león, caninos de 20 cm. ~20 Ma.",
+    "tags":["Mamífero","Mioceno"],
+    "image":"imgDibujosDinosaurios/pngwing.com (1).png"
+  },
+  {
+    "title":"Primer nido de terópodo en Sudamérica",
+    "brief":"90 Ma. 7 huevos con restos de serpiente.",
+    "tags":["Nido","Terópodo"],
+    "image":"imgDibujosDinosaurios/pngwing.com (2).png"
+  }
+]

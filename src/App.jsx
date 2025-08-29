@@ -1,6 +1,7 @@
 import { Routes, Route, Link } from 'react-router-dom'
 import HomeDinosaurios from './pages/Home'
 import Navbar from './components/Navbar'
+import Impact from './pages/Impact'
 
 
 function App() {
@@ -12,8 +13,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomeDinosaurios />} />
-        {/* <Route path="/about" element={<About />} />
-        <Route path="/donate" element={<Donate />} /> */}
+        <Route path="/impact" element={<Impact/>} />
       </Routes>
     </div>
   )
