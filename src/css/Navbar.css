@@ -1,27 +1,168 @@
-:root{
-  --nav-h:64px;
-  --green:#2f6f3e;
+/* src/css/Navbar.css */
+
+/* Variables */
+:root {
+  --nav-h: 72px;
+  --maxw: 1100px;
+
+  --ink: #171a1c;
+  --text-light: #f7f3ec;
+  --teal: #1f6b6e;
+  --gold: #e3b261;
 }
 
-.navbar{
-  position:fixed; top:0; left:0; right:0;
-  height:var(--nav-h); z-index:9999;
-  display:flex; align-items:center;
-  border-bottom:3px solid #3d2a20;
-  background:
-    repeating-linear-gradient(90deg, rgba(255,255,255,.04) 0 2px, transparent 2px 8px),
-    repeating-linear-gradient(-90deg, rgba(0,0,0,.05) 0 3px, transparent 3px 10px),
-    linear-gradient(135deg, #6b4f3a, #5a3f2d);
-  box-shadow:0 6px 18px rgba(0,0,0,.35);
+.navbar {
+    padding: 10px;
+    display: flex
+;
+    justify-content: space-between !important;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--nav-h);
+    z-index: 50;
+    width: 100%;
+    border-bottom: 3px solid #3d2a20;
+    background: linear-gradient(to bottom, rgb(0 0 0 / 70%), rgba(0, 0, 0, 0.15)), url(/src/ImgCampanas/tierra.jpg) center / cover no-repeat;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .35);
 }
-.nav-inner{
-  max-width:1100px; margin:0 auto; padding:0 16px;
-  width:100%; display:flex; gap:22px; justify-content:center; align-items:center;
+
+
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.25); /* oscurece un poco para contraste */
+  mix-blend-mode: multiply;
 }
-.navbar a{
-  color:#f7f3ec; font-weight:700; transition:color .2s, transform .2s;
+
+/* Contenedor interior */
+.nav-inner {
+  width: 100% !important;
+  max-width: var(--maxw);
+  height: var(--nav-h);
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  position: relative;
 }
-.navbar a:hover{ color:var(--green); transform:translateY(-2px) }
-.navbar a.donate{
-  background:var(--green); padding:8px 14px; border-radius:10px; font-weight:800;
+
+/* Marca (izquierda) */
+.brand .brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 900;
+}
+.brand-logo {
+  height: 46px;
+  width: auto;
+  border-radius: 6px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Links (centro) */
+.links {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+.nav-link {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 8px 6px;
+  border-radius: 8px;
+  transition: transform .2s ease, color .2s ease, background .2s ease;
+}
+.nav-link:hover {
+  color: #d9efe9;
+  transform: translateY(-1px);
+}
+.nav-link.active {
+  background: rgba(227, 178, 97, .18);
+  border: 1px solid rgba(227, 178, 97, .55);
+}
+
+/* Acciones (derecha) */
+.actions {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+/* Botón Donar */
+.btn-donate {
+  background: var(--teal);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 900;
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, .25);
+  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+}
+.btn-donate:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.04);
+}
+
+/* Selector de idioma */
+.lang-switch {
+  display: flex;
+  gap: 6px;
+  padding: 2px 6px;
+  background: rgba(0, 0, 0, .25);
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 999px;
+  backdrop-filter: blur(2px);
+}
+.lang {
+  appearance: none;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 800;
+  color: var(--text-light);
+  background: transparent;
+  transition: background .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+.lang:hover { transform: translateY(-1px); }
+.lang.current {
+  background: rgba(227, 178, 97, .22);
+  box-shadow: inset 0 0 0 1px rgba(227, 178, 97, .55);
+}
+
+/* Responsive */
+@media (max-width: 880px) {
+  .nav-inner {
+    flex-wrap: wrap;
+    gap: 10px;
+    height: auto;
+    padding: 8px 12px;
+  }
+  .links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin-top: 6px;
+  }
+  .brand {
+    order: 1;
+  }
+  .actions {
+    order: 2;
+    margin-left: auto;
+  }
 }

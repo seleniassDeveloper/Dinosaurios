@@ -1,0 +1,83 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "expedition": "Expedition",
+    "impact": "Impact",
+    "press": "Press",
+    "donate": "Donate"
+  },
+  "hero": {
+    "kicker": "Science powered by exploration",
+    "title": {
+      "line1": "Let's discover new species",
+      "line2": "in the next expedition"
+    },
+    "subtitle": "Team: 11 researchers, 5 technicians, 2 educators and 10+ students. Based at the Bernardino Rivadavia Museum (Buenos Aires). 5 Nature covers and 400+ publications. In the last 20 years: 35 species in Argentina and 5 in Antarctica/LatAm (40 total).",
+    "cta1": "Donate now",
+    "cta2": "See expedition plan"
+  },
+  "goal": {
+    "kicker": "2025 Goal",
+    "title": "Publish a new article in Nature",
+    "subtitle": "Antarctic expeditions 2027–2032 (IAA & CONICET) to uncover 70 Ma dinosaurs.",
+    "badges": {
+      "natgeo": "National Geographic (4)",
+      "explorers": "Explorers Club (3)",
+      "jurassic": "Jurassic Foundation (3)"
+    }
+  },
+  "kpis": {
+    "covers": "Nature covers",
+    "papers": "Published papers",
+    "species20": "New species (20 years)",
+    "outreach": "Outreach initiatives"
+  },
+  "projects": {
+    "flag": "Project",
+    "ribbon": {
+      "eta2025": "ETA late 2025",
+      "ongoing": "Ongoing",
+      "analysis": "Analysis"
+    },
+    "cards": {
+      "softTissues": {
+        "title": "Carnivore with soft tissues",
+        "meta": "First evidence of muscles and blood in South American dinosaurs."
+      },
+      "raptor": {
+        "title": "New high-latitude raptor",
+        "meta": "Insights into Patagonian ecosystems and cold adaptation."
+      },
+      "nest": {
+        "title": "First theropod nest",
+        "meta": "90 Ma. Seven eggs with a coiled snake: predator or nest mate?"
+      }
+    },
+    "tags": {
+      "patagonia": "Patagonia",
+      "cretaceous": "Cretaceous",
+      "south": "South",
+      "ecology": "Ecology",
+      "nest": "Nest"
+    }
+  },
+  "cta": {
+    "title": "Make history with us",
+    "copy": "We comply with Argentine National Law and hold official permits. In-house fossil prep lab.",
+    "other": "Other",
+    "button": "Donate now"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "expedition": "Expedition",
+    "impact": "Impact",
+    "press": "Press",
+    "donate": "Donate",
+    "language": "Language"
+  },
+  "brand": {
+    "title": "Dinosaurs"
+  }
+}

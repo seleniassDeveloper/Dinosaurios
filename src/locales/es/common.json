@@ -1,0 +1,83 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Acerca",
+    "expedition": "Expedición",
+    "impact": "Impacto",
+    "press": "Prensa",
+    "donate": "Donar"
+  },
+  "hero": {
+    "kicker": "Ciencia impulsada por la exploración",
+    "title": {
+      "line1": "Descubramos nuevas especies",
+      "line2": "en la próxima expedición"
+    },
+    "subtitle": "Equipo: 11 investigadores, 5 técnicos, 2 educadores y 10+ estudiantes. Con sede en el Museo Bernardino Rivadavia (Buenos Aires). 5 portadas en Nature y 400+ publicaciones. En los últimos 20 años: 35 especies en Argentina y 5 en Antártida/LatAm (40 en total).",
+    "cta1": "Donar ahora",
+    "cta2": "Ver plan de expedición"
+  },
+  "goal": {
+    "kicker": "Objetivo 2025",
+    "title": "Publicar un nuevo artículo en Nature",
+    "subtitle": "Expediciones 2027–2032 en Antártida (IAA & CONICET) para hallar dinosaurios de hace 70 Ma.",
+    "badges": {
+      "natgeo": "National Geographic (4)",
+      "explorers": "Explorers Club (3)",
+      "jurassic": "Jurassic Foundation (3)"
+    }
+  },
+  "kpis": {
+    "covers": "Portadas en Nature",
+    "papers": "Artículos publicados",
+    "species20": "Nuevas especies (20 años)",
+    "outreach": "Iniciativas de divulgación"
+  },
+  "projects": {
+    "flag": "Proyecto",
+    "ribbon": {
+      "eta2025": "ETA fines de 2025",
+      "ongoing": "En curso",
+      "analysis": "Análisis"
+    },
+    "cards": {
+      "softTissues": {
+        "title": "Carnívoro con tejidos blandos",
+        "meta": "Primera evidencia de músculos y sangre en dinosaurios de Sudamérica."
+      },
+      "raptor": {
+        "title": "Nuevo raptor de alta latitud",
+        "meta": "Claves sobre ecosistemas patagónicos y adaptación al frío extremo."
+      },
+      "nest": {
+        "title": "Primer nido de terópodo",
+        "meta": "90 Ma. 7 huevos con restos de serpiente enroscada: ¿depredadora o habitante del nido?"
+      }
+    },
+    "tags": {
+      "patagonia": "Patagonia",
+      "cretaceous": "Cretácico",
+      "south": "Sur",
+      "ecology": "Ecología",
+      "nest": "Nido"
+    }
+  },
+  "cta": {
+    "title": "Haz historia con nosotros",
+    "copy": "Cumplimos la Ley Nacional Argentina y contamos con permisos oficiales. Laboratorio propio para preparación.",
+    "other": "Otro",
+    "button": "Donar ahora"
+  },
+   "nav": {
+    "home": "Inicio",
+    "about": "Acerca",
+    "expedition": "Expedición",
+    "impact": "Impacto",
+    "press": "Prensa",
+    "donate": "Donar",
+    "language": "Idioma"
+  },
+  "brand": {
+    "title": "Dinosaurios"
+  }
+}

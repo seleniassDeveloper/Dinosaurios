@@ -1,22 +1,14 @@
-import { Routes, Route, Link } from 'react-router-dom'
-import HomeDinosaurios from './pages/Home'
-import Navbar from './components/Navbar'
-import Impact from './pages/Impact'
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
 
-
-function App() {
+export default function App() {
   return (
-    <div>
-      <nav>
-        <Navbar/>
-      </nav>
-
-      <Routes>
-        <Route path="/" element={<HomeDinosaurios />} />
-        <Route path="/impact" element={<Impact/>} />
-      </Routes>
-    </div>
-  )
+    <>
+      <Navbar />
+      <div className="px-5 py-5">
+ <Home />
+      </div>
+     
+    </>
+  );
 }
-
-export default App
