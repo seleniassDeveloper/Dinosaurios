@@ -36,7 +36,7 @@
     "titleStart": "Sé parte de la historia.",
     "titleHighlight": "Míralo en vivo",
     "titleEnd": "mientras buscamos nuevos dinosaurios en Patagonia",
-    "intro": "Somos un equipo de <span class='resaltado'>paleontólogos</span>, profesores, estudiantes y naturalistas del Laboratorio de Anatomía Comparada y Evolución de los Vertebrados (LACEV). Desde hace más de 20 años buscamos, extraemos, preparamos, investigamos y comunicamos públicamente la paleontología en la Patagonia, habiendo descubierto el <span class='resaltado'>26%</span> de las nuevas especies de dinosaurios en Sudamérica."
+    "intro": "Somos un equipo de paleontólogos, profesores, estudiantes y naturalistas que formamos parte del Laboratorio de Anatomía Comparada y Evolución de Vertebrados (LACEV)"
   },
   "navbar": {
     "home": "Home",
@@ -81,7 +81,8 @@
   "title": "Completando las páginas perdidas de la evolución,",
   "titleHighlight": "un fósil a la vez — en la Patagonia.",
   "p1": "Somos un equipo de paleontólogos, profesores, estudiantes y naturalistas del Laboratorio de Anatomía Comparada y Evolución de los Vertebrados (LACEV).",
-  "p2": "Durante más de 20 años, hemos buscado, extraído, preparado, investigado y comunicado públicamente la paleontología en la Patagonia.",
+  "p2": "Desde hace más de 20 años buscamos, extraemos, preparamos, investigamos y comunicamos públicamente la paleontología en la Patagonia, descubriendo el 26% de las nuevas especies de dinosaurios de Sudamérica.",
+  "p4": "Se descubre el 26 % de las nuevas especies de dinosaurios en Sudamérica.", 
   "p3": "Hemos descubierto el 26% de las nuevas especies de dinosaurios en Sudamérica."
 },
 
@@ -105,7 +106,7 @@
     "desc": {
       "p1": "We are 11 researchers, 5 professional technicians, 2 educators/science communicators, and 10+ students based at the Argentine Museum of Natural Sciences (Buenos Aires). We’ve achieved 5 Nature covers and 400+ scientific publications.",
       "p2": "Over the past two decades we discovered and named 33 new dinosaur species in Argentina (22% of the country’s known species) plus 5 additional species in Antarctica, Brazil, Chile, and Ecuador. We also described 20+ other Mesozoic vertebrates (mammals, marine reptiles, crocodiles, turtles, and more).",
-      "p3": "Highlights: Maip macrothorax (a 10 m predator with a claw over 30 cm), Patagorhynchus (the oldest South American platypus), a near-complete skeleton of Taurovenator violantei, and the world’s oldest tadpole. Supported by organizations such as National Geographic (4), The Explorers Club (3), and Jurassic Foundation (3)."
+   "p3": "Highlights: Maip macrothorax (a 10 m predator with a claw over 30 cm), Patagorhynchus (the oldest South American platypus), a near-complete skeleton of Taurovenator violantei, and the world’s oldest tadpole. Supported by organizations such as National Geographic (4), The Explorers Club (3), and Jurassic Foundation (3)."
     },
     "badges": {
       "natgeo": "National Geographic (4)",

@@ -18,10 +18,8 @@ export default function ParrafoWelcome() {
     <span className="underline">{t("welcome.titleHighlight")}</span>
   </h2>
   <p className="parrafo-descripcion">{t("welcome.p1")}</p>
-  <p className="parrafo-descripcion">{t("welcome.p2")}</p>
-  <p className="parrafo-final">
-    <span className="green-bold">{t("welcome.p3")}</span>
-  </p>
+  <p className="parrafo-descripcion">{t("welcome.p2")}  <u><span className="green-bold">{t("welcome.p4")}</span></u> </p>
+
 </div>
 
       <div className="parrafo-imagenes">

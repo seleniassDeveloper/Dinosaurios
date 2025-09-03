@@ -36,7 +36,7 @@
     "titleStart": "Be part of history.",
     "titleHighlight": "Watch live",
     "titleEnd": "as we search for new dinosaurs in Patagonia",
-    "intro": "We are a team of <span class='resaltado'>paleontologists</span>, professors, students, and naturalists from the Laboratory of Comparative Anatomy and Evolution of Vertebrates (LACEV). For over 20 years, we’ve been searching, extracting, preparing, researching, and publicly communicating paleontology in Patagonia — having discovered <span class='resaltado'>26%</span> of all new dinosaur species in South America."
+    "intro": "We are a team of paleontologists, professors, students, and naturalists part of the Laboratory of Comparative Anatomy and Evolution of Vertebrates (LACEV)."
   
 },
   "navbar": {
@@ -79,7 +79,8 @@
   "title": "Filling the missing pages of evolution,",
   "titleHighlight": "one fossil at a time — in Patagonia.",
   "p1": "We are a team of paleontologists, professors, students, and naturalists part of the Laboratory of Comparative Anatomy and Evolution of Vertebrates (LACEV).",
-  "p2": "For more than 20 years, we have been searching, extracting, preparing, researching, and publicly communicating paleontology in Patagonia.",
+  "p2": "For more than 20 years, we have been searching, extracting, preparing, researching, and publicly communicating paleontology in Patagonia,",
+  "p4":" discovering 26% of new dinosaur species in South America.",
   "p3": "We’ve discovered 26% of new dinosaur species in South America."
 },
 

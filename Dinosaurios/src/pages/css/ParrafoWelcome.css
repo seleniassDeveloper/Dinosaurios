@@ -34,7 +34,7 @@
 }
 
 .parrafo-descripcion {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: var(--marron);
   line-height: 1.9;
   margin-bottom: 1.4rem;
@@ -42,11 +42,10 @@
 }
 
 .parrafo-final {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--verde);
-  margin-top: 1.8rem;
-  letter-spacing: 0.3px;
+  
 }
 
 /* ==== CASCADA DE IMÁGENES ==== */
@@ -65,7 +64,9 @@
   z-index: 1;
 }
  .green-bold{
+  font-weight: 600;
     color: green!important;
+
   }
 .img1 { top: 0; left: 0; z-index: 4; }
 .img2 { top: 150px; left: -160px; z-index: 3; }
