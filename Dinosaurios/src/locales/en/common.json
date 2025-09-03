@@ -48,15 +48,14 @@
     "press": "Press",
     "donate": "Donate"
   },
-  "nav": {
-    "home": "Home",
-    "about": "About",
-    "expedition": "Expedition",
-    "impact": "Impacto",
-    "press": "Prensa",
-    "donate": "Dona",
-    "language": "Language"
-  },
+"nav": {
+  "home": "Home",
+  "about": "About Us",
+  "expedition": "Discoveries",
+  "live": "Live Dig Hub",
+  "press": "Press",
+  "donate": "Donate"
+},
   "countdown": {
   "heading": "EXCAVACIÓN EN VIVO",
   "date": "Comienza el 25 de septiembre de 2025",

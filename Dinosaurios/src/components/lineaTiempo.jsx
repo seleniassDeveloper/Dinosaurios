@@ -1,14 +1,12 @@
 // src/pages/LineaTiempo.jsx
 import "../css/Timeline.css";
 
-// Imágenes (ajustá las rutas si las cambiaste)
 import dino1 from "../ImgCampanas/imgDibujosDinosaurios/dinosaurio.png";
 import dino2 from "../ImgCampanas/imgDibujosDinosaurios/dinosaurio2.jpeg";
 import dino3 from "../ImgCampanas/imgDibujosDinosaurios/dinosaurio3.png";
 import dino4 from "../ImgCampanas/imgDibujosDinosaurios/dinosaurio4.png";
 import dino5 from "../ImgCampanas/imgDibujosDinosaurios/dinosaurio5.png";
 
-// Datos
 const timelineData = [
   {
     year: "2016",
@@ -46,25 +44,18 @@ export default function LineaTiempo() {
   return (
     <section className="timeline-section">
       <h2 className="timeline-title">Major Discoveries by Year</h2>
-      <div className="timeline-container">
+      <div className="timeline-wrapper">
         <div className="timeline-line" />
-
         {timelineData.map((item, index) => (
           <div key={index} className="timeline-item">
-            {/* Título arriba */}
-            <div className="timeline-title-top">
-              <h3>{item.title}</h3>
-            </div>
-
-            {/* Nodo central con imagen y año */}
-            <div className="timeline-node">
-              <img src={item.image} alt={item.title} className="timeline-image" />
-              <div className="timeline-year">{item.year}</div>
-            </div>
-
-            {/* Descripción abajo */}
-            <div className="timeline-info-bottom">
+            <div className={`timeline-info ${index % 2 === 0 ? "top" : "bottom"}`}>
+              <h3>{item.year}</h3>
+              <strong>{item.title}</strong>
               <p>{item.description}</p>
+            </div>
+
+            <div className="timeline-node">
+              <img src={item.image} alt={item.title} />
             </div>
           </div>
         ))}

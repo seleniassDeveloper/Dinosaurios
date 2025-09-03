@@ -48,15 +48,14 @@
     "press": "Press",
     "donate": "Donate"
   },
-  "nav": {
-    "home": "Home",
-    "about": "About",
-    "expedition": "Expedition",
-    "impact": "Impact",
-    "press": "Press",
-    "donate": "Donate",
-    "language": "Language"
-  },
+ "nav": {
+  "home": "Inicio",
+  "about": "Sobre Nosotros",
+  "expedition": "Descubrimientos",
+  "live": "Excavación en Vivo",
+  "press": "Prensa",
+  "donate": "Donar"
+},
   "countdown": {
   "heading": "LIVESTREAM EXCAVATION",
   "date": "Starting September 25, 2025",

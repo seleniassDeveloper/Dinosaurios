@@ -1,111 +1,105 @@
-/* src/css/timeline.css */
-
 .timeline-section {
   padding: 60px 30px;
-  background-color: #f9f9f9;
-  overflow-x: auto;
-  white-space: nowrap;
+  background: #f8f8f8;
+  text-align: center;
 }
 
 .timeline-title {
-  text-align: center;
   font-size: 2rem;
-  margin-bottom: 60px;
-  color: #222;
   font-weight: 700;
+  margin-bottom: 60px;
 }
 
-.timeline-container {
-  display: flex;
+.timeline-wrapper {
   position: relative;
+  display: flex;
   gap: 100px;
-  padding: 100px 40px; /* espacio vertical para textos arriba y abajo */
-  min-width: 1200px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 120px 40px;
 }
 
+.timeline-info h3{
+  color: green!important;
+}
+
+/* Línea horizontal base */
 .timeline-line {
   position: absolute;
   top: 50%;
   left: 0;
+  right: 0;
   height: 4px;
-  width: 100%;
   background-color: #ccc;
-  z-index: 0;
+  z-index: 1;
   transform: translateY(-50%);
+  border-radius: 2px;
 }
 
+/* Cada ítem */
 .timeline-item {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  z-index: 1;
-  width: 180px;
-  white-space: normal;
+  z-index: 2;
+  min-width: 180px;
 }
 
-/* Imagen centrada en la línea */
+/* Nodo con imagen */
 .timeline-node {
-  background-color: white;
-  border: 6px solid #03680d;
-  border-radius: 50%;
   width: 100px;
   height: 100px;
-  overflow: hidden;
+  border-radius: 50%;
+  border: 6px solid #03680d;
+  background: #fff;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  position: relative;
+  overflow: hidden;
+  z-index: 3;
 }
 
-/* Imagen dentro del nodo */
-.timeline-image {
+.timeline-node img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
 }
 
-/* Año siempre debajo del nodo */
-.timeline-year {
-  position: absolute;
-  bottom: -25px;
-  font-weight: bold;
-  font-size: 1rem;
-  color: #333333;
-  z-index: 3;
-}
-
-/* Alternar textos arriba y abajo */
-.timeline-item:nth-child(odd) .timeline-info {
-  position: absolute;
-  top: -120px;
-}
-
-.timeline-item:nth-child(even) .timeline-info {
-  position: absolute;
-  bottom: -120px;
-}
-
+/* Info: texto superior e inferior alternado */
 .timeline-info {
-  max-width: 220px;
-  padding: 0 10px;
-  background-color: transparent;
+  max-width: 200px;
+  padding: 10px;
+  background: none;
+  text-align: center;
+}
+
+.timeline-info.top {
+  position: absolute;
+  top: -130px;
+}
+
+.timeline-info.bottom {
+  position: absolute;
+  bottom: -130px;
 }
 
 .timeline-info h3 {
-  margin-bottom: 5px;
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.timeline-info strong {
+  display: block;
   font-size: 1rem;
   font-weight: bold;
-  color: #333;
-  white-space: normal;
+  color: #222;
+  margin: 4px 0;
 }
 
 .timeline-info p {
   font-size: 0.9rem;
   color: #666;
-  white-space: normal;
+  margin: 0;
 }
