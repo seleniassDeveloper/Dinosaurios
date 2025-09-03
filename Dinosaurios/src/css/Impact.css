@@ -52,7 +52,16 @@
   line-height: 1.7;
   color: #333;
 }
-
+.mag-intro {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  line-height: 1.6;
+  color: #333;
+  font-weight: 400;
+  max-width: 70ch;
+  margin-top: 1.5rem;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1);
+}
 .impacto-lista {
   list-style: none;
   padding: 0;
@@ -75,6 +84,7 @@
   color: var(--amber);
   font-size: 1.1rem;
 }
+
 
 /* Imagen decorativa */
 
@@ -141,4 +151,24 @@
     font-size: 1.2rem;
     color: var(--accent);
   }
+
+  .resaltado {
+  color: #30a86f; /* Verde científico */
+  font-weight: 700;
+}
+
+.mag-subtitle {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #333;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+
+
+.resaltado {
+  color: #1db954; /* verde tipo Spotify */
+  font-weight: 600;
+}
 }

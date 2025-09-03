@@ -7,7 +7,7 @@ export default function MainSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="mag-hero my-3">
+    <section className="mag-hero">
       <div className="mag-veil" />
 
       <div className="mag-hero-inner">
@@ -18,6 +18,11 @@ export default function MainSection() {
           <span className="resaltado">{t("mainSection.titleHighlight")}</span>{" "}
           {t("mainSection.titleEnd")}
         </h1>
+
+        <p
+          className="mag-intro"
+          dangerouslySetInnerHTML={{ __html: t("mainSection.intro") }}
+        />
       </div>
 
       <div className="mag-dino">

@@ -11,7 +11,7 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <div className="px-5 py-5">
+      <div className="">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

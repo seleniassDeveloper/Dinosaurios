@@ -30,12 +30,14 @@
     "impactP1": "Más allá de la ciencia, compartimos nuestros descubrimientos con escuelas rurales, museos y el público general. Diseñamos exhibiciones, damos charlas y creamos materiales educativos.",
     "impactP2": "Nuestro trabajo inspira a futuras generaciones de científicos y promueve el valor del patrimonio fósil argentino."
   },
+
   "mainSection": {
-  "kicker": "La ciencia impulsada por la exploración",
-  "titleStart": "Sé parte de la historia.",
-  "titleHighlight": "Míralo en vivo",
-  "titleEnd": "mientras buscamos nuevos dinosaurios."
-},
+    "kicker": "La ciencia impulsada por la exploración",
+    "titleStart": "Sé parte de la historia.",
+    "titleHighlight": "Míralo en vivo",
+    "titleEnd": "mientras buscamos nuevos dinosaurios.",
+    "intro": "Somos un equipo de <span class='resaltado'>paleontólogos</span>, profesores, estudiantes y naturalistas del Laboratorio de Anatomía Comparada y Evolución de los Vertebrados (LACEV). Desde hace más de 20 años buscamos, extraemos, preparamos, investigamos y comunicamos públicamente la paleontología en la Patagonia, habiendo descubierto el <span class='resaltado'>26%</span> de las nuevas especies de dinosaurios en Sudamérica."
+  },
   "navbar": {
     "home": "Home",
     "about": "About",

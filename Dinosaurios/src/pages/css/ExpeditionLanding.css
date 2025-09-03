@@ -58,6 +58,7 @@
 .kicker { 
     color: var(--teal-2);
      text-transform: uppercase;
+     
       letter-spacing: .06em; 
       font-weight: 900; 
       font-size: var(--step--1); 
