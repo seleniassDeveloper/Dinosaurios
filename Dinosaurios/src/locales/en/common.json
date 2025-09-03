@@ -55,17 +55,22 @@
   "press": "Press",
   "donate": "Donate"
 },
-  "countdown": {
-  "heading": "EXCAVACIÓN EN VIVO",
-  "date": "Comienza el 25 de septiembre de 2025",
-  "days": "Días",
-  "hours": "Horas",
-  "minutes": "Minutos",
-  "seconds": "Segundos"
+
+
+   "countdown": {
+  "heading": "LIVESTREAM EXCAVATION",
+  "date": "Starting September 25, 2025",
+  "days": "Days",
+  "hours": "Hours",
+  "minutes": "Minutes",
+  "seconds": "Seconds"
 },
 "social": {
-  "follow": "Seguinos en nuestras redes:"
+  "follow": "Follow us on our social media:"
 },
+
+ 
+
 "partners": {
   "title": "Press & Partners",
   "alt": "Logos of our press mentions and collaborating institutions"

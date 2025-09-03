@@ -36,9 +36,9 @@ export default function HeroSection() {
           <a href="/donate" className="hero-btn primary">
             {t("hero.cta1")}
           </a>
-          <a href="/expedition" className="hero-btn secondary">
+          {/* <a href="/expedition" className="hero-btn secondary">
             {t("hero.cta2")}
-          </a>
+          </a> */}
         </div>
         <Redes />
       </div>

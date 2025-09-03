@@ -21,7 +21,10 @@ export default function Home() {
       <div>
         <ParrafoWelcome />
       </div>
-      <Colaboradores />
+      <div className="pb-5">
+        <Colaboradores />
+      </div>
+      
     </main>
   );
 }
