@@ -1,0 +1,154 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "expedition": "Expedition",
+    "impact": "Impact",
+    "press": "Press",
+    "donate": "Donate"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "expedition": "Expedition",
+    "impact": "Impact",
+    "press": "Press",
+    "donate": "Donate",
+    "language": "Language"
+  },
+"hero": {
+  "kicker": "Science powered by exploration",
+  "titleBefore": "Be part of history.",
+  "titleHighlight": "Watch live",
+  "titleAfter": "as we search for new dinosaurs in Patagonia.",
+  "subtitle": "Team: 11 researchers, 5 technicians, 2 educators and 10+ students. Based at the Bernardino Rivadavia Museum (Buenos Aires). 5 Nature covers and 400+ publications. In the last 20 years: 35 species in Argentina and 5 in Antarctica/LatAm.",
+  "cta1": "Donate now",
+  "cta2": "See expedition plan"
+},
+  
+
+  "goal": {
+    "kicker": "Our track record",
+    "title": "20+ years of discoveries that open new paths",
+    "desc": {
+      "p1": "We are 11 researchers, 5 professional technicians, 2 educators/science communicators, and 10+ students based at the Argentine Museum of Natural Sciences (Buenos Aires). We’ve achieved 5 Nature covers and 400+ scientific publications.",
+      "p2": "Over the past two decades we discovered and named 33 new dinosaur species in Argentina (22% of the country’s known species) plus 5 additional species in Antarctica, Brazil, Chile, and Ecuador. We also described 20+ other Mesozoic vertebrates (mammals, marine reptiles, crocodiles, turtles, and more).",
+      "p3": "Highlights: Maip macrothorax (a 10 m predator with a claw over 30 cm), Patagorhynchus (the oldest South American platypus), a near-complete skeleton of Taurovenator violantei, and the world’s oldest tadpole. Supported by organizations such as National Geographic (4), The Explorers Club (3), and Jurassic Foundation (3)."
+    },
+    "badges": {
+      "natgeo": "National Geographic (4)",
+      "explorers": "Explorers Club (3)",
+      "jurassic": "Jurassic Foundation (3)"
+    }
+  
+  },
+  "kpis": {
+    "covers": "Covers in Nature",
+    "papers": "Published articles",
+    "species20": "New species (20 years)",
+    "outreach": "Outreach initiatives"
+  },
+  "projects": {
+    "flag": "Project",
+    "ribbon": {
+      "eta2025": "ETA end of 2025",
+      "ongoing": "Ongoing",
+      "analysis": "Analysis"
+    },
+    "cards": {
+      "softTissues": {
+        "title": "Carnivore with soft tissues",
+        "meta": "First evidence of muscles and blood in South American dinosaurs."
+      },
+      "raptor": {
+        "title": "New high-latitude raptor",
+        "meta": "Insights into Patagonian ecosystems and adaptation to extreme cold."
+      },
+      "nest": {
+        "title": "First theropod nest",
+        "meta": "90 Ma. 7 eggs with remains of a coiled snake: predator or nest inhabitant?"
+      }
+    },
+    "tags": {
+      "patagonia": "Patagonia",
+      "cretaceous": "Cretaceous",
+      "south": "South",
+      "ecology": "Ecology",
+      "nest": "Nest"
+    }
+  },
+  "cta": {
+    "title": "Make history with us",
+    "copy": "We comply with the Argentine National Law and have official permits. Own laboratory for preparation.",
+    "other": "Other",
+    "button": "Donate now"
+  },
+  "brand": {
+    "title": "Dinosaurs"
+  },
+   "exp": {
+  "hero": {
+  "kicker": "Science powered by exploration",
+  "title": "Be part of history. Watch live as we search for new dinosaurs in Patagonia.",
+  "subtitle": "Team: 11 researchers, 5 technicians, 2 educators and 10+ students. Based at the Bernardino Rivadavia Museum (Buenos Aires). 5 Nature covers and 400+ publications. In the last 20 years: 35 species in Argentina and 5 in Antarctica/LatAm.",
+  "ctaPlan": "See expedition plan"
+},
+    "methods": {
+      "title": "How we work in the field",
+      "intro": "A full cycle: from prospecting to peer-reviewed science and outreach.",
+      "steps": {
+        "1": { "title": "Prospecting", "copy": "Stratigraphy reading, mapping and systematic surveys to locate fossils." },
+        "2": { "title": "Excavation", "copy": "Recording, plaster jacketing and safe extraction of the material." },
+        "3": { "title": "Laboratory", "copy": "Fine prep, CT scans and comparisons with reference collections." },
+        "4": { "title": "Publication & outreach", "copy": "Formal description, peer review and public engagement in schools, media and museums." }
+      }
+    },
+    "highlights": {
+      "title": "Finds that define us",
+      "items": {
+        "maip": {
+          "title": "Maip macrothorax",
+          "copy": "A ~10 m predator from the southern tip, with a >30 cm killing claw."
+        },
+        "platypus": {
+          "title": "Patagorhynchus",
+          "copy": "The oldest platypus found in South America, 70 million years old."
+        },
+        "tauro": {
+          "title": "Taurovenator violantei",
+          "copy": "Near-complete skeleton of a giant carnivore, a rival to T. rex."
+        },
+        "tadpole": {
+          "title": "The oldest tadpole",
+          "copy": "A unique specimen from Patagonia, over 200 million years old."
+        }
+      }
+    },
+    "antarctica": {
+      "title": "Antarctica Mission 2027–2032",
+      "copy": "Five-year agreement with the Argentine Antarctic Institute and CONICET. Goal: uncover ~70 Ma dinosaurs in the frozen continent.",
+      "m1": "Outcrop reconnaissance and field logistics.",
+      "m2": "Focused campaigns and extraction of promising matrices.",
+      "m3": "Analyses, species descriptions and exhibits."
+    },
+    "compliance": {
+      "title": "Permits & transparency",
+      "copy": "We operate under Argentine National Law with official permits and an in-house fossil prep lab."
+    },
+    "support": {
+      "title": "Support & organizations",
+      "paleoSociety": "The Paleontological Society (2)",
+      "apa": "Asociación Paleontológica Argentina (3)"
+    },
+    "cta": {
+      "title": "Your gift speeds up the next discovery",
+      "copy": "Every contribution funds logistics, fossil preparation and training of young researchers.",
+      "donateNow": "Donate now",
+      "impact": {
+        "a": "Field team for one day (fuel & supplies).",
+        "b": "Lab materials (consolidants, micro-tools).",
+        "c": "One week of professional fossil preparation."
+      }
+    }
+  }
+}

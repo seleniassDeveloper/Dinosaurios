@@ -1,0 +1,19 @@
+[
+  {
+    "type":"Exposición",
+    "title":"Dinosaur Expo 2023",
+    "venue":"National Museum of Natural History, Tokio",
+    "year":2023,
+    "brief":"Material expositivo de Maip macrothorax.",
+    "people":["M. Aranciaga Rolando"]
+  },
+  {
+    "type":"Ilustración",
+    "title":"Nature – Chilesaurus (cover)",
+    "venue":"Nature",
+    "year":2017,
+    "people":["G. Lio"],
+    "url":"https://www.nature.com/nature/volumes/522/issues/7556",
+    "image":"covers/nature-chilesaurus.jpg"
+  }
+]

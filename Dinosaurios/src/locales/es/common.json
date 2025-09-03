@@ -1,0 +1,151 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Acerca",
+    "expedition": "Expedición",
+    "impact": "Impacto",
+    "press": "Prensa",
+    "donate": "Donar"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca",
+    "expedition": "Expedición",
+    "impact": "Impacto",
+    "press": "Prensa",
+    "donate": "Donar",
+    "language": "Idioma"
+  },
+ "hero": {
+  "kicker": "Ciencia impulsada por la exploración",
+  "titleBefore": "Sé parte de la historia.",
+  "titleHighlight": "EN VIVO",
+  "titleAfter": "en la búsqueda de nuevos dinosaurios en la Patagonia.",
+ "subtitle": "Team: 11 researchers, 5 technicians, 2 educators and 10+ students. Based at the Bernardino Rivadavia Museum (Buenos Aires). 5 Nature covers and 400+ publications. In the last 20 years: 35 species in Argentina and 5 in Antarctica/LatAm.",
+  "cta1": "Donate now",
+  "cta2": "See expedition plan"
+}, 
+   "goal": {
+    "kicker": "Nuestro recorrido",
+    "title": "20+ años de descubrimientos que abren caminos",
+    "desc": {
+      "p1": "Somos 11 investigadores, 5 técnicos, 2 educadores y 10+ estudiantes con sede en el Museo Argentino de Ciencias Naturales (Buenos Aires). Logramos 5 portadas en Nature y 400+ publicaciones científicas.",
+      "p2": "En las últimas dos décadas descubrimos y nombramos 33 especies nuevas de dinosaurios en Argentina (22% de las conocidas en el país) y 5 adicionales en Antártida, Brasil, Chile y Ecuador. También describimos más de 20 especies de otros vertebrados mesozoicos (mamíferos, reptiles marinos, cocodrilos, tortugas y más).",
+      "p3": "Hitos: Maip macrothorax (depredador de 10 m con garra de 30+ cm), Patagorhynchus (el ornitorrinco más antiguo de Sudamérica), un esqueleto casi completo de Taurovenator violantei, y el renacuajo más antiguo del mundo. Todo con apoyo de organizaciones como National Geographic (4), The Explorers Club (3) y Jurassic Foundation (3)."
+    },
+    "badges": {
+      "natgeo": "National Geographic (4)",
+      "explorers": "Explorers Club (3)",
+      "jurassic": "Jurassic Foundation (3)"
+    }
+  },
+  "kpis": {
+    "covers": "Portadas en Nature",
+    "papers": "Artículos publicados",
+    "species20": "Nuevas especies (20 años)",
+    "outreach": "Iniciativas de divulgación"
+  },
+  "projects": {
+    "flag": "Proyecto",
+    "ribbon": {
+      "eta2025": "ETA fines de 2025",
+      "ongoing": "En curso",
+      "analysis": "Análisis"
+    },
+    "cards": {
+      "softTissues": {
+        "title": "Carnívoro con tejidos blandos",
+        "meta": "Primera evidencia de músculos y sangre en dinosaurios de Sudamérica."
+      },
+      "raptor": {
+        "title": "Nuevo raptor de alta latitud",
+        "meta": "Claves sobre ecosistemas patagónicos y adaptación al frío extremo."
+      },
+      "nest": {
+        "title": "Primer nido de terópodo",
+        "meta": "90 Ma. 7 huevos con restos de serpiente enroscada: ¿depredadora o habitante del nido?"
+      }
+    },
+    "tags": {
+      "patagonia": "Patagonia",
+      "cretaceous": "Cretácico",
+      "south": "Sur",
+      "ecology": "Ecología",
+      "nest": "Nido"
+    }
+  },
+  "cta": {
+    "title": "Haz historia con nosotros",
+    "copy": "Cumplimos la Ley Nacional Argentina y contamos con permisos oficiales. Laboratorio propio para preparación.",
+    "other": "Otro",
+    "button": "Donar ahora"
+  },
+  "brand": {
+    "title": "Dinosaurios"
+  },
+  "exp": {
+"hero": {
+  "kicker": "Ciencia impulsada por la exploración",
+  "title": "Sé parte de la historia. Mira en vivo mientras buscamos nuevos dinosaurios en la Patagonia.",
+  "subtitle": "Equipo: 11 investigadores, 5 técnicos, 2 educadores y 10+ estudiantes. Con sede en el Museo Bernardino Rivadavia (Buenos Aires). 5 portadas en Nature y 400+ publicaciones. En los últimos 20 años: 35 especies en Argentina y 5 en Antártida/LatAm.",
+  "ctaPlan": "Ver plan de expedición"
+},
+    "methods": {
+      "title": "Cómo trabajamos en campaña",
+      "intro": "Un ciclo completo: desde la prospección en campo hasta la publicación científica y la divulgación.",
+      "steps": {
+        "1": { "title": "Prospección", "copy": "Lectura de estratigrafía, mapeo y recorridas sistemáticas para localizar fósiles." },
+        "2": { "title": "Excavación", "copy": "Registro, protección con vendas de yeso ('jackets') y extracción segura de los restos." },
+        "3": { "title": "Laboratorio", "copy": "Preparación fina, tomografías y comparación con colecciones de referencia." },
+        "4": { "title": "Publicación y alcance", "copy": "Descripción formal, revisión por pares y comunicación en escuelas, medios y museos." }
+      }
+    },
+    "highlights": {
+      "title": "Hallazgos que nos definen",
+      "items": {
+        "maip": {
+          "title": "Maip macrothorax",
+          "copy": "Depredador de ~10 m del extremo sur, con garra letal de +30 cm."
+        },
+        "platypus": {
+          "title": "Patagorhynchus",
+          "copy": "El ornitorrinco más antiguo de Sudamérica, 70 millones de años."
+        },
+        "tauro": {
+          "title": "Taurovenator violantei",
+          "copy": "Esqueleto casi completo de un gran carnívoro, rival del T. rex."
+        },
+        "tadpole": {
+          "title": "El renacuajo más antiguo",
+          "copy": "Ejemplar único de Patagonia, con +200 millones de años."
+        }
+      }
+    },
+    "antarctica": {
+      "title": "Misión Antártida 2027–2032",
+      "copy": "Acuerdo con el Instituto Antártico Argentino y CONICET para expediciones paleontológicas. Objetivo: hallar dinosaurios de ~70 Ma en el continente blanco.",
+      "m1": "Reconocimiento de afloramientos y logística de campo.",
+      "m2": "Campañas focalizadas y extracción de matrices con potencial.",
+      "m3": "Análisis, descripción de especies y exhibiciones."
+    },
+    "compliance": {
+      "title": "Permisos y transparencia",
+      "copy": "Operamos bajo la Ley Nacional Argentina con permisos oficiales y laboratorio propio de preparación."
+    },
+    "support": {
+      "title": "Apoyos y organizaciones",
+      "paleoSociety": "The Paleontological Society (2)",
+      "apa": "Asociación Paleontológica Argentina (3)"
+    },
+    "cta": {
+      "title": "Tu aporte acelera el próximo descubrimiento",
+      "copy": "Cada contribución se invierte en logística, preparación de fósiles y formación de jóvenes investigadores.",
+      "donateNow": "Donar ahora",
+      "impact": {
+        "a": "Equipo de campo por un día (combustible y suministros).",
+        "b": "Materiales de laboratorio (consolidantes, microherramientas).",
+        "c": "Una semana de preparación profesional de fósiles."
+      }
+    }
+  }
+}

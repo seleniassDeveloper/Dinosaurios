@@ -1,0 +1,116 @@
+.countdown-section {
+    height: 140px;
+  background: #ffffff;
+  padding: 10px 10px 20px 10px;
+  font-family: 'Inter', sans-serif;
+  color: #2d1a0e;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  border: 1px solid #d4cbb9;
+  animation: fadeInMini 0.6s ease-out;
+}
+
+@keyframes fadeInMini {
+  from { opacity: 0; transform: scale(0.96); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.countdown-section::before {
+  content: "🪨";
+  font-size: 20px;
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  opacity: 0.06;
+}
+
+.countdown-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #3c3226;
+  margin-bottom: 10px;
+  letter-spacing: -0.3px;
+}
+
+.countdown-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.time-box {
+  background-color: #fff9f1;
+  border: 1px solid #cfc6b4;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 58px;
+  transition: transform 0.25s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.02);
+}
+
+.time-box:hover {
+  transform: scale(1.05);
+  background-color: #fef3e0;
+}
+
+.time-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #386641;
+  font-family: 'Share Tech Mono', monospace;
+  line-height: 1.1;
+}
+
+.time-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  color: #5f5042;
+  margin-top: 3px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.countdown-subtitle {
+  margin-top: 12px;
+  font-size: 0.8rem;
+  color: #6e5a4e;
+  font-style: italic;
+}
+
+.countdown-section::after {
+  content: "";
+  background-image: url('/footprint-dino.svg');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 50px;
+  opacity: 0.01;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  pointer-events: none;
+}
+.countdown-heading {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--marron);
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.highlight-date {
+  color: var(--naranja);
+  font-weight: 600;
+  display: block;
+  font-size: 1rem;
+  margin-top: 0.2rem;
+}

@@ -1,0 +1,345 @@
+/* =========================================================
+   Expedition Landing – Diseño editorial enfocado en conversión
+   ========================================================= */
+
+/* ---------- Variables base ---------- */
+:root {
+  /* Colores del proyecto (puedes heredar de site.css) */
+  --bg: #efe6d2;
+  --surface: #fffaf2;
+  --ink: #171a1c;
+  --muted: #6b6f72;
+  --line: #eadfcd;
+
+  --brand: #e3b261;     /* dorado */
+  --teal: #1f6b6e;      /* acento principal */
+  --teal-2: #2a8a8d;
+  --leaf: #2f6f3e;      /* apoyo verde */
+  --rust: #7a4c16;      /* apoyo cálido */
+
+  --shadow-s: 0 6px 16px rgba(0,0,0,.08);
+  --shadow-m: 0 12px 28px rgba(0,0,0,.12);
+  --shadow-l: 0 24px 60px rgba(0,0,0,.16);
+
+  --radius: 16px;
+  --radius-lg: 24px;
+  --maxw: 1100px;
+
+  --step--1: clamp(.9rem, .75vw + .7rem, 1rem);
+  --step-0:  clamp(1rem, .9vw + .8rem, 1.125rem);
+  --step-1:  clamp(1.15rem, 1.2vw + .9rem, 1.35rem);
+  --step-2:  clamp(1.4rem, 1.8vw + 1rem, 1.8rem);
+  --step-3:  clamp(1.8rem, 2.8vw + 1rem, 2.4rem);
+  --step-4:  clamp(2.2rem, 4vw + 1rem, 3rem);
+}
+
+/* ---------- Base ---------- */
+.expedition-landing {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+}
+
+.expedition-landing a { 
+  color: inherit; 
+  text-decoration: none; 
+}
+
+.expedition-landing img { 
+  width: 600px;
+  height: 650px; 
+  display: block; 
+}
+
+.expedition-landing .container { max-width: var(--maxw); margin: 0 auto; padding: 0 18px; }
+
+/* Helpers */
+.muted { color: var(--muted); }
+.kicker { 
+    color: var(--teal-2);
+     text-transform: uppercase;
+      letter-spacing: .06em; 
+      font-weight: 900; 
+      font-size: var(--step--1); 
+    }
+
+/* ---------- HERO con foco en CTA ---------- */
+.hero {
+  position: relative;
+  overflow: clip;
+
+  border-bottom: 1px solid var(--line);
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  align-items: center;
+  gap: 28px;
+  padding: clamp(24px, 5vw, 64px) 0;
+}
+
+
+.hero-content .lead {
+  font-size: var(--step-1);
+  color: var(--muted);
+  max-width: 60ch;
+}
+
+.hero-content .btn:hover{
+    color: white;
+    background-color: #2f6f3e5a!important;
+}
+.cta-row {
+  display: flex;
+  gap: 12px; flex-wrap: wrap;
+  margin-top: 16px;
+}
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 12px 18px; border-radius: 12px; font-weight: 900;
+  box-shadow: var(--shadow-s); transition: transform .18s, box-shadow .18s, filter .18s, background .18s;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn.primary { background: var(--teal); color: #fff; }
+.btn.secondary { border: 2px solid var(--teal); color: var(--teal); background: transparent; }
+.btn.ghost { border: 2px solid var(--ink); color: var(--ink); background: transparent; }
+
+.hero-art {
+  position: relative; min-height: 320px; display: grid; place-items: start;
+}
+.hero-art .spot {
+  position: absolute; inset: -15% -25% -25% -25%;
+  background:
+    radial-gradient(420px 260px at 62% 68%, rgba(0,0,0,.10), transparent 60%),
+    radial-gradient(360px 220px at 42% 28%, rgba(0,0,0,.06), transparent 60%);
+  filter: blur(2px); z-index: 0;
+}
+.hero-art .dino {
+  position: relative; z-index: 1; width: min(88%, 560px);
+  filter: drop-shadow(0 16px 32px rgba(0,0,0,.22));
+}
+
+/* ---------- Secciones estándar ---------- */
+.section {
+  padding: clamp(28px, 5vw, 64px) 0;
+}
+.section .header {
+  margin-bottom: clamp(14px, 2.2vw, 18px);
+}
+.section .header h2 {
+  font-size: var(--step-3);
+  line-height: 1.06;
+  margin: 0 0 6px;
+}
+.section .header p { color: var(--muted); max-width: 70ch; }
+
+/* ---------- Tarjeta destacada (mensaje-conversión) ---------- */
+
+.highlight .row { display: grid; grid-template-columns: 1.1fr .9fr; gap: 20px; align-items: center; }
+.highlight .badges { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+.badge {
+  display: inline-flex; gap: 8px; align-items: center;
+  background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 8px 10px;
+  box-shadow: var(--shadow-s); font-weight: 800; font-size: var(--step--1);
+}
+.badge .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--brand); display: inline-block; }
+
+/* ---------- KPIs (métricas) ---------- */
+.kpis {
+  display: grid; gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+.kpi {
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 14px; text-align: center; box-shadow: var(--shadow-s);
+}
+.kpi .n { font-size: var(--step-2); font-weight: 900; color: var(--rust); }
+.kpi .l { color: var(--muted); font-size: var(--step--1); }
+
+/* ---------- Grid de proyectos / beneficios ---------- */
+.cards {
+  display: grid; gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.card {
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow-s); padding: 16px; transition: transform .18s, box-shadow .18s;
+}
+.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-m); }
+.card h3 { margin: 4px 0 6px; font-size: var(--step-2); line-height: 1.05; }
+.card .meta { color: var(--muted); font-size: var(--step--1); }
+.chips { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+.chip {
+  border: 1px solid var(--line); background: #fff; border-radius: 999px;
+  padding: 6px 8px; font-weight: 800; font-size: .86rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,.06);
+}
+.chip.teal { color: var(--teal); background: color-mix(in srgb, var(--teal) 10%, #fff); border-color: color-mix(in srgb, var(--teal) 28%, #fff); }
+.chip.gold { color: #7A4C16; background: color-mix(in srgb, var(--brand) 16%, #fff); border-color: color-mix(in srgb, var(--brand) 40%, #fff); }
+
+/* ---------- Timeline (programa de campaña / expedición) ---------- */
+.timeline {
+  position: relative; padding-left: 26px;
+}
+.timeline::before {
+  content: ""; position: absolute; left: 10px; top: 4px; bottom: 4px;
+  width: 2px; background: linear-gradient(var(--brand), var(--teal));
+  border-radius: 2px;
+}
+.milestone {
+  position: relative; background: #fff; border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 12px 14px; margin: 12px 0; box-shadow: var(--shadow-s);
+}
+.milestone::before {
+  content: ""; position: absolute; left: -18px; top: 14px;
+  width: 10px; height: 10px; border-radius: 50%; background: var(--brand);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand) 30%, #fff);
+}
+
+/* ---------- Franja sponsors / logos ---------- */
+.sponsors {
+  display: flex; gap: 12px; flex-wrap: wrap; align-items: center;
+  border: 1px dashed var(--line); background: #fff; border-radius: var(--radius);
+  padding: 12px; box-shadow: var(--shadow-s);
+}
+.sponsors .pill {
+  border: 1px solid var(--line); border-radius: 999px; padding: 8px 12px; background: #fff; font-weight: 800;
+}
+.sponsors strong { color: var(--teal-2); }
+
+/* ---------- CTA final ancho ---------- */
+.cta-wide {
+  position: relative; overflow: clip;
+  background:
+    radial-gradient(800px 400px at 10% 120%, rgba(227,178,97,.16), transparent 60%),
+    radial-gradient(800px 400px at 90% -20%, rgba(31,107,110,.16), transparent 60%),
+    linear-gradient(180deg, #fff, #fffaf2);
+  border: 1px solid var(--line); border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-l);
+  padding: clamp(18px, 2.6vw, 28px);
+  text-align: center;
+}
+.cta-wide h3 { font-size: var(--step-3); margin: 6px 0 8px; }
+.amounts { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin: 12px 0 16px; }
+.amount {
+  padding: 10px 14px; border: 1px solid var(--line); border-radius: 10px; background: #fff; cursor: pointer;
+  transition: border-color .18s, color .18s, transform .18s;
+}
+.amount:hover { border-color: var(--teal); color: var(--teal); transform: translateY(-1px); }
+
+/* ---------- Accesibilidad / motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .btn, .card, .kpi, .amount { transition: none; }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 980px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-content { text-align: center; }
+  .cta-row { justify-content: center; }
+  .hero-art { min-height: 260px; place-items: center; }
+}
+@media (max-width: 720px) {
+  .highlight .row { grid-template-columns: 1fr; }
+  .section .header h2 { font-size: var(--step-2); }
+}
+/* Cambia el orden para versión izquierda */
+.hero-left {
+  grid-template-columns: .9fr 1.1fr; /* imagen + texto */
+}
+
+.hero-left .hero-art {
+  order: 1; /* primero imagen */
+}
+.hero-left .hero-content {
+  order: 2; /* luego texto */
+}
+
+/* Responsive: vuelve a stack en mobile */
+@media (max-width: 980px) {
+  .hero-left {
+    grid-template-columns: 1fr; /* pila vertical */
+  }
+  .hero-left .hero-art {
+    order: 0;
+    justify-self: center;
+    margin-bottom: 20px;
+  }
+}
+.expedition-landing{background:var(--bg);color:var(--ink);font-family:ui-sans-serif,system-ui,sans-serif}
+
+/* ===== HERO ===== */
+.hero{background:linear-gradient(180deg,#f6eddc 0%,#eadcc5 100%);padding:36px 0}
+.hero-inner{display:grid;grid-template-columns:1.1fr 1fr;gap:22px;align-items:center;max-width:1100px;margin:0 auto;padding:0 16px}
+.hero-left .hero-inner{grid-template-columns:1fr 1.1fr}
+.kicker{color:var(--brand);font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin:0 0 6px}
+
+
+.hero-content h1{
+  font-size:0.9rem;
+  line-height:1.02;
+  margin:0 0 8px
+}
+
+.lead{color:var(--muted);font-size:clamp(1.02rem,2.2vw,1.18rem)}
+.cta-row{display:flex;gap:12px;margin-top:14px}
+.btn{padding:12px 18px;border-radius:12px;font-weight:900;text-decoration:none;display:inline-block;transition:transform .2s,box-shadow .2s,filter .2s}
+.btn.primary{background:var(--teal);color:#fff;box-shadow:0 12px 26px rgba(0,0,0,.18)}
+.btn.primary:hover{transform:translateY(-2px)}
+.btn.secondary{border:2px solid var(--teal);color:var(--teal);background:transparent}
+.btn.secondary:hover{filter:brightness(1.05)}
+
+.hero-art{position:relative;isolation:isolate}
+.hero-art .spot{
+  position:absolute;inset:auto -8% -8% -8%;top:-6%;
+  background:radial-gradient(440px 260px at 60% 60%,rgba(0,0,0,.16),transparent 65%),
+             radial-gradient(300px 200px at 40% 30%,rgba(0,0,0,.09),transparent 60%);
+  filter:blur(2px);z-index:0;border-radius:24px;
+}
+.hero-art .dino{position:relative;z-index:1;width:100%;height:auto;display:block;border-radius:18px;
+  box-shadow:0 20px 40px rgba(0,0,0,.22)}
+
+/* ===== SECTIONS ===== */
+.section{padding:38px 0}
+.container{max-width:1100px;margin:0 auto;padding:0 16px}
+.h2{font-size:clamp(1.6rem,3.6vw,2.2rem);margin:0 0 10px}
+.muted{color:var(--muted)}
+
+/* Métodos */
+.method-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.method{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;box-shadow:0 14px 30px rgba(0,0,0,.08)}
+.method .n{font-weight:900;color:var(--brand-strong, #6b4f3a);font-size:1rem;opacity:.75;margin-bottom:6px}
+.method h3{margin:0 0 6px;font-size:1.05rem}
+
+/* Highlights */
+.cards{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 16px 36px rgba(0,0,0,.08);transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 22px 44px rgba(0,0,0,.14)}
+.card img{width:100%;height:160px;object-fit:cover;display:block}
+.card-body{padding:12px}
+.card-body h4{margin:0 0 6px}
+
+/* Timeline Antártida */
+.timeline{display:grid;grid-template-columns:12px 1fr;gap:10px;align-items:start;margin-top:8px}
+.timeline .dot{width:12px;height:12px;border-radius:50%;background:var(--brand);margin-top:.55rem}
+.timeline .milestone{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px;box-shadow:0 10px 24px rgba(0,0,0,.08)}
+.timeline .milestone h4{margin:0 0 4px}
+
+/* Panels y pills */
+.info-panels{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.panel{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;box-shadow:0 14px 30px rgba(0,0,0,.08)}
+.pill-list{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 0;padding:0;list-style:none}
+.pill{background:#fff;border:1px dashed var(--line);border-radius:999px;padding:6px 10px;font-weight:800}
+
+/* CTA donación */
+.cta-card{background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 18px 40px rgba(0,0,0,.12);text-align:center}
+.impact-rows{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:12px 0}
+.impact{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 12px;min-width:220px}
+.impact .amount{font-weight:900;color:var(--teal);margin-bottom:6px}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero-inner{grid-template-columns:1fr}
+  .hero-art .dino{border-radius:14px}
+}
