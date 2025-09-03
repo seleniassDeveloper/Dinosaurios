@@ -1,4 +1,45 @@
 {
+"impact": {
+  "title": "Impacto en la comunidad científica",
+  "description": "Con más de 200 iniciativas de divulgación entre 2005 y 2025, nuestro equipo ha hecho que la ciencia sea accesible al público y ha contribuido al desarrollo educativo.",
+  "bullet1": "Más de 50 charlas y conferencias en escuelas, universidades y eventos culturales.",
+  "bullet2": "11 talleres y sesiones de capacitación para docentes y profesionales sobre herramientas innovadoras para la enseñanza de la paleontología.",
+  "bullet3": "12 artículos publicados en medios de renombre como National Geographic y revistas especializadas.",
+  "bullet4": "Amplia presencia en medios: documentales y apariciones en televisión en Canal Encuentro, NHK (Japón), NatGeo Kids (EE.UU.) y Paka Paka (Argentina).",
+  "bullet5": "Más de 100 noticias en medios internacionales en múltiples idiomas.",
+  "bullet6": "3 libros publicados sobre paleontología e historia, y un cuarto en producción sobre dinosaurios de la Patagonia.",
+  "bullet7": "Trabajo colaborativo con museos, comunidades locales y organismos internacionales."
+},
+  "about": {
+  "hero": "Un equipo que convierte huesos en conocimiento",
+
+  "whoTitle": "Quiénes somos",
+  "whoP1": "APASUR es una ONG paleontológica sin fines de lucro con base en Argentina. Desde hace más de 20 años, realizamos excavaciones en la Patagonia, los Andes y la Antártida—recuperando, estudiando y difundiendo el patrimonio fósil de Sudamérica.",
+  "whoP2": "Nuestra misión es preservar y comprender la vida prehistórica, al mismo tiempo que promovemos la ciencia mediante la educación, el trabajo de campo y la colaboración internacional.",
+
+  "teamTitle": "Un equipo interdisciplinario",
+  "teamP1": "Somos 11 investigadores, 5 técnicos profesionales, 2 educadores y comunicadores científicos, y más de 10 estudiantes. Nuestro equipo está basado en el Museo Argentino de Ciencias Naturales Bernardino Rivadavia (Buenos Aires).",
+  "teamP2": "A lo largo de los años, descubrimos y nombramos 33 especies de dinosaurios en Argentina (el 22% de todas las especies conocidas en el país), además de 5 en la Antártida y otras partes de América Latina. Publicamos más de 400 artículos científicos y aparecimos 5 veces en la portada de la revista Nature.",
+
+  "excavationP1": "Cada campaña nos acerca a nuevas especies y conocimientos.",
+  "excavationP2": "33 especies nombradas, 400+ publicaciones, 5 portadas en Nature.",
+  "button": "Ver más descubrimientos",
+
+  "antarcticaTitle": "Exploración en la Antártida",
+  "antarcticaP1": "En alianza con el Instituto Antártico Argentino y CONICET, lanzamos un proyecto a largo plazo para buscar fósiles de dinosaurios cerca de la Cuenca James Ross, en condiciones extremas y con apoyo logístico de las bases científicas.",
+  "antarcticaMissionTitle": "Misión 2027–2032:",
+  "antarcticaMission": "Excavar afloramientos clave y analizar la fauna que vivió en el continente helado hace 70 millones de años.",
+
+  "impactTitle": "Impacto comunitario",
+  "impactP1": "Más allá de la ciencia, compartimos nuestros descubrimientos con escuelas rurales, museos y el público general. Diseñamos exhibiciones, damos charlas y creamos materiales educativos.",
+  "impactP2": "Nuestro trabajo inspira a futuras generaciones de científicos y promueve el valor del patrimonio fósil argentino."
+},
+  "mainSection": {
+  "kicker": "La ciencia impulsada por la exploración",
+  "titleStart": "Sé parte de la historia.",
+  "titleHighlight": "Míralo en vivo",
+  "titleEnd": "mientras buscamos nuevos dinosaurios."
+},
   "navbar": {
     "home": "Home",
     "about": "About",
@@ -35,20 +76,18 @@
   "p3": "27% of all new dinosaur species in South America have been discovered by our team."
 },
 "hero": {
-  "alt": "Excavation",
-  "kicker": "Science powered by exploration",
-  "titleBefore": "Be part of history.",
-  "titleHighlight": "Watch live",
-  "titleAfter": "as we search for a new dinosaur species.",
-  "description": "We will stream live from Río Negro, Argentina, as our team searches for new dinosaur species. For the first time, you’ll witness a real-time dig: every bone, every find, while directly supporting one of the most innovative paleontology campaigns in the world.",
-  "quote": "With over 30 species discovered, our NGO leads paleontology in South America.",
+  "alt": "Excavación",
+  "title": "Sé parte de la historia.",
+  "highlight": "Míralo en vivo",
+  "description": "Transmitiremos en vivo desde Río Negro, Argentina, mientras nuestro equipo busca nuevas especies de dinosaurios. Por primera vez, podrás presenciar una excavación en tiempo real: cada hueso, cada hallazgo, mientras apoyas directamente una de las campañas de paleontología más innovadoras del mundo.",
+  "quote": "Con más de 30 especies descubiertas, nuestra ONG lidera la paleontología en Sudamérica.",
   "urgency": {
-    "prefix": "Only",
-    "days": "7 days left",
-    "suffix": "to enter the original fossil giveaway!"
+    "prefix": "Solo",
+    "days": "quedan 7 días",
+    "suffix": "para participar en el sorteo de un fósil original"
   },
-  "cta1": "Watch livestream",
-  "cta2": "See expedition plan"
+  "cta1": "Ver transmisión en vivo",
+  "cta2": "Ver plan de expedición"
 },
   "goal": {
     "kicker": "Our track record",
@@ -109,12 +148,12 @@
     "title": "Dinosaurs"
   },
   "exp": {
-    "hero": {
-      "kicker": "Science powered by exploration",
-      "title": "Be part of history. Watch live as we search for new dinosaurs in Patagonia.",
-      "subtitle": "Team: 11 researchers, 5 technicians, 2 educators and 10+ students. Based at the Bernardino Rivadavia Museum (Buenos Aires). 5 Nature covers and 400+ publications. In the last 20 years: 35 species in Argentina and 5 in Antarctica/LatAm.",
-      "ctaPlan": "See expedition plan"
-    },
+"hero": {
+  "kicker": "Science powered by exploration",
+  "titleBefore": "Be part of history.",
+  "titleHighlight": "Watch live",
+  "titleAfter": "as we search for a new dinosaur species."
+},
     "methods": {
       "title": "How we work in the field",
       "intro": "A full cycle: from prospecting to peer-reviewed science and outreach.",

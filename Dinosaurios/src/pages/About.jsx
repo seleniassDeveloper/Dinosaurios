@@ -10,7 +10,8 @@ export default function About() {
   return (
     <section className="about-team-section">
       <div className="container">
-        {/* Hero Section */}
+        
+        {/* Hero: Imagen destacada del equipo con texto encima */}
         <div className="team-photo-hero">
           <img src={Grupo} alt="Equipo APASUR" className="team-photo" />
           <div className="hero-overlay-text">
@@ -18,21 +19,21 @@ export default function About() {
           </div>
         </div>
 
-        {/* About APASUR */}
+        {/* Introducción a APASUR */}
         <div className="apasur-intro">
           <h2>{t("about.whoTitle")}</h2>
           <p dangerouslySetInnerHTML={{ __html: t("about.whoP1") }} />
           <p>{t("about.whoP2")}</p>
         </div>
 
-        {/* Team Summary */}
+        {/* Resumen del equipo */}
         <div className="team-summary">
           <h3>{t("about.teamTitle")}</h3>
           <p dangerouslySetInnerHTML={{ __html: t("about.teamP1") }} />
           <p dangerouslySetInnerHTML={{ __html: t("about.teamP2") }} />
         </div>
 
-        {/* Excavation Impact */}
+        {/* Impacto de excavación */}
         <div className="excavation-metrics">
           <p className="italic-highlight">{t("about.excavationP1")}</p>
           <p className="bold-metric">{t("about.excavationP2")}</p>
@@ -41,7 +42,7 @@ export default function About() {
           </div>
         </div>
 
-        {/* Antarctica Section */}
+        {/* Misión Antártida */}
         <div className="antarctica-section">
           <h3>{t("about.antarcticaTitle")}</h3>
           <p dangerouslySetInnerHTML={{ __html: t("about.antarcticaP1") }} />
@@ -51,12 +52,13 @@ export default function About() {
           </p>
         </div>
 
-        {/* Community Impact */}
+        {/* Impacto comunitario */}
         <div className="team-impact">
           <h3>{t("about.impactTitle")}</h3>
           <p dangerouslySetInnerHTML={{ __html: t("about.impactP1") }} />
           <p>{t("about.impactP2")}</p>
         </div>
+        
       </div>
     </section>
   );

@@ -10,16 +10,14 @@ export default function MainSection() {
     <section className="mag-hero my-3">
       <div className="mag-veil" />
 
-      <div className="mag-hero-inner ">
-        <p className="mag-kicker">{t("hero.kicker")}</p>
+      <div className="mag-hero-inner">
+        <p className="mag-kicker">{t("mainSection.kicker")}</p>
 
         <h1 className="mag-title">
-          {t("hero.titleBefore")}{" "} 
-          <span className="resaltado">{t("hero.titleHighlight")}</span>{" "}
-          {t("hero.titleAfter")}
+          {t("mainSection.titleStart")}{" "}
+          <span className="resaltado">{t("mainSection.titleHighlight")}</span>{" "}
+          {t("mainSection.titleEnd")}
         </h1>
-
-
       </div>
 
       <div className="mag-dino">

@@ -1,7 +1,48 @@
 {
+"impact": {
+  "title": "Science Community Impact",
+  "description": "With over 200 outreach initiatives between 2005 and 2025, our team has made science accessible to the public and contributed to educational development.",
+  "bullet1": "50+ talks and lectures delivered in schools, universities, and cultural events.",
+  "bullet2": "11 workshops and training sessions for teachers and professionals on innovative tools for teaching paleontology.",
+  "bullet3": "12 articles published in renowned outlets, including National Geographic and specialized magazines.",
+  "bullet4": "Broad media presence: documentaries, television appearances on Canal Encuentro (Argentina), NHK (Japan), National Geographic Kids (USA), and Paka Paka (Argentina).",
+  "bullet5": "100+ news features across international media in multiple languages.",
+  "bullet6": "3 books published on paleontology and its history, with a fourth one currently in production about the dinosaurs of Patagonia.",
+  "bullet7": "Collaborative work with museums, local communities, and international organizations."
+},
+"about": {
+  "hero": "A team that turns bones into knowledge",
+
+  "whoTitle": "Who we are",
+  "whoP1": "APASUR is a nonprofit paleontological NGO based in Argentina. For over 20 years, we have carried out excavations in Patagonia, the Andes, and Antarctica—recovering, studying, and sharing the fossil heritage of South America.",
+  "whoP2": "Our mission is to preserve and understand prehistoric life while promoting science through education, fieldwork, and international collaboration.",
+
+  "teamTitle": "An interdisciplinary team",
+  "teamP1": "We are 11 researchers, 5 professional technicians, 2 educators and science communicators, and more than 10 students. Our team is based at the Bernardino Rivadavia Natural Sciences Museum (Buenos Aires).",
+  "teamP2": "Over the years, we’ve discovered and named 33 dinosaur species in Argentina (22% of all known species in the country), plus 5 in Antarctica and other parts of Latin America. We’ve published 400+ papers and appeared 5 times on the cover of Nature.",
+
+  "excavationP1": "Every campaign leads to new species and knowledge.",
+  "excavationP2": "33 species named, 400+ publications, 5 Nature covers.",
+  "button": "See more discoveries",
+
+  "antarcticaTitle": "Antarctic exploration",
+  "antarcticaP1": "In partnership with the Argentine Antarctic Institute and CONICET, we’ve launched a long-term project to uncover dinosaur fossils near the James Ross Basin, under extreme conditions and with logistical support from scientific bases.",
+  "antarcticaMissionTitle": "Mission 2027–2032:",
+  "antarcticaMission": "To excavate key fossil-bearing outcrops and analyze the fauna that lived on the frozen continent 70 million years ago.",
+
+  "impactTitle": "Community impact",
+  "impactP1": "Beyond science, we share our discoveries with rural schools, museums, and the public. We design exhibitions, give talks, and create educational material.",
+  "impactP2": "Our work inspires future scientists and raises awareness about Argentina’s fossil heritage."
+},  
+"mainSection": {
+  "kicker": "Science powered by exploration",
+  "titleStart": "Be part of history.",
+  "titleHighlight": "Watch live",
+  "titleEnd": "as we search for new dinosaurs."
+},
   "navbar": {
-    "home": "Home",
-    "about": "About",
+    "home": "Inicio",
+    "about": "Sobre nosotros",
     "expedition": "Expedition",
     "impact": "Impact",
     "press": "Press",
@@ -11,9 +52,9 @@
     "home": "Home",
     "about": "About",
     "expedition": "Expedition",
-    "impact": "Impact",
-    "press": "Press",
-    "donate": "Donate",
+    "impact": "Impacto",
+    "press": "Prensa",
+    "donate": "Dona",
     "language": "Language"
   },
   "countdown": {
@@ -34,21 +75,19 @@
   "p2": "Desde el polvo hasta el descubrimiento, hemos liderado excavaciones, publicado más de 400 artículos y aparecido en la portada de la revista Nature cinco veces.",
   "p3": "El 27% de todas las nuevas especies de dinosaurios en Sudamérica han sido descubiertas por nuestro equipo."
 },
- "hero": {
-  "alt": "Excavación",
-  "kicker": "Ciencia impulsada por la exploración",
-  "titleBefore": "Sé parte de la historia.",
-  "titleHighlight": "Explora en vivo",
-  "titleAfter": "una nueva especie de dinosaurio.",
-  "description": "Transmitiremos en vivo desde Río Negro, Argentina, donde nuestro equipo buscará nuevas especies de dinosaurios. Por primera vez podrás presenciar una excavación en tiempo real: cada hueso, cada hallazgo, mientras apoyas directamente una de las campañas paleontológicas más innovadoras del mundo.",
-  "quote": "Con más de 30 especies descubiertas, nuestra ONG lidera la paleontología en América del Sur.",
+"hero": {
+  "alt": "Excavation",
+  "title": "Be part of history.",
+  "highlight": "Watch live",
+  "description": "We will stream live from Río Negro, Argentina, as our team searches for new dinosaur species. For the first time, you’ll witness a real-time dig: every bone, every find, while directly supporting one of the most innovative paleontology campaigns in the world.",
+  "quote": "With over 30 species discovered, our NGO leads paleontology in South America.",
   "urgency": {
-    "prefix": "¡Quedan",
-    "days": "7 días",
-    "suffix": "para participar en el sorteo de fósiles originales!"
+    "prefix": "Only",
+    "days": "7 days left",
+    "suffix": "to enter the original fossil giveaway!"
   },
-  "cta1": "Ver lifestream",
-  "cta2": "Ver plan de expedición"
+  "cta1": "Watch livestream",
+  "cta2": "See expedition plan"
 },
    
   "goal": {
@@ -110,12 +149,12 @@
     "title": "Dinosaurs"
   },
   "exp": {
-    "hero": {
-      "kicker": "Science powered by exploration",
-      "title": "Be part of history. Watch live as we search for new dinosaurs in Patagonia.",
-      "subtitle": "Team: 11 researchers, 5 technicians, 2 educators and 10+ students. Based at the Bernardino Rivadavia Museum (Buenos Aires). 5 Nature covers and 400+ publications. In the last 20 years: 35 species in Argentina and 5 in Antarctica/LatAm.",
-      "ctaPlan": "See expedition plan"
-    },
+   "hero": {
+  "kicker": "La ciencia impulsada por la exploración",
+  "titleBefore": "Sé parte de la historia.",
+  "titleHighlight": "Míralo en vivo",
+  "titleAfter": "mientras buscamos una nueva especie de dinosaurio."
+},
     "methods": {
       "title": "How we work in the field",
       "intro": "A full cycle: from prospecting to peer-reviewed science and outreach.",
