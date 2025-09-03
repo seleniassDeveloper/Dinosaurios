@@ -2,9 +2,11 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "../css/About.css";
-import Grupo from "../../src/ImgCampanas/210.jpg";
-import antartida from "../../src/ImgCampanas/antartida.jpg";
+import Grupo from "../../src/ImgCampanas/210.JPG";
+import antartida from "../../src/ImgCampanas/antantida2.png";
 import Impact from "./Impact";
+import hueso from "../../src/ImgCampanas/hueso1.JPG";
+// import hueso2 from "../../src/ImgCampanas/hueso2.jpg";
 
 export default function About() {
   const { t } = useTranslation();
@@ -23,28 +25,36 @@ export default function About() {
 
           {/* ¿Quiénes somos? */}
           <div className="apasur-intro">
-            <h2>{t("about.whoTitle")}</h2>
-            <p>{t("about.whoP1")}</p>
+            <h2 className="h2-uppercase">{t("about.whoTitle")}</h2>
             <p>{t("about.whoP2")}</p>
+            <p>{t("about.whoP3")}</p>
           </div>
 
-          {/* Nuestro equipo */}
+          <div className="floating-image-wrapper">
+            <img
+              src={hueso}
+              alt="Excavation detail"
+              className="floating-image"
+            />
+          </div>
+
           <div className="team-summary">
-            <h3>{t("about.teamTitle")}</h3>
+            <h3 className="h2-uppercase">{t("about.teamTitle")}</h3>
             <p>{t("about.teamP1")}</p>
-            <ul>
-              <li>11+ {t("about.researchers", "researchers")}</li>
-              <li>5+ {t("about.technicians", "technicians")}</li>
-              <li>2+ {t("about.educators", "educators and communicators")}</li>
-              <li>10+ {t("about.students", "students based at the museum")}</li>
-            </ul>
-            <p>{t("about.teamP2")}</p>
+              <p>{t("about.teamP3")}</p>
           </div>
 
+     <div className="floating-image-wrapper">
+            {/* <img
+              src={hueso}
+              alt="Excavation detail"
+              className="floating-image"
+            /> */}
+          </div>
           {/* Excavaciones */}
           <div className="excavation-metrics">
-            <p className="italic-highlight">{t("about.excavationP1")}</p>
-            <p className="bold-metric">{t("about.excavationP2")}</p>
+            {/* <p className="italic-highlight">{t("about.excavationP1")}</p> */}
+            <p className="bold-metric">{t("about.excavationP1")}</p>
             <div className="cta-button">
               <button>{t("about.button")}</button>
             </div>
@@ -59,9 +69,7 @@ export default function About() {
                 <strong>{t("about.antarcticaMissionTitle")}</strong>{" "}
                 {t("about.antarcticaMission")}
               </p>
-              <a href="#impacto" className="antarctica-button">
-                {t("about.button")}
-              </a>
+            
             </div>
             <img
               src={antartida}
