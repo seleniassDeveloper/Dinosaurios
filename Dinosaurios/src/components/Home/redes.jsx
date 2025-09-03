@@ -2,11 +2,14 @@
 import React from "react";
 import "../../css/sections/Redes.css";
 import { FaTiktok, FaTwitch, FaInstagram, FaFacebook } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export default function Redes() {
+  const { t } = useTranslation();
+
   return (
-    <div  >
-      <p className="redes-follow-label">Seguinos en nuestras redes:</p>
+    <div>
+      <p className="redes-follow-label">{t("social.follow")}</p>
 
       <div className="redes-streams">
         <a
@@ -25,7 +28,6 @@ export default function Redes() {
         >
           <FaTwitch />
         </a>
-   
         <a
           href="https://www.instagram.com/tuusuario"
           target="_blank"
@@ -43,7 +45,6 @@ export default function Redes() {
           <FaFacebook />
         </a>
       </div>
-    
     </div>
   );
 }

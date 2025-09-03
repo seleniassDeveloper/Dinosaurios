@@ -16,17 +16,41 @@
     "donate": "Donate",
     "language": "Language"
   },
-"hero": {
-  "kicker": "Science powered by exploration",
-  "titleBefore": "Be part of history.",
-  "titleHighlight": "Watch live",
-  "titleAfter": "as we search for new dinosaurs in Patagonia.",
-  "subtitle": "Team: 11 researchers, 5 technicians, 2 educators and 10+ students. Based at the Bernardino Rivadavia Museum (Buenos Aires). 5 Nature covers and 400+ publications. In the last 20 years: 35 species in Argentina and 5 in Antarctica/LatAm.",
-  "cta1": "Donate now",
-  "cta2": "See expedition plan"
+  "countdown": {
+  "heading": "EXCAVACIÓN EN VIVO",
+  "date": "Comienza el 25 de septiembre de 2025",
+  "days": "Días",
+  "hours": "Horas",
+  "minutes": "Minutos",
+  "seconds": "Segundos"
 },
-  
-
+"social": {
+  "follow": "Seguinos en nuestras redes:"
+},
+"welcome": {
+  "title": "La ciencia en la Patagonia no solo se estudia —",
+  "titleHighlight": "se descubre.",
+  "p1": "En LACEV, nuestro equipo de paleontólogos, profesores, estudiantes y naturalistas ha pasado más de 20 años desenterrando el pasado antiguo—hueso por hueso.",
+  "p2": "Desde el polvo hasta el descubrimiento, hemos liderado excavaciones, publicado más de 400 artículos y aparecido en la portada de la revista Nature cinco veces.",
+  "p3": "El 27% de todas las nuevas especies de dinosaurios en Sudamérica han sido descubiertas por nuestro equipo."
+},
+ "hero": {
+  "alt": "Excavación",
+  "kicker": "Ciencia impulsada por la exploración",
+  "titleBefore": "Sé parte de la historia.",
+  "titleHighlight": "Explora en vivo",
+  "titleAfter": "una nueva especie de dinosaurio.",
+  "description": "Transmitiremos en vivo desde Río Negro, Argentina, donde nuestro equipo buscará nuevas especies de dinosaurios. Por primera vez podrás presenciar una excavación en tiempo real: cada hueso, cada hallazgo, mientras apoyas directamente una de las campañas paleontológicas más innovadoras del mundo.",
+  "quote": "Con más de 30 especies descubiertas, nuestra ONG lidera la paleontología en América del Sur.",
+  "urgency": {
+    "prefix": "¡Quedan",
+    "days": "7 días",
+    "suffix": "para participar en el sorteo de fósiles originales!"
+  },
+  "cta1": "Ver lifestream",
+  "cta2": "Ver plan de expedición"
+},
+   
   "goal": {
     "kicker": "Our track record",
     "title": "20+ years of discoveries that open new paths",
@@ -40,7 +64,6 @@
       "explorers": "Explorers Club (3)",
       "jurassic": "Jurassic Foundation (3)"
     }
-  
   },
   "kpis": {
     "covers": "Covers in Nature",
@@ -86,21 +109,33 @@
   "brand": {
     "title": "Dinosaurs"
   },
-   "exp": {
-  "hero": {
-  "kicker": "Science powered by exploration",
-  "title": "Be part of history. Watch live as we search for new dinosaurs in Patagonia.",
-  "subtitle": "Team: 11 researchers, 5 technicians, 2 educators and 10+ students. Based at the Bernardino Rivadavia Museum (Buenos Aires). 5 Nature covers and 400+ publications. In the last 20 years: 35 species in Argentina and 5 in Antarctica/LatAm.",
-  "ctaPlan": "See expedition plan"
-},
+  "exp": {
+    "hero": {
+      "kicker": "Science powered by exploration",
+      "title": "Be part of history. Watch live as we search for new dinosaurs in Patagonia.",
+      "subtitle": "Team: 11 researchers, 5 technicians, 2 educators and 10+ students. Based at the Bernardino Rivadavia Museum (Buenos Aires). 5 Nature covers and 400+ publications. In the last 20 years: 35 species in Argentina and 5 in Antarctica/LatAm.",
+      "ctaPlan": "See expedition plan"
+    },
     "methods": {
       "title": "How we work in the field",
       "intro": "A full cycle: from prospecting to peer-reviewed science and outreach.",
       "steps": {
-        "1": { "title": "Prospecting", "copy": "Stratigraphy reading, mapping and systematic surveys to locate fossils." },
-        "2": { "title": "Excavation", "copy": "Recording, plaster jacketing and safe extraction of the material." },
-        "3": { "title": "Laboratory", "copy": "Fine prep, CT scans and comparisons with reference collections." },
-        "4": { "title": "Publication & outreach", "copy": "Formal description, peer review and public engagement in schools, media and museums." }
+        "1": {
+          "title": "Prospecting",
+          "copy": "Stratigraphy reading, mapping and systematic surveys to locate fossils."
+        },
+        "2": {
+          "title": "Excavation",
+          "copy": "Recording, plaster jacketing and safe extraction of the material."
+        },
+        "3": {
+          "title": "Laboratory",
+          "copy": "Fine prep, CT scans and comparisons with reference collections."
+        },
+        "4": {
+          "title": "Publication & outreach",
+          "copy": "Formal description, peer review and public engagement in schools, media and museums."
+        }
       }
     },
     "highlights": {

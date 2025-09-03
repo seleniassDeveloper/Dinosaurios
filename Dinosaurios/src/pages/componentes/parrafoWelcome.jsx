@@ -1,4 +1,6 @@
+// src/components/ParrafoWelcome.jsx
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "../css/ParrafoWelcome.css";
 import dinoBrush from "../../ImgCampanas/portadaNature.png";
 import dinoBrush2 from "../../ImgCampanas/portadaNature2.jpeg";
@@ -6,20 +8,23 @@ import dinoBrush3 from "../../ImgCampanas/portadaNature3.jpeg";
 import dinoBrush4 from "../../ImgCampanas/portadaNature4.jpeg";
 
 export default function ParrafoWelcome() {
+  const { t } = useTranslation();
+
   return (
     <section className="parrafo-welcome-grid">
       <div className="parrafo-texto">
         <h2 className="parrafo-titulo">
-          Science in Patagonia isn’t just studied — <span className="underline">it’s uncovered.</span>
+          {t("welcome.title")}{" "} 
+          <span className="underline">{t("welcome.titleHighlight")}</span>
         </h2>
         <p className="parrafo-descripcion">
-          At <strong>LACEV</strong>, our team of paleontologists, professors, students, and naturalists has spent over <strong>20 years</strong> uncovering the ancient past—bone by bone.
+          {t("welcome.p1")}
         </p>
         <p className="parrafo-descripcion">
-          From dust to discovery, we’ve led excavations, published over 400 papers, and graced the cover of <strong>Nature</strong> magazine <strong>five times</strong>.
+          {t("welcome.p2")}
         </p>
         <p className="parrafo-final">
-          <span className="green-bold">27% of all new dinosaur species in South America</span> have been discovered by our team.
+          <span className="green-bold">{t("welcome.p3")}</span>
         </p>
       </div>
 
@@ -32,4 +37,3 @@ export default function ParrafoWelcome() {
     </section>
   );
 }
-

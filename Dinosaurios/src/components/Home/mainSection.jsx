@@ -14,7 +14,7 @@ export default function MainSection() {
         <p className="mag-kicker">{t("hero.kicker")}</p>
 
         <h1 className="mag-title">
-          {t("hero.titleBefore")}{" "}
+          {t("hero.titleBefore")}{" "} 
           <span className="resaltado">{t("hero.titleHighlight")}</span>{" "}
           {t("hero.titleAfter")}
         </h1>
