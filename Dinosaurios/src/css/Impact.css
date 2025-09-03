@@ -1,73 +1,144 @@
-/* src/css/ImpactoComunidad.css */
+:root {
+  --bone: #f3efe5;
+  --earth: #4e3b2a;
+  --amber: #f4a300;
+  --ash: #111;
+  --soft-gray: #f9f9f9;
+  --highlight: #e1d4c0;
+  --accent: #c97324;
+}
+
+/* ==========================
+   IMPACTO COMUNIDAD STYLES
+   ========================== */
+
 .impacto-comunidad {
-  background: #ffffff;
+  background: var(--soft-gray);
   padding: 80px 20px;
   font-family: 'Inter', sans-serif;
-  color: #111;
+  color: var(--ash);
 }
 
 .impacto-contenedor {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 40px;
+  align-items: center;
+  gap: 50px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .impacto-texto {
   flex: 1 1 520px;
+  padding: 10px;
 }
 
 .impacto-titulo {
-  background: #111;
-  color: white;
-  font-size: 1.8rem;
-  padding: 10px 16px;
-  margin-bottom: 24px;
-  display: inline-block;
-  letter-spacing: 1px;
-}
-
-.impacto-texto p {
-  font-size: 1.1rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--earth);
   margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-left: 6px solid var(--amber);
+  padding-left: 16px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.impacto-desc {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.impacto-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.impacto-lista li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 16px;
+  font-size: 1.05rem;
+  color: #444;
   line-height: 1.6;
 }
 
-.impacto-texto ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  font-size: 1rem;
-  line-height: 1.6;
+.impacto-lista li::before {
+  content: "★";
+  position: absolute;
+  left: 0;
+  color: var(--amber);
+  font-size: 1.1rem;
 }
 
-.impacto-texto ul li {
-  margin-bottom: 14px;
-}
+/* Imagen decorativa */
 
 .impacto-imagen {
-  flex: 1 1 400px;
+  flex: 1 1 500px;
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: slideIn 1.5s ease;
 }
 
 .impacto-imagen img {
   width: 100%;
-  max-width: 500px;
-  border-radius: 8px;
+  max-width: 520px;
+  border-radius: 18px;
   object-fit: cover;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+
+.impacto-imagen img:hover {
+  transform: scale(1.03);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   .impacto-contenedor {
     flex-direction: column;
+    text-align: center;
   }
 
-  .impacto-imagen img {
-    max-width: 100%;
+  .impacto-imagen {
+    order: -1;
+  }
+
+  .impacto-titulo {
+    font-size: 2rem;
+    text-align: center;
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .impacto-desc {
+    font-size: 1.1rem;
+  }
+
+  .impacto-lista li {
+    padding-left: 20px;
+  }
+
+  .impacto-lista li::before {
+    content: "–";
+    font-size: 1.2rem;
+    color: var(--accent);
   }
 }

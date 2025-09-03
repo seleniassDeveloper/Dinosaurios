@@ -118,9 +118,9 @@ export default function Discoveries() {
 
    
     </section>
-       <div>
+       {/* <div>
         <Impact />
-      </div>
+      </div> */}
 
       <div>
         <LineaTiempo />

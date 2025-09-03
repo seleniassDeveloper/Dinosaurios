@@ -2,7 +2,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "../css/impact.css";
-import impactoImg from "../../src/ImgCampanas/impacto.png";
 
 export default function Impact() {
   const { t } = useTranslation();
@@ -12,8 +11,8 @@ export default function Impact() {
       <div className="impacto-contenedor">
         <div className="impacto-texto">
           <h2 className="impacto-titulo">{t("impact.title")}</h2>
-          <p>{t("impact.description")}</p>
-          <ul>
+          <p className="impacto-desc">{t("impact.description")}</p>
+          <ul className="impacto-lista">
             <li>{t("impact.bullet1")}</li>
             <li>{t("impact.bullet2")}</li>
             <li>{t("impact.bullet3")}</li>
@@ -23,9 +22,7 @@ export default function Impact() {
             <li>{t("impact.bullet7")}</li>
           </ul>
         </div>
-        <div className="impacto-imagen">
-          <img src={impactoImg} alt={t("impact.imageAlt")} />
-        </div>
+       
       </div>
     </section>
   );
