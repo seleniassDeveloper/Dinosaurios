@@ -15,7 +15,7 @@ export default function Home() {
       <div className="inicioHome" style={{ backgroundImage: `url(${desert})` }}>
         <MainSection />
       </div>
-      <div className="pt-5">
+      <div className="">
         <HeroSection />
       </div>
       <div>

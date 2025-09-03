@@ -10,7 +10,7 @@ export default function HeroSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="hero-magazine my-5 pt-5">
+    <section className="hero-magazine  pt-5">
       {/* Imagen con texto encima */}
       <div className="hero-left">
         <img src={trex} alt={t("hero.alt")} className="hero-img" />
