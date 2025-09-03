@@ -2,133 +2,82 @@
 import React from "react";
 import "../css/About.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedin,
-  faInstagram,
-  faYoutube,
-  faFacebook,
-} from "@fortawesome/free-brands-svg-icons";
+
 import Grupo from "../../src/ImgCampanas/210.jpg";
 
 export default function About() {
-  const teamData = [
-    {
-      name: "Fernando Novas",
-      role: "Paleontólogo Principal",
-      img: "/img/team/novas.jpg",
-      quote: "La ciencia es la mejor aventura.",
-      linkedin: "https://www.linkedin.com/in/fernando-novas",
-    },
-    {
-      name: "Andrea Arcucci",
-      role: "Técnica de laboratorio",
-      img: "/img/team/arcucci.jpg",
-      quote: "Los huesos cuentan historias.",
-      instagram: "https://www.instagram.com/andreaarcucci",
-    },
-    {
-      name: "Sofía Calvo",
-      role: "Educadora científica",
-      img: "/img/team/sofia.jpg",
-      linkedin: "https://www.linkedin.com/in/sofiacalvo",
-      facebook: "https://www.facebook.com/sofia.calvo",
-    },
-    {
-      name: "Julián Pereira",
-      role: "Técnico de campo",
-      img: "/img/team/julian.jpg",
-      quote: "Excavar es leer el pasado.",
-      instagram: "https://www.instagram.com/julianpaleo",
-    },
-    {
-      name: "Lucía Gómez",
-      role: "Estudiante avanzada",
-      img: "/img/team/lucia.jpg",
-    },
-    {
-      name: "Martín Silva",
-      role: "Preparador de fósiles",
-      img: "/img/team/martin.jpg",
-      quote: "Cada hueso merece paciencia.",
-      youtube: "https://www.youtube.com/@martinpaleo",
-    },
-  ];
+
 
   return (
     <section className="about-team-section">
       <div className="container">
-        {/* Hero */}
+        {/* Hero Section */}
         <div className="team-photo-hero">
-          <img src={Grupo} alt="Equipo de Dinosaurios" className="team-photo" />
+          <img src={Grupo} alt="Equipo APASUR" className="team-photo" />
           <div className="hero-overlay-text">
-            <h1>Exploración científica en el fin del mundo</h1>
-         
+            <h1>Scientific Exploration at the End of the World</h1>
           </div>
         </div>
 
-        <h2 className="section-title">Nuestro equipo de exploradores científicos</h2>
-        <p className="section-subtitle">
-          Basados en el Museo de Ciencias Naturales Bernardino Rivadavia (Buenos Aires), somos un equipo de investigadores, técnicos y educadores con una misión clara: explorar y compartir los secretos de la vida prehistórica.
-        </p>
-
-        <div className="team-intro">
+        {/* About APASUR */}
+        <div className="apasur-intro">
+          <h2>Who Are We?</h2>
           <p>
-            11 investigadores, 5 técnicos, 2 educadores y más de 10 estudiantes. Más de 400 publicaciones científicas, 5 portadas en <i>Nature</i>, y descubrimientos de más de 40 nuevas especies en Sudamérica. Nuestra próxima meta: publicar otro artículo en <i>Nature</i> antes de 2025.
+            <strong>APASUR (La Asociación Paleontológica del Sur)</strong> is a non-profit
+            organization created by the team of paleontologists and professionals from
+            <strong> (LACEV-MACN)</strong> Laboratorio de Anatomía Comparada y Evolución de los Vertebrados del Museo Argentino de Ciencias Naturales.
+          </p>
+          <p>
+            Its creation responds to the need for research promotion, investigation, public
+            communication, and conservation projects for the paleontological heritage of Argentina and South America.
           </p>
         </div>
 
-        {/* Cards */}
-        <div className="team-grid">
-          {teamData.map((member, i) => (
-            <div key={i} className="team-card">
-              <img src={member.img} alt={member.name} className="team-img" />
-              <div className="team-info">
-                <h4>{member.name}</h4>
-                <p className="team-role">{member.role}</p>
-                {member.quote && <p className="team-quote">"{member.quote}"</p>}
-                <div className="team-links">
-                  {member.linkedin && (
-                    <a href={member.linkedin} target="_blank" rel="noreferrer">
-                      <FontAwesomeIcon icon={faLinkedin} />
-                    </a>
-                  )}
-                  {member.instagram && (
-                    <a href={member.instagram} target="_blank" rel="noreferrer">
-                      <FontAwesomeIcon icon={faInstagram} />
-                    </a>
-                  )}
-                  {member.youtube && (
-                    <a href={member.youtube} target="_blank" rel="noreferrer">
-                      <FontAwesomeIcon icon={faYoutube} />
-                    </a>
-                  )}
-                  {member.facebook && (
-                    <a href={member.facebook} target="_blank" rel="noreferrer">
-                      <FontAwesomeIcon icon={faFacebook} />
-                    </a>
-                  )}
-                </div>
-              </div>
-            </div>
-          ))}
+        {/* Team Summary */}
+        <div className="team-summary">
+          <h3>Our Team</h3>
+          <p>
+            We are one of the top Paleontology teams in Argentina, consisting of <strong>11+ researchers</strong>, <strong>5+ professional technicians</strong>, <strong>2+ science communicators</strong>, and <strong>10+ students</strong> based in the Bernardino Rivadavia Museum of Natural Science (Buenos Aires).
+          </p>
+          <p>
+            With <strong>400+ research papers</strong> published in national & international journals and over <strong>20 years of experience</strong>, our team has discovered and named more than <strong>27% of all new dinosaur species in South America between 2005 - 2025</strong>.
+          </p>
+        </div>
 
-          {/* CTA */}
-          <div className="team-card join-card">
-            <h3>¡Súmate al equipo!</h3>
-            <p>Participa en futuras expediciones científicas o apóyanos como donante.</p>
-            <button>Unirme</button>
+        {/* Excavation Impact */}
+        <div className="excavation-metrics">
+          <p className="italic-highlight">
+            We excavate world-class discoveries at 1/30th - 1/100th the cost with the highest success rate in the world.
+          </p>
+          <p className="bold-metric">
+            70-80% OF OUR EXCAVATION CAMPAIGNS RESULTED IN NEW DINOSAUR SPECIES OR BREAKTHROUGH DISCOVERIES
+          </p>
+          <div className="cta-button">
+            <button>SEE MORE</button>
           </div>
         </div>
 
-        {/* Impacto */}
+        {/* Antarctica Section */}
+        <div className="antarctica-section">
+          <h3>Antarctica Excavations</h3>
+          <p>
+            We have signed an exclusive five-year agreement with the Argentine government to conduct paleontological expeditions in Antarctica <strong>(2027–2032)</strong> in partnership with the Argentine Antarctic Institute and CONICET.
+          </p>
+          <p>
+            <strong>OUR MISSION:</strong> UNCOVER NEW DINOSAUR FOSSILS THAT HAVE LIVED 70 MILLION YEARS AGO ON THE FROZEN CONTINENT.
+          </p>
+        </div>
+
+     
+
+        {/* Community Impact */}
         <div className="team-impact">
-          <h3>Impacto comunitario y apoyo internacional</h3>
+          <h3>Community Impact & Global Support</h3>
           <p>
-            Apoyados por <strong>National Geographic</strong>, <strong>Explorers Club</strong>,
-            <strong>Jurassic Foundation</strong> y otras instituciones, hemos realizado más de 200 actividades de divulgación, 50+ charlas educativas, publicaciones en medios globales y colaboraciones con museos y canales de TV internacionales.
+            Supported by <strong>National Geographic</strong>, <strong>Explorers Club</strong>, <strong>Jurassic Foundation</strong> and others, we’ve led 200+ science outreach activities, 50+ talks, and built collaborations with museums and international TV networks.
           </p>
           <p>
-            Actualmente trabajamos en descubrimientos inéditos: un nuevo dinosaurio con tejidos blandos, un nido de terópodo, un marsupial con colmillos de 20 cm y más de 60 huesos nuevos de especies ya conocidas.
+            Current research includes: a new dinosaur with preserved soft tissue, a theropod nest, a saber-toothed marsupial, and over 60 new bones from known species.
           </p>
         </div>
       </div>
