@@ -1,6 +1,52 @@
 .colaboradores-section {
   background-color: var(--beige);
-  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+ 
 }
 
+.colaboradores-single-image {
+  max-width: 1200px; /* Aumentamos el ancho del contenedor */
+  width: 100%;
+}
+
+.colaboradores-single-image h1 {
+  font-size: 2.8rem;
+  color: var(--marron);
+  font-weight: 900;
+  margin-bottom: 40px;
+  letter-spacing: -0.5px;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+}
+
+.colaboradores-single-image img {
+  width: 100%;
+  max-width: 1100px; /* Le damos más tamaño a la imagen */
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+  display: block;
+}
+
+.colaboradores-single-image img:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .colaboradores-single-image h1 {
+    font-size: 2rem;
+  }
+
+  .colaboradores-section {
+    padding: 60px 16px;
+  }
+
+  .colaboradores-single-image img {
+    max-width: 100%;
+  }
+}

@@ -27,10 +27,10 @@ export default function HeroSection() {
         <p className="hero-description">{t("hero.description")}</p>
         <p className="hero-quote">{t("hero.quote")}</p>
         <p className="hero-urgency">
-          ⏳ {t("hero.urgency.prefix")} <strong>{t("hero.urgency.days")}</strong> {t("hero.urgency.suffix")}
+          {/* ⏳ {t("hero.urgency.prefix")} <strong>{t("hero.urgency.days")}</strong> {t("hero.urgency.suffix")} */}
         </p>
         <div className="d-flex">
-          <CountdownTimer targetDate="2025-09-08T12:00:00" />
+<CountdownTimer targetDate="2025-09-25T12:00:00" />
         </div>
         <div className="hero-buttons">
           <a href="/donate" className="hero-btn primary">

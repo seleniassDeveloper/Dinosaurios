@@ -65,19 +65,25 @@
 "social": {
   "follow": "Follow us on our social media:"
 },
-"welcome": {
-  "title": "Science in Patagonia isn’t just studied —",
-  "titleHighlight": "it’s uncovered.",
-  "p1": "At LACEV, our team of paleontologists, professors, students, and naturalists has spent over 20 years uncovering the ancient past—bone by bone.",
-  "p2": "From dust to discovery, we’ve led excavations, published over 400 papers, and graced the cover of Nature magazine five times.",
-  "p3": "27% of all new dinosaur species in South America have been discovered by our team."
+"partners": {
+  "title": "Prensa y Colaboradores",
+  "alt": "Logotipos de nuestra presencia en prensa y entidades colaboradoras"
 },
+
+"welcome": {
+  "title": "Completando las páginas perdidas de la evolución,",
+  "titleHighlight": "un fósil a la vez — en la Patagonia.",
+  "p1": "Somos un equipo de paleontólogos, profesores, estudiantes y naturalistas del Laboratorio de Anatomía Comparada y Evolución de los Vertebrados (LACEV).",
+  "p2": "Durante más de 20 años, hemos buscado, extraído, preparado, investigado y comunicado públicamente la paleontología en la Patagonia.",
+  "p3": "Hemos descubierto el 26% de las nuevas especies de dinosaurios en Sudamérica."
+},
+
 "hero": {
   "alt": "Excavación",
   "title": "Sé parte de la historia.",
   "highlight": "Míralo en vivo",
   "description": "Transmitiremos en vivo desde Río Negro, Argentina, mientras nuestro equipo busca nuevas especies de dinosaurios. Por primera vez, podrás presenciar una excavación en tiempo real: cada hueso, cada hallazgo, mientras apoyas directamente una de las campañas de paleontología más innovadoras del mundo.",
-  "quote": "Con más de 30 especies descubiertas, nuestra ONG lidera la paleontología en Sudamérica.",
+  "quote": "Con más de 40 especies descubiertas, nuestro equipo lidera la Paleontología en Sudamérica",
   "urgency": {
     "prefix": "Solo",
     "days": "quedan 7 días",

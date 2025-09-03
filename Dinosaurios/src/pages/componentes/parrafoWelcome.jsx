@@ -13,20 +13,16 @@ export default function ParrafoWelcome() {
   return (
     <section className="parrafo-welcome-grid">
       <div className="parrafo-texto">
-        <h2 className="parrafo-titulo">
-          {t("welcome.title")}{" "} 
-          <span className="underline">{t("welcome.titleHighlight")}</span>
-        </h2>
-        <p className="parrafo-descripcion">
-          {t("welcome.p1")}
-        </p>
-        <p className="parrafo-descripcion">
-          {t("welcome.p2")}
-        </p>
-        <p className="parrafo-final">
-          <span className="green-bold">{t("welcome.p3")}</span>
-        </p>
-      </div>
+  <h2 className="parrafo-titulo">
+    {t("welcome.title")}{" "}
+    <span className="underline">{t("welcome.titleHighlight")}</span>
+  </h2>
+  <p className="parrafo-descripcion">{t("welcome.p1")}</p>
+  <p className="parrafo-descripcion">{t("welcome.p2")}</p>
+  <p className="parrafo-final">
+    <span className="green-bold">{t("welcome.p3")}</span>
+  </p>
+</div>
 
       <div className="parrafo-imagenes">
         <img src={dinoBrush} className="cascada-img img1" alt="Nature cover 1" />

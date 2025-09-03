@@ -1,64 +1,46 @@
+.redes-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.redes-follow-label {
+  font-size: 1rem;
+  color: var(--brown);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
 .redes-streams {
   display: flex;
-  /* justify-content: center; */
-  gap: 14px;
-  margin-top: 12px;
-  margin-bottom: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
-.stream-link-circle {
+.stream-link {
+  font-size: 1.6rem;
+  padding: 12px;
+  border-radius: 50%;
+  background: var(--cream);
+  border: 1px solid var(--sand);
+  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  font-size: 1.1rem;
-  color: white;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  color: var(--black);
 }
 
-.stream-link-circle.tiktok {
-    color: white;
-  background: #000;
-}
-.stream-link-circle.tiktok:hover {
-  background: #333;
-}
-
-.stream-link-circle.twitch {
-  background: #9146FF;
-}
-.stream-link-circle.twitch:hover {
-  background: #6f36c9;
-}
-
-
-
-.icon-circle {
-  width: 36px;
-  height: 36px;
-  font-size: 1rem;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #e0d8c2;
-  color: #3b2e1c;
-  transition: all 0.3s ease;
-}
-
-.icon-circle:hover {
+.stream-link:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 0 3px rgba(0,0,0,0.05);
+  background-color: var(--amber);
+  color: white;
 }
 
-.icon.instagram:hover {
-  background-color: #e1306c;
-  color: white;
-}
-.icon.facebook:hover {
-  background-color: #1877f2;
-  color: white;
-}
+/* Colores por red (opcionalmente personalizables) */
+.stream-link.instagram:hover { background: #e1306c; }
+.stream-link.facebook:hover { background: #1877f2; }
+.stream-link.youtube:hover { background: #ff0000; }
+.stream-link.twitter:hover { background: #1da1f2; }
+.stream-link.discord:hover { background: #5865f2; }
