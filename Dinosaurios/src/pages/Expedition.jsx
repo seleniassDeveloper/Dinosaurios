@@ -1,108 +1,63 @@
-// src/pages/Expedition.jsx
-import React from "react";
-import "../css/Expedition.css";
-import { FaUserTie, FaMountain, FaBalanceScale, FaDollarSign } from "react-icons/fa";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../css/expedition.css";
 
-export default function Expedition() {
+import maip1 from "../../src/ImgCampanas/expedition.jpeg";
+import maip2 from "../../src/imgCampanas/expedition2.jpg";
+import trex1 from "../../src/ImgCampanas/expedition3.jpeg";
+import trex2 from "../../src/ImgCampanas/expedition4.jpg";
+
+export default function Discoveries() {
   return (
-    <section className="expedition-section">
+    <section className="discoveries-layout container py-5">
+      <div className="row align-items-center g-5">
+        {/* Texto editorial */}
+        <div className="col-lg-6">
+          <p className="text-uppercase small fw-bold text-warning mb-2">Discovery Highlight #1</p>
+          <h1 className="display-5 fw-bold text-white">Maip <span className="color">Macrothorax</span></h1>
+          <h2 className="h5 fw-semibold text-light">The Largest Megaraptor Ever Discovered</h2>
 
-      {/* HERO */}
-      <div className="exp-hero">
-        <h1>World-Class Discoveries at 1/20th the Cost</h1>
-        <p>
-          In Argentina, $5,000 funds a 15+ person, 3-week campaign that produces new species or breakthroughs
-          70–80% of the time. In the US or Europe, similar digs cost $100k+ with far lower discovery rates.
-        </p>
-      </div>
-
-      {/* COMPARACIÓN */}
-      <div className="exp-comparison">
-        <div className="comparison-box">
-          <h3>🇦🇷 LACEV – Patagonia</h3>
-          <ul>
-            <li>💰 Cost: $5,000</li>
-            <li>⏳ Duration: 3 weeks, 15+ people</li>
-            <li>📈 Discovery Rate: 70–80%</li>
-            <li>🏆 Track Record:
-              <ul>
-                <li>Maip macrothorax</li>
-                <li>Patagorhynchus</li>
-                <li>Oldest tadpole fossil</li>
-                <li>First theropod nest in South America</li>
-              </ul>
-            </li>
-          </ul>
+          <p className="text-light mt-4">
+            In 2019, near El Calafate in Patagonia, our team uncovered the remains of a predator unlike any seen before:
+            <strong> Maip macrothorax</strong>.
+          </p>
+          <p className="text-light">
+            At <strong>10 meters (33 feet)</strong> long and <strong>over five tons</strong>, with
+            <strong> claws up to 40 cm (16 in)</strong>, it was built for <strong>lethal speed and power</strong>.
+          </p>
+          <p className="text-light">
+            Our team’s deep expertise and the richness of potential discoveries in Patagonia (where fossils often lie above ground) 
+            have allowed for a <strong>70–80% success rate</strong> in finding new species or major discoveries with every excavation.
+          </p>
         </div>
 
-        <div className="comparison-box">
-          <h3>🇺🇸/🇪🇺 US & Europe</h3>
-          <ul>
-            <li>💰 Cost: $75,000–$150,000</li>
-            <li>📅 High-profile: $130k–$250k</li>
-            <li>📉 Discovery Rate: Mostly known species</li>
-            <li>🔧 Often funds:
-              <ul>
-                <li>Machinery</li>
-                <li>Land leases</li>
-                <li>Insurance</li>
-                <li>Donor amenities</li>
-              </ul>
-            </li>
-          </ul>
+        {/* Carrusel Bootstrap con 4 imágenes */}
+        <div className="col-lg-6">
+          <div id="maipCarousel" className="carousel slide" data-bs-ride="carousel">
+            <div className="carousel-inner rounded shadow">
+              <div className="carousel-item active">
+                <img src={maip1} className="d-block w-100 carousel-img" alt="Maip Macrothorax 1" />
+              </div>
+              <div className="carousel-item">
+                <img src={maip2} className="d-block w-100 carousel-img" alt="Maip Macrothorax 2" />
+              </div>
+              <div className="carousel-item">
+                <img src={trex1} className="d-block w-100 carousel-img" alt="Expedition Image 1" />
+              </div>
+              <div className="carousel-item">
+                <img src={trex2} className="d-block w-100 carousel-img" alt="Expedition Image 2" />
+              </div>
+            </div>
+            <button className="carousel-control-prev" type="button" data-bs-target="#maipCarousel" data-bs-slide="prev">
+              <span className="carousel-control-prev-icon" aria-hidden="true" />
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button className="carousel-control-next" type="button" data-bs-target="#maipCarousel" data-bs-slide="next">
+              <span className="carousel-control-next-icon" aria-hidden="true" />
+              <span className="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
       </div>
-
-      {/* FRASE DESTACADA */}
-      <div className="exp-highlight">
-        👉 1 new species per $5k vs. 1 per $500k
-      </div>
-
-      {/* POR QUÉ ARGENTINA */}
-      <div className="exp-icons">
-        <div className="icon-box">
-          <FaUserTie />
-          <p><strong>Talent Advantage</strong><br />Salaried paleontologists at top institutions.</p>
-        </div>
-        <div className="icon-box">
-          <FaMountain />
-          <p><strong>Geology Advantage</strong><br />Surface fossils – no bulldozers required.</p>
-        </div>
-        <div className="icon-box">
-          <FaBalanceScale />
-          <p><strong>Legal Advantage</strong><br />Public fossil ownership avoids land conflicts.</p>
-        </div>
-        <div className="icon-box">
-          <FaDollarSign />
-          <p><strong>Cost Advantage</strong><br />Low logistics, no insurance burdens.</p>
-        </div>
-      </div>
-
-      {/* IMPACTO */}
-      <div className="exp-impact">
-        “Every $5,000 campaign we run has a 70–80% chance of yielding a new dinosaur, mammal, or world-first fossil.”
-      </div>
-
-      {/* CASOS */}
-      <div className="exp-cases">
-        <div className="case-card">$5k → Maip macrothorax (Nature cover)</div>
-        <div className="case-card">$5k → Patagorhynchus pascuali (oldest platypus)</div>
-        <div className="case-card">$5k → World’s oldest tadpole (161 Mya)</div>
-        <div className="case-card">$100k+ US/Europe → Often partial skeletons</div>
-        <div className="case-card">China–Canada Project ($15M, 5 years) → ~11 new species</div>
-      </div>
-
-      {/* CTA FINAL */}
-      <div className="exp-cta">
-        “In the US or Europe, $100,000 might fund one week in the field — with no guarantee of a new species.
-        <br />
-        <strong>
-          In Patagonia, $5,000 funds an entire expedition, almost always resulting in a discovery worthy of the world’s top journals.
-        </strong>
-        <br />
-        Your support here doesn’t just go farther — it rewrites the history of life on Earth.”
-      </div>
-
     </section>
   );
 }
