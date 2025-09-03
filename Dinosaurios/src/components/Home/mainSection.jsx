@@ -7,22 +7,18 @@ export default function MainSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="mag-hero">
+    <section className="mag-hero ">
       <div className="mag-veil" />
 
-      <div className="mag-hero-inner">
+      <div className="mag-hero-inner px-5 py-5">
         <p className="mag-kicker">{t("mainSection.kicker")}</p>
 
         <h1 className="mag-title">
-          {t("mainSection.titleStart")}{" "}
+          {t("mainSection.titleStart")}{" "} 
           <span className="resaltado">{t("mainSection.titleHighlight")}</span>{" "}
-          {t("mainSection.titleEnd")}
+          {t("mainSection.titleEnd")} 
         </h1>
-
-        <p
-          className="mag-intro"
-          dangerouslySetInnerHTML={{ __html: t("mainSection.intro") }}
-        />
+          <div className=""></div>
       </div>
 
       <div className="mag-dino">
