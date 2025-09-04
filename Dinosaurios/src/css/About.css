@@ -10,355 +10,142 @@
   --highlight-yellow: #fef3c7;
   --highlight-blue: #e0f2fe;
   --gradient-earth: linear-gradient(135deg, #f4a300 0%, #fff5d7 100%);
+  --line: #e5e7eb;
 }
 
-.h2-uppercase {
-  text-transform: uppercase;
-}
+.h2-uppercase { text-transform: uppercase; }
 
-/* ==========================
-   ABOUT PAGE STYLES
-   ========================== */
-
+/* ========================== PAGE WRAPPER ========================== */
 .about-team-section {
   font-family: 'Inter', sans-serif;
   background: var(--bone);
-  border-radius: 15px;
   color: var(--ash);
   padding: 80px 0;
+  border-radius: 15px;
   position: relative;
   overflow-x: hidden;
 }
+.container { width: 92%; max-width: 1280px; margin: 0 auto; }
 
-.container {
-  width: 92%;
-  max-width: 1280px;
-  margin: 0 auto;
-  position: relative;
-}
-
-/* ==== HERO IMAGE ==== */
+/* ========================== HERO ========================== */
 .team-photo-hero {
   position: relative;
   border-radius: 24px;
   overflow: hidden;
-  margin-bottom: 70px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.2);
 }
-
-.team-photo-hero img {
+.team-photo-hero .team-photo {
   width: 100%;
   height: 420px;
   object-fit: cover;
-  transition: transform 0.6s ease;
+  transition: transform .6s ease;
 }
-
-.team-photo-hero:hover img {
-  transform: scale(1.04);
+.team-photo-hero:hover .team-photo { transform: scale(1.03); }
+.hero-overlay-text {
+  position: absolute; inset: 0; display: grid; place-items: center;
+  background: linear-gradient(0deg, rgba(0,0,0,.25), rgba(0,0,0,0));
 }
-
 .hero-overlay-text h1 {
-  padding: 20px;
-  font-size: 20px;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: black;
-  text-align: center;
-  text-shadow: 2px 4px 12px rgba(0,0,0,0.7);
+  margin: 0; padding: 10px 14px; font-size: clamp(20px, 4vw, 34px);
+  font-weight: 900; text-transform: uppercase; color: #fff; text-align: center;
+  text-shadow: 0 8px 24px rgba(0,0,0,.55);
 }
 
-/* ==== BLOQUES DE TEXTO ==== */
-.apasur-intro,
-.team-summary,
-.excavation-metrics,
-.antarctica-section,
-.team-impact {
-  max-width: 980px;
-  margin: 50px auto;
-  font-size: 1.15rem;
-  line-height: 1.8;
-  color: #2e2e2e;
-  background: white;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+/* ========================== FEATURES (3 col) ========================== */
+.about-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin: 24px 0 36px;
 }
-
-.apasur-intro {
-  margin-bottom: 20px;
+.about-columns .column {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 6px 22px rgba(0,0,0,.06);
 }
-
-.team-summary {
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-
-.apasur-intro h2,
-.team-summary h3,
-.antarctica-section h3,
-.team-impact h3 {
-  font-size: 2.2rem;
-  margin-bottom: 18px;
-  color: var(--earth);
-  position: relative;
-  text-transform: uppercase;
-  letter-spacing: -0.5px;
-}
-
-.apasur-intro h2::after,
-.team-summary h3::after,
-.antarctica-section h3::after,
-.team-impact h3::after {
-  content: '';
-  display: block;
-  width: 80px;
-  height: 4px;
-  background: var(--amber);
-  margin-top: 10px;
-}
-
-/* ==== LISTA DEL EQUIPO ==== */
-.team-summary ul {
-  list-style: disc;
-  padding-left: 30px;
-  margin-top: 20px;
-  font-size: 1.05rem;
-}
-
-.team-summary ul li {
+.column-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
   margin-bottom: 12px;
-  color: var(--ash);
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
 }
-
-/* ==== EXCAVATION STATS ==== */
-.italic-highlight {
-  font-style: italic;
-  color: var(--forest);
-  font-size: 1.1rem;
-  margin-top: 20px;
+.about-columns .column h2,
+.about-columns .column h3 {
+  margin: 6px 0 8px;
+  color: var(--earth);
+  font-weight: 900;
+  letter-spacing: -.01em;
 }
+.about-columns .column p { margin: 0 0 10px; line-height: 1.68; color: #2e2e2e; }
 
+/* Tu métrica/CTA existentes */
 .bold-metric {
   font-weight: 700;
   background: var(--highlight-yellow);
   border-left: 6px solid var(--amber);
   padding: 16px 24px;
   border-radius: 16px;
-  margin: 30px 0;
-  font-size: 1.1rem;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
-  animation: pulseMetric 3s infinite;
+  margin: 18px 0;
+  font-size: 1.02rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
 }
-
-@keyframes pulseMetric {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.015); }
-  100% { transform: scale(1); }
-}
-
-/* ==== CTA BUTTON ==== */
-.cta-button {
-  text-align: center;
-  margin-top: 40px;
-}
-
+.cta-button { text-align: center; margin-top: 12px; }
 .cta-button button {
-  background: var(--amber);
-  color: white;
-  border: none;
-  padding: 14px 32px;
-  border-radius: 50px;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 1.1rem;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
-  transition: background 0.3s, transform 0.3s;
+  background: var(--amber); color: #fff; border: 0; padding: 12px 22px;
+  border-radius: 999px; font-weight: 800; cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0,0,0,.15);
 }
+.cta-button button:hover { filter: brightness(.95); transform: translateY(-1px); }
 
-.cta-button button:hover {
-  background: #f18c00;
-  transform: translateY(-3px);
+/* ========================== QUOTE ========================== */
+.about-quote {
+  max-width: 980px; margin: 28px auto 36px;
+  background: #fff; border: 1px solid var(--line); border-radius: 16px;
+  box-shadow: 0 6px 22px rgba(0,0,0,.06);
 }
-
-/* ==== IMAGEN FLOTANTE 1 ==== */
-.floating-image-wrapper {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  margin-top: -60px;
-  margin-bottom: -60px;
+.about-quote blockquote { margin: 0; position: relative; padding: 22px 26px; }
+.about-quote blockquote::before {
+  content: "“"; position: absolute; left: 12px; top: 6px;
+  font-size: 34px; color: #c7c7c7; line-height: 1;
 }
+.about-quote p { margin: 0; padding-left: 22px; font-size: 1.06rem; }
 
-.floating-image {
-  margin-left: 790px;
-  width: 360px;
-  max-width: 80vw;
-  border-radius: 20px;
-  border: 4px solid white;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  transition: transform 0.4s ease;
-}
-
-.floating-image:hover {
-  transform: scale(1.015) rotate(0.3deg);
-}
-
-/* ==== NUEVA SECCIÓN HUESO2 (imagen izquierda / texto derecha) ==== */
+/* ========================== SPLIT (img izq / texto der) ========================== */
 .hueso2-section {
-  display: flex;
+  display: grid; grid-template-columns: 1fr 1.1fr; gap: 18px;
   align-items: center;
-  justify-content: center;
-  gap: 48px;
-  margin: 80px auto;
-  max-width: 1080px;
-  padding: 40px;
-  border-radius: 24px;
-  background: var(--highlight-blue);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-}
-
-.hueso2-image {
-  width: 380px;
-  max-width: 100%;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
-}
-
-.hueso2-text {
-  flex: 1;
-}
-
-.hueso2-text h3 {
-  font-size: 2rem;
-  color: var(--earth);
-  margin-bottom: 16px;
-  text-transform: uppercase;
-  letter-spacing: -0.5px;
-}
-
-.hueso2-text p {
-  font-size: 1.15rem;
-  line-height: 1.7;
-  color: #222;
-}
-
-/* ==== ANTARCTICA SECTION ==== */
-.antarctica-section {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   background: linear-gradient(90deg, var(--polar-blue), #ffffff);
-  padding: 50px;
-  border-radius: 24px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-  gap: 40px;
+  padding: 24px; border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.05);
 }
-
-.antarctica-section-text {
-  flex: 1;
+.hueso2-image {
+  width: 100%; max-height: 340px; object-fit: cover; border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
 }
-
-.antarctica-section-text h3 {
-  font-size: 2.6rem;
-  color: var(--polar-accent);
-  font-weight: 900;
-  margin-bottom: 24px;
+.hueso2-text h3 {
+  margin: 0 0 10px; font-size: clamp(18px, 3vw, 30px);
+  color: var(--polar-accent); font-weight: 900; letter-spacing: -.01em;
 }
-
-.antarctica-section-text p {
-  font-size: 1.2rem;
-  color: #2e2e2e;
-  line-height: 1.7;
-}
-
-.antarctica-section-text strong {
-  color: #1d4e89;
-}
-
-.antarctica-section-image {
-  flex: 1;
-  max-width: 420px;
-  border-radius: 16px;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
-}
-
-/* Botón */
+.hueso2-text p { margin: 0 0 10px; color: #2e2e2e; line-height: 1.68; }
 .antarctica-button {
-  margin-top: 24px;
-  display: inline-block;
-  background-color: var(--polar-accent);
-  color: white;
-  padding: 14px 28px;
-  border-radius: 50px;
-  font-weight: bold;
-  font-size: 1rem;
-  text-decoration: none;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
-  transition: background 0.3s ease, transform 0.3s ease;
+  margin-top: 10px; display: inline-block; background: var(--polar-accent);
+  color: #fff; padding: 12px 22px; border-radius: 999px; font-weight: 800;
+  text-decoration: none; box-shadow: 0 6px 16px rgba(0,0,0,.15);
 }
+.antarctica-button:hover { background: #1a5ca3; transform: translateY(-1px); }
 
-.antarctica-button:hover {
-  background-color: #1a5ca3;
-  transform: translateY(-3px);
+/* ========================== RESPONSIVE ========================== */
+@media (max-width: 1024px) {
+  .about-columns { grid-template-columns: 1fr; }
+  .hueso2-section { grid-template-columns: 1fr; }
+  .team-photo-hero .team-photo { height: 320px; }
 }
-
-/* ==== IMPACT SECTION ==== */
-.team-impact {
-  background: linear-gradient(135deg, var(--dust), var(--bone));
-  border-radius: 16px;
-  padding: 40px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-  border-left: 8px solid var(--forest);
-}
-
-/* ==== RESPONSIVE ==== */
-@media screen and (max-width: 768px) {
-  .hero-overlay-text h1 {
-    font-size: 1.4rem;
-  }
-
-  .team-photo-hero img {
-    height: 260px;
-  }
-
-  .apasur-intro h2,
-  .team-summary h3,
-  .antarctica-section-text h3,
-  .team-impact h3,
-  .hueso2-text h3 {
-    font-size: 1.7rem;
-  }
-
-  .antarctica-section,
-  .hueso2-section {
-    flex-direction: column;
-    text-align: center;
-    padding: 30px 20px;
-  }
-
-  .antarctica-section-image,
-  .hueso2-image {
-    max-width: 100%;
-    margin-top: 24px;
-  }
-
-  .cta-button button,
-  .antarctica-button {
-    font-size: 0.95rem;
-    padding: 10px 20px;
-  }
-
-  .floating-image-wrapper {
-    margin-top: -40px;
-    margin-bottom: -40px;
-  }
-
-  .floating-image {
-    width: 100%;
-    max-width: 360px;
-  }
+@media (max-width: 640px) {
+  .team-photo-hero .team-photo { height: 240px; }
+  .hero-overlay-text h1 { font-size: 1.1rem; }
 }
