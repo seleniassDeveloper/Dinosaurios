@@ -1,0 +1,108 @@
+.with-fixed-nav { padding-top: 80px; }
+
+.lp7 {
+  --ink:#0f172a; --muted:#5b6474; --card:#ffffff; --bg:#0b1b26;
+  --accent:#ffc861; --line:#dfe5ec; --pill:#e7eef7;
+  background: linear-gradient(180deg, #0e2230, #09141b 60%);
+  color: #eaf0f6;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+.lp7-section {
+  max-width: 1100px;
+  margin: 0 auto 22px;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 16px;
+  padding: 0 16px;
+}
+
+.lp7-label {
+  align-self: flex-start;
+  color: #c8d5e4;
+  font-size: 0.78rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+.lp7-card {
+  background: var(--card);
+  color: var(--ink);
+  border-radius: 18px;
+  border: 1px solid #e9eef4;
+  padding: 22px 22px;
+  box-shadow: 0 14px 32px rgba(3, 16, 24, .25);
+}
+
+.lp7-title {
+  font-size: clamp(28px, 3vw, 44px);
+  margin: 0 0 8px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.lp7-sub { color: var(--muted); margin: 0; }
+
+.lp7-visual {
+  display: grid;
+  grid-template-columns: minmax(220px, 38%) 1fr;
+  gap: 18px;
+}
+.lp7-media {
+  min-height: 220px;
+  border-radius: 14px;
+  background: #edf3fa;
+  border: 1px dashed #c6d4e3;
+}
+.lp7-body h2 { margin: 2px 0 8px; }
+
+.lp7-benefits {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.lp7-benefits li {
+  background: #f7fafc;
+  border: 1px solid #e7edf5;
+  border-radius: 12px;
+  padding: 12px 12px;
+}
+
+.lp7-quote {
+  margin: 0;
+  padding: 14px 16px;
+  border-left: 4px solid var(--accent);
+  background: #fff9ea;
+  border-radius: 10px;
+}
+.lp7-note { margin: 10px 0 0; color: #4a4f56; }
+
+.lp7-split {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1fr 1fr;
+}
+.lp7-col p { margin: 10px 0; }
+
+.lp7-cta { text-align: center; }
+.lp7-cta-row {
+  display: flex; gap: 12px; justify-content: center; margin-top: 10px;
+}
+.lp7-btn {
+  background: var(--accent);
+  border: none; color: #1a202c; font-weight: 700;
+  padding: 10px 14px; border-radius: 12px; cursor: pointer;
+}
+.lp7-btn-alt {
+  background: #e6eef7;
+}
+
+@media (max-width: 900px) {
+  .lp7-section { grid-template-columns: 1fr; }
+  .lp7-label { padding: 0 0 6px; }
+  .lp7-visual, .lp7-split { grid-template-columns: 1fr; }
+}

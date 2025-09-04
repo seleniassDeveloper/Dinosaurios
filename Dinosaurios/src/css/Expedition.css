@@ -1,4 +1,40 @@
-/* === Layout general === */
+/* ====== 1) HERO con fondo ====== */
+.disc-hero-bg{
+  background-size: cover;
+  background-position: center;
+  padding: 90px 0;
+}
+.disc-hero-bg .container{
+  max-width: 1000px;
+}
+.fw-extrabold{ font-weight: 900; }
+.lh-tight{ line-height: 1.05; }
+
+/* ====== 2) Cascada de imágenes (estilo Nature covers) ====== */
+.cascade{
+  position: relative;
+  height: 520px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+.cascade-img{
+  position: absolute;
+  width: 62%;
+  box-shadow: 0 25px 60px rgba(0,0,0,.25);
+  border-radius: 18px;
+  background: #fff;
+  object-fit: cover;
+}
+.img-a{ top: 0; left: 0; transform: rotate(-6deg); }
+.img-b{ top: 18%; right: -4%; width: 66%; transform: rotate(6deg); }
+.img-c{ bottom: -4%; left: -2%; width: 68%; transform: rotate(3deg); }
+.img-d{ bottom: 14%; right: 6%; width: 64%; transform: rotate(-3deg); }
+.cascade-shadow{
+  position:absolute; inset:auto 0 -30px 0; height:60px; 
+  filter: blur(22px); background: radial-gradient(closest-side, rgba(0,0,0,.25), transparent 70%);
+}
+
+/* ====== 3) Tu layout existente ====== */
 .discoveries-layout {
   background-color: #1c1c1c;
   border-radius: 20px;
@@ -9,7 +45,6 @@
   color: #f5f5f5;
 }
 
-/* === Textos del bloque editorial (izquierda) === */
 .discoveries-layout h1 {
   font-size: 2.8rem;
   font-weight: 700;
@@ -29,60 +64,14 @@
   color: #dddddd;
 }
 
-.discoveries-layout strong {
-  font-weight: 700;
-  color: #ffffff;
-}
+.discoveries-layout strong { font-weight: 700; color: #ffffff; }
 
-.text-success {
-  color: #4ae96a !important;
-}
+.text-success { color: #4ae96a !important; }
+.text-warning { color: #fdd835 !important; }
+.color{ color: green; }
 
-.text-warning {
-  color: #fdd835 !important;
-}
-
-.highlight {
-  color: #ffbf00;
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  letter-spacing: 1px;
-}
-
-/* === KPIs (si los usas) === */
-.discoveries-kpis {
-  display: flex;
-  gap: 30px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
-
-.discoveries-kpis div {
-  text-align: center;
-}
-
-.discoveries-kpis strong {
-  display: block;
-  font-size: 1.8rem;
-  color: #ffffff;
-}
-
-.discoveries-kpis span {
-  font-size: 0.85rem;
-  color: #aaaaaa;
-}
-
-/* === Carrusel de imágenes (derecha) === */
-.carousel {
-  position: relative;
-  overflow: hidden;
-}
-
-.carousel-inner {
-  border-radius: 16px;
-  overflow: hidden;
-}
-
+/* Carrusel */
+.carousel-inner { border-radius: 16px; overflow: hidden; }
 .carousel-img {
   height: 400px;
   object-fit: contain;
@@ -92,45 +81,41 @@
   border-radius: 12px;
   transition: all 0.3s ease-in-out;
 }
-
 .carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(255, 255, 255, 0.6);
+.carousel-control-next-icon{
+  background-color: rgba(255,255,255,.6);
   border-radius: 50%;
   padding: 10px;
 }
+.carousel-control-prev, .carousel-control-next{ width: 5%; }
 
-.carousel-control-prev,
-.carousel-control-next {
-  width: 5%;
+/* Responsive */
+@media (max-width: 992px){
+  .cascade{ height: 460px; max-width: 480px; }
+}
+@media (max-width: 768px){
+  .disc-hero-bg{ padding: 64px 0; }
+  .discoveries-layout{ padding: 40px 20px; }
+  .carousel-img{ height: 260px; }
 }
 
-
-.color{
-  color: green;
+/* ===== Statement block ===== */
+.disc-statement {
+  background: #111;
+  border-top: 4px solid #ffc861;
+  border-bottom: 4px solid #ffc861;
+  margin: 0;
 }
-
-/* === Responsive === */
-@media (max-width: 768px) {
-  .discoveries-layout {
-    padding: 40px 20px;
-  }
-
-  .carousel-img {
-    height: 260px;
-  }
-
-  .discoveries-kpis {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .discoveries-layout h1 {
-    font-size: 2rem;
-  }
-
-  .discoveries-layout h2 {
-    font-size: 1rem;
-  }
+.statement-text {
+  font-size: 13px;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+.statement-text strong {
+  color: #ffc861;
+}
+@media (max-width: 768px){
+  .statement-text { font-size: 1.1rem; }
 }
