@@ -277,6 +277,142 @@ export default function Discoveries() {
 </section>
 
 
+{/* ===== 5) Why Argentina Outperforms ===== */}
+   <main className="whyar-page container py-4">
+      {/* Title */}
+      <header className="mb-3">
+        <h1 className="whyar-title">Why argentina outperforms</h1>
+      </header>
+
+      {/* Top grid (image + right column) */}
+      <section className="row g-4 align-items-start">
+        {/* Left: big image + thumbnails */}
+        <div className="col-lg-7">
+          <div className="whyar-hero-img">
+            <img src={maip1} alt="Fieldwork main" />
+          </div>
+          <div className="whyar-thumbs mt-3">
+            <img src={maip2} alt="thumb 1" />
+            <img src={trex1} alt="thumb 2" />
+            <img src={trex2} alt="thumb 3" />
+          </div>
+        </div>
+
+        {/* Right: text meta + CTA */}
+        <div className="col-lg-5">
+          <h2 className="whyar-sub">1X new species</h2>
+
+          <p className="whyar-pre">
+$5,000 vs. $500,000
+In the US and Europe, a $150k campaign might uncover one or two scientifically interesting specimens — usually of known species. 
+
+In Patagonia, $5k funds a campaign that often results in world-first discoveries, published in top journals, and rewriting paleontological history.
+
+Your support directly uncovers a new species with us.
+          </p>
+
+          {/* Meta pills (mapeadas a tu texto) */}
+          <div className="whyar-meta">
+            <div className="whyar-meta-row">
+              <span className="whyar-meta-label">Talent Advantage</span>
+              <span className="whyar-pill">Salaried paleontologists</span>
+            </div>
+            <div className="whyar-meta-row">
+              <span className="whyar-meta-label">Geology Advantage</span>
+              <span className="whyar-pill">Fossils at surface</span>
+            </div>
+            <div className="whyar-meta-row">
+              <span className="whyar-meta-label">Legal Advantage</span>
+              <span className="whyar-pill">State fossil ownership</span>
+            </div>
+            <div className="whyar-meta-row">
+              <span className="whyar-meta-label">Cost Advantage</span>
+              <span className="whyar-pill">Lean logistics</span>
+            </div>
+          </div>
+
+          {/* Quantity + CTA (estilo wireframe) */}
+          <div className="d-flex align-items-center gap-2 mt-3">
+            <div className="qty">
+              <button aria-label="decrease">−</button>
+              <input type="text" value="1" readOnly aria-label="quantity"/>
+              <button aria-label="increase">+</button>
+            </div>
+            <button className="btn-cta">Support a $5k dig</button>
+          </div>
+        </div>
+      </section>
+
+      {/* Bottom: Description + side card */}
+      <section className="row g-4 align-items-start mt-5">
+        {/* Description (left) */}
+        <div className="col-lg-8">
+          <h3 className="whyar-h3">Description</h3>
+          <div className="">
+{`1X new species 
+
+$5,000 vs. $500,000
+In the US and Europe, a $150k campaign might uncover one or two scientifically interesting specimens — usually of known species. 
+
+In Patagonia, $5k funds a campaign that often results in world-first discoveries, published in top journals, and rewriting paleontological history.
+
+Your support directly uncovers a new species with us.
+Talent Advantage 
+Salaried paleontologists working at world-class institutions.
+🧑‍🔬
+⛰️
+Geology Advantage 
+Abundant Fossils exposed at the surface, no bulldozers required.
+⚖️
+Legal Advantage 
+State fossil ownership avoids costly private land battles.
+💰
+Cost Advantage
+No massive insurance premiums; lean logistics.
+Fun Fact: 
+The historic China-Canada Dinosaur Project (1986 - 1991) costed roughly $11 million USD over the course of 6 years, resulting in 11 new dinosaur species.
+🇺🇸/🇪🇺 US & Europe
+
+Cost for 3 weeks/15+ people
+$75k–$100k (Lean Academic)
+$100k-$150k (Standard Baseline)
+$150k - $250k (High Profile)
+
+Discovery Rate: Mostly known species, fragments, 
+or refinements; new species are rare
+
+Often funds heavy machinery, land leases, insurance, donor amenities
+🇦🇷 APASUR/LACEV – Patagonia
+
+Cost for 3 weeks/15+ people: $5,000~
+
+Discovery Rate: 70–80% yield new species or breakthrough fossils such as the first theropod nest in South America or the oldest tadpole fossil (161 million years old)`}
+      </div>
+
+          <div className="whyar-facts">
+            <h4>Average “discovery ROI”</h4>
+            <p className="m-0">
+              $5k in Patagonia ≈ world-first discoveries; $150k in US/EU ≈ known species.
+            </p>
+          </div>
+        </div>
+
+        {/* Side media/card (right) */}
+        <aside className="col-lg-4">
+          <div className="whyar-sidecard">
+            <img src={maip2} alt="support image" />
+            <div className="sidecard-body">
+              <h4>Direct impact</h4>
+              <p className="m-0">
+                Your support directly uncovers new species with us.
+              </p>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+
 
       {/* Puedes seguir con más secciones o tus componentes */}
       {/* <Impact /> */}

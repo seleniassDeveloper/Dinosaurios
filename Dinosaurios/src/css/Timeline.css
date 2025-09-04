@@ -1,40 +1,70 @@
+:root{
+  /* Ajusta la velocidad (cuanto menor, más rápido) */
+  --speed: 40s;
+  --gap: 100px;
+  --bg: #f8f8f8;
+  --line: #cccccc;
+  --node: #03680d;
+  --ink: #222;
+  --muted: #666;
+}
+
 .timeline-section {
   padding: 60px 30px;
-  background: #f8f8f8;
+  background: var(--bg);
   text-align: center;
+  overflow: hidden;
 }
 
 .timeline-title {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 60px;
+  margin-bottom: 36px;
 }
 
-.timeline-wrapper {
+/* ===== Viewport con máscara lateral para mejor look ===== */
+.timeline-viewport{
   position: relative;
-  display: flex;
-  gap: 100px;
-  justify-content: center;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  padding: 120px 40px;
-}
-
-.timeline-info h3{
-  color: green!important;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0; /* espacio vertical */
+  overflow: hidden; /* ocultar la pista fuera de vista */
 }
 
 /* Línea horizontal base */
 .timeline-line {
   position: absolute;
   top: 50%;
-  left: 0;
-  right: 0;
+  left: -2000px;  /* extra ancho para cubrir animación */
+  right: -2000px;
   height: 4px;
-  background-color: #ccc;
+  background-color: var(--line);
   z-index: 1;
   transform: translateY(-50%);
   border-radius: 2px;
+}
+
+/* Pista desplazándose en loop */
+.timeline-track{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--gap);
+  will-change: transform;
+  animation: scroll-loop var(--speed) linear infinite;
+  padding-inline: 40px; /* margen interno para que no pegue a los bordes */
+  z-index: 2;
+}
+
+@keyframes scroll-loop {
+  /* Se desplaza exactamente el ancho de la mitad de la pista (porque duplicamos data) */
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Pausa animación en hover (para leer) */
+.timeline-viewport:hover .timeline-track{
+  animation-play-state: paused;
 }
 
 /* Cada ítem */
@@ -43,8 +73,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 2;
-  min-width: 180px;
+  min-width: 200px; /* coherente con tu diseño */
 }
 
 /* Nodo con imagen */
@@ -52,7 +81,7 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 6px solid #03680d;
+  border: 6px solid var(--node);
   background: #fff;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   overflow: hidden;
@@ -68,7 +97,7 @@
 
 /* Info: texto superior e inferior alternado */
 .timeline-info {
-  max-width: 200px;
+  max-width: 220px;
   padding: 10px;
   background: none;
   text-align: center;
@@ -87,19 +116,40 @@
 .timeline-info h3 {
   margin: 0;
   font-size: 1rem;
-  color: #555;
+  color: #0a7b17; /* verde visible */
 }
 
 .timeline-info strong {
   display: block;
   font-size: 1rem;
-  font-weight: bold;
-  color: #222;
+  font-weight: 800;
+  color: var(--ink);
   margin: 4px 0;
 }
 
 .timeline-info p {
-  font-size: 0.9rem;
-  color: #666;
+  font-size: 0.92rem;
+  color: var(--muted);
   margin: 0;
+}
+
+/* Gradientes laterales */
+.fade-left, .fade-right{
+  position: absolute;
+  top: 0; bottom: 0; width: 60px; z-index: 5; pointer-events: none;
+}
+.fade-left{ left: 0; background: linear-gradient(90deg, var(--bg), transparent); }
+.fade-right{ right: 0; background: linear-gradient(-90deg, var(--bg), transparent); }
+
+/* ===== Accesibilidad: reduce motion ===== */
+@media (prefers-reduced-motion: reduce){
+  .timeline-track{ animation: none; }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px){
+  .timeline-viewport{ padding: 100px 0; }
+  .timeline-node{ width: 84px; height: 84px; }
+  .timeline-info.top{ top: -120px; }
+  .timeline-info.bottom{ bottom: -120px; }
 }
