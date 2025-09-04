@@ -172,3 +172,108 @@
   font-weight: 600;
 }
 }
+
+
+/* ========================== STICKER PHOTO (foto tipo calcomanía) ========================== */
+.sticker-photo {
+  position: relative;
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 12px 12px 20px;         /* margen inferior p/ caption */
+  box-shadow:
+    0 18px 30px rgba(0,0,0,.14),
+    0 2px 0 rgba(255,255,255,.9) inset;
+  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+}
+
+.sticker-photo img {
+  display: block;
+  width: min(520px, 78vw);
+  max-width: 100%;
+  aspect-ratio: 4/3;               /* recorte agradable; quita si no lo quieres */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,.08) inset;
+}
+
+/* “Cinta” translúcida que pega la foto (arriba centro) */
+.sticker-photo::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -16px;
+  transform: translateX(-50%) rotate(3deg);
+  width: 120px;
+  height: 22px;
+  border-radius: 4px;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(255,255,255,.65) 0 10px,
+      rgba(255,255,255,.52) 10px 20px
+    );
+  box-shadow: 0 6px 14px rgba(0,0,0,.22);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+/* Sombras en esquina inferior (look levantado) */
+.sticker-photo::after {
+  content: "";
+  position: absolute;
+  right: 14px;
+  bottom: 12px;
+  width: 24px;
+  height: 24px;
+  background:
+    radial-gradient(130% 130% at 100% 100%,
+      rgba(0,0,0,.20) 0 65%,
+      transparent 70%);
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  opacity: .45;
+  pointer-events: none;
+}
+
+/* Caption estilo polaroid */
+.sticker-photo figcaption {
+  margin-top: 8px;
+  font-size: .9rem;
+  color: #4b5563;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: .01em;
+}
+
+/* Inclinaciones listas para usar */
+.tilt-r { transform: rotate(2.6deg); }
+.tilt-l { transform: rotate(-2.6deg); }
+
+.sticker-photo:hover {
+  transform: translateY(-2px) rotate(2deg);
+  box-shadow:
+    0 24px 40px rgba(0,0,0,.18),
+    0 2px 0 rgba(255,255,255,.92) inset;
+  filter: saturate(1.03);
+}
+
+/* Integración con tu layout existente */
+.impacto-imagen {
+  flex: 1 1 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: slideIn 1.2s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sticker-photo {
+    transform: rotate(-1.5deg);
+  }
+  .sticker-photo::before {
+    width: 90px;
+    top: -14px;
+  }
+}
