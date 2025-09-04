@@ -1,27 +1,42 @@
-/* ===== Why Argentina Outperforms ===== */
+/* ================== DINO THEME ================== */
+.dino-theme {
+  --sand: #F4E8D5;          /* arena patagónica */
+  --sage: #9CAF88;          /* vegetación */
+  --clay: #C07D52;          /* roca arcillosa */
+  --basalt: #2B2F36;        /* roca oscura */
+  --bone: #F7F2EA;          /* hueso fósil */
+  --amber: #D97706;         /* resina ámbar */
+  --sky: #CFE7E3;           /* cielo desaturado */
+  --us-accent: #6B7280;     /* gris pizarra para US/EU */
+  --patagonia-accent: #2F855A; /* verde andino para Patagonia */
 
-/* Base */
-.whyar-page {
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  color: #1f2937;
-  width: 100%;
-  max-width: 100%;
+  background: radial-gradient(
+    1200px 400px at 50% -200px,
+    #fff 0%,
+    var(--bone) 70%,
+    transparent 100%
+  );
+  padding: 2rem 0;
 }
 
+/* ===== Títulos ===== */
 .whyar-title {
   font-weight: 800;
   letter-spacing: -0.01em;
   font-size: clamp(28px, 3vw, 40px);
-  margin: 0;
+  margin: 0 0 1rem 0;
+  color: var(--basalt);
+  text-transform: uppercase;
 }
 
 .whyar-sub {
   font-weight: 700;
   font-size: 20px;
-  margin: 0 0 8px;
+  margin: 0 0 12px;
+  color: var(--clay);
 }
 
-/* Hero image + thumbs */
+/* ===== Hero image + thumbnails ===== */
 .whyar-hero-img img {
   width: 100%;
   aspect-ratio: 16/9;
@@ -41,12 +56,11 @@
   width: 100%;
   aspect-ratio: 4/3;
   object-fit: cover;
-  background: #f3f4f6;
   border: 1px solid #e5e7eb;
   border-radius: 10px;
 }
 
-/* Meta stats */
+/* ===== Stats box (intro) ===== */
 .whyar-stats {
   display: grid;
   gap: 8px;
@@ -54,6 +68,7 @@
   border: 1px solid #e5e7eb;
   border-radius: 12px;
   padding: 14px 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.04);
 }
 
 .stat-chip {
@@ -69,16 +84,12 @@
   color: #111827;
 }
 
-.stat-kicker {
-  letter-spacing: 0.02em;
-}
-
 .whyar-stats .accent {
   font-style: italic;
-  color: #111827;
+  color: var(--basalt);
 }
 
-/* Meta pills (ventajas) */
+/* ===== Meta pills (advantages) ===== */
 .whyar-meta {
   margin-top: 12px;
   display: grid;
@@ -100,48 +111,51 @@
   display: inline-block;
   font-size: 12px;
   padding: 6px 10px;
-  background: #01800984;
+  background: var(--sage);
   border: 1px solid #e5e7eb;
   border-radius: 999px;
-  color: #374151;
+  color: #fff;
+  font-weight: 600;
 }
 
-/* CTA button */
+/* ===== Botón CTA ===== */
 .btn-cta {
-  background: var(--amber, #f59e0b);
+  background: var(--amber);
   color: #fff;
   border: 0;
   border-radius: 10px;
-  padding: 10px 14px;
+  padding: 10px 16px;
   font-weight: 700;
   cursor: pointer;
+  transition: all .2s ease;
 }
 .btn-cta:hover {
-  opacity: 0.9;
+  filter: brightness(.9);
+  transform: translateY(-2px);
 }
 
-/* Fun Fact */
-.whyar-funfact.v2 {
-  border: 1px solid #e5e7eb;
-  background: linear-gradient(#ffffff, #fbfbfb);
-  border-radius: 14px;
-  padding: 14px 16px;
-  margin-bottom: 16px;
-  box-shadow: 0 1px 0 rgba(17, 24, 39, 0.03);
-}
-
-/* Bloque comparativa */
-.whyar-block {
-  border: 1px solid #e5e7eb;
+/* ===== Cards generales ===== */
+.dino-card {
   border-radius: 16px;
-  background: #fff;
-  padding: 20px;
+ position: relative;
+}
+
+/* ===== Fun Fact (ámbar) ===== */
+.dino-funfact {
+  background: linear-gradient(180deg, #FFF7ED, #FFF3E6);
+  border: 1px solid rgba(217,119,6,.35);
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+}
+.dino-funfact p { color:#7C3A02; margin:0; }
+
+/* ===== Comparativa ===== */
+.whyar-block {
   display: grid;
   gap: 20px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
 }
 
-/* Columnas */
 .whyar-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -153,17 +167,18 @@
   border-radius: 14px;
   background: #fff;
   overflow: hidden;
-  box-shadow: 0 2px 12px rgba(17, 24, 39, 0.04);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 2px 12px rgba(17,24,39,.04);
+  transition: transform .15s ease, box-shadow .15s ease;
 }
-
 .compare-card.v2:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 22px rgba(17, 24, 39, 0.06);
+  box-shadow: 0 8px 22px rgba(17,24,39,.06);
 }
-
-.compare-card.v2.highlight {
-  outline: 2px solid rgba(17, 24, 39, 0.06);
+.compare-card[data-accent="us"] .head-text h4 {
+  color: var(--us-accent);
+}
+.compare-card[data-accent="patagonia"] .head-text h4 {
+  color: var(--patagonia-accent);
 }
 
 .compare-head.v2 {
@@ -174,39 +189,30 @@
   background: linear-gradient(180deg, #f9fafb, #f3f4f6);
   border-bottom: 1px solid #e5e7eb;
 }
-
-.compare-head.v2 .flag {
-  font-size: 18px;
-}
-
+.compare-head.v2 .flag { font-size: 18px; }
 .compare-head.v2 .head-text h4 {
   font-size: 16px;
   font-weight: 800;
   margin: 0;
-  letter-spacing: -0.01em;
 }
-
 .compare-head.v2 .head-sub {
   font-size: 12px;
   color: #6b7280;
 }
 
+/* ===== Cuerpo comparativa ===== */
 .compare-body {
   padding: 14px 16px;
   display: grid;
   gap: 14px;
 }
 
-.stat {
-  display: grid;
-  gap: 6px;
-}
-
 .clabel {
   font-size: 12px;
   color: #6b7280;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
+  letter-spacing: .08em;
+  position: relative;
 }
 
 .cvalue {
@@ -220,7 +226,6 @@
   flex-wrap: wrap;
   gap: 8px;
 }
-
 .chip {
   display: inline-block;
   font-size: 12px;
@@ -228,55 +233,63 @@
   color: #111827;
   padding: 6px 10px;
   border-radius: 999px;
-  background: #f3f4f6;
-  border: 1px solid #e5e7eb;
+  background: linear-gradient(180deg,#F7F7F7,#EFEFEF);
+  border: 1px solid #E2E8F0;
 }
-
 .chip.emphasis {
-  background: #eef2ff;
-  border-color: #c7d2fe;
+  background: linear-gradient(180deg,#E6F4EA,#D7F0E0);
+  border-color: #B7E4C4;
+  color: #0E5135;
 }
 
 .bullets {
-  margin: 0;
-  padding-left: 18px;
-  color: #1f2937;
+  list-style: none;
+  padding-left: 0;
 }
 .bullets li {
+  position: relative;
+  padding-left: 22px;
   margin: 2px 0;
 }
-
-.divider {
-  height: 1px;
-  background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
-  margin: 4px 0;
+.bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  background: url("data:image/svg+xml;utf8,\
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232B2F36'>\
+    <path d='M6 8c0-2 2-4 3-4s2 2 2 4-1 3-3 3-2-1-2-3zm6-2c0-1 1-3 2-3s2 1 2 3-1 3-2 3-2-2-2-3zm-3 7c1-1 3-1 4 0 1 1 0 3-2 3s-3-2-2-3z'/>\
+    </svg>") center/contain no-repeat;
+  opacity: .7;
 }
 
-/* Narrativa */
-.whyar-narrative.v2 {
-  border-top: 1px solid #e5e7eb;
-  padding-top: 12px;
-  font-size: 15px;
-  line-height: 1.6;
-  color: #374151;
+/* ===== Separador fósil ===== */
+.fossil-sep {
+  position: relative;
+  margin-top: 20px;
 }
-.whyar-narrative.v2 p:first-child {
-  font-weight: 700;
-  color: #111827;
-}
-
-/* ROI box */
-.whyar-facts {
-  margin-top: 14px;
-  padding: 12px 14px;
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  background: #fafafa;
+.fossil-sep::before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; top: -14px;
+  height: 10px; border-radius: 8px;
+  background: repeating-linear-gradient(
+      90deg, rgba(43,47,54,.08) 0 18px, transparent 18px 36px
+    ),
+    linear-gradient(180deg,var(--bone), #ffffff);
 }
 
-/* Responsive */
+/* ===== ROI Box ===== */
+.whyar-facts.dino-card {
+  background: linear-gradient(180deg, #FFFFFF, #FFFEFC);
+  border-color: #E9E2D7;
+  padding: 14px 16px;
+  margin-top: 16px;
+}
+
+/* ===== Responsive ===== */
 @media (max-width: 992px) {
-  .whyar-columns {
-    grid-template-columns: 1fr;
-  }
+  .whyar-columns { grid-template-columns: 1fr; }
 }

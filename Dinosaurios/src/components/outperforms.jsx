@@ -3,11 +3,11 @@ import maip1 from "../../src/ImgCampanas/expedition.jpeg";
 import maip2 from "../../src/imgCampanas/expedition2.jpg";
 import trex1 from "../../src/ImgCampanas/expedition3.jpeg";
 import trex2 from "../../src/ImgCampanas/expedition4.jpg";
-import "../css/outPerforms.css"
+import "../css/outPerforms.css";
 
 export function Outperforms() {
   return (
-    <main className="whyar-page py-4">
+    <main className="whyar-page py-4 dino-theme container">
       {/* Title */}
       <header className="mb-3 text-center">
         <h1 className="whyar-title">Why argentina outperforms</h1>
@@ -32,8 +32,8 @@ export function Outperforms() {
           <h2 className="whyar-sub">1X new species</h2>
 
           {/* Mini–stack (mismo texto) */}
-          <div className="whyar-stats">
-            <div className="stat-chip">
+          <div className="whyar-stats ">
+            <div className="stat-chip ">
               <span className="stat-kicker">$5,000 vs. $500,000</span>
             </div>
             <p className="m-0">
@@ -79,12 +79,12 @@ export function Outperforms() {
         </div>
       </section>
 
-      {/* Bottom: Description + side card */}
+      {/* Bottom: Description + compare */}
       <section className="row g-4 align-items-start mt-5">
         <div className="col-lg-12">
-          <div className="whyar-block">
+          <div className="whyar-block dino-card">
             {/* Fun Fact */}
-            <div className="whyar-funfact v2">
+            <div className="whyar-funfact v2 dino-funfact">
               <p className="m-0">
                 The historic China-Canada Dinosaur Project (1986 - 1991) costed
                 roughly $11 million USD over the course of 6 years, resulting in
@@ -95,14 +95,15 @@ export function Outperforms() {
             {/* Comparativa */}
             <div className="whyar-columns">
               {/* US & Europe */}
-              <article className="compare-card v2">
-                <header className="compare-head v2">
+              <article className="compare-card v2 dino-card" data-accent="us">
+                <header className="compare-head v2 dino-head">
                   <span className="flag">🇺🇸/🇪🇺</span>
                   <div className="head-text">
                     <h4>US &amp; Europe</h4>
                     <span className="head-sub">Typical academic expedition</span>
                   </div>
                 </header>
+
                 <div className="compare-body">
                   <div className="stat">
                     <span className="clabel">Cost for 3 weeks/15+ people</span>
@@ -115,7 +116,9 @@ export function Outperforms() {
                       Lean Academic / Standard Baseline / High Profile
                     </div>
                   </div>
+
                   <div className="divider"></div>
+
                   <div className="stat">
                     <span className="clabel">Discovery Rate</span>
                     <p className="cvalue">
@@ -123,6 +126,7 @@ export function Outperforms() {
                       <strong>new species are rare</strong>
                     </p>
                   </div>
+
                   <div className="stat">
                     <span className="clabel">Notes</span>
                     <ul className="bullets">
@@ -135,14 +139,18 @@ export function Outperforms() {
               </article>
 
               {/* Patagonia */}
-              <article className="compare-card v2 highlight">
-                <header className="compare-head v2">
+              <article
+                className="compare-card v2 dino-card"
+                data-accent="patagonia"
+              >
+                <header className="compare-head v2 dino-head">
                   <span className="flag">🇦🇷</span>
                   <div className="head-text">
                     <h4>APASUR/LACEV – Patagonia</h4>
                     <span className="head-sub">Lean, field-first expeditions</span>
                   </div>
                 </header>
+
                 <div className="compare-body">
                   <div className="stat">
                     <span className="clabel">Cost for 3 weeks/15+ people</span>
@@ -150,7 +158,9 @@ export function Outperforms() {
                       <span className="chip emphasis">$5,000~</span>
                     </div>
                   </div>
+
                   <div className="divider"></div>
+
                   <div className="stat">
                     <span className="clabel">Discovery Rate</span>
                     <p className="cvalue">
@@ -164,11 +174,25 @@ export function Outperforms() {
             </div>
 
             {/* Narrativa */}
-
+            <div className="whyar-narrative v2 fossil-sep px-5 py-5">
+              <p>$5,000 vs. $500,000</p>
+              <p>
+                In the US and Europe, a $150k campaign might uncover one or two
+                scientifically interesting specimens — usually of known species.
+              </p>
+              <p>
+                In Patagonia, $5k funds a campaign that often results in
+                world-first discoveries, published in top journals, and
+                rewriting paleontological history.
+              </p>
+              <p>
+                <em>Your support directly uncovers a new species with us.</em>
+              </p>
+            </div>
           </div>
 
           {/* ROI callout */}
-          <div className="whyar-facts mt-3">
+          <div className="whyar-facts dino-card mt-3">
             <h4>Average “discovery ROI”</h4>
             <p className="m-0">
               $5k in Patagonia ≈ world-first discoveries; $150k in US/EU ≈
