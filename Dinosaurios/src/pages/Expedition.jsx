@@ -48,6 +48,7 @@ export default function Discoveries() {
         </div>
       </section>
 
+      {/* ===== Statement ===== */}
       <section className="disc-statement text-center py-5">
         <div className="container">
           <p className="statement-text">
@@ -59,7 +60,7 @@ export default function Discoveries() {
         </div>
       </section>
 
-      {/* ===== 2) Discovery highlight + cascada de imágenes ===== */}
+      {/* ===== 2) Discovery highlight #1 + cascada ===== */}
       <section className="container py-5">
         <div className="row align-items-start g-5">
           <div className="col-lg-6">
@@ -103,7 +104,7 @@ export default function Discoveries() {
             </div>
           </div>
 
-          {/* Cascada de imágenes tipo “Nature covers” */}
+          {/* Cascada de imágenes (con animación) */}
           <div className="col-lg-6">
             <div className="cascade">
               <img className="cascade-img img-a" src={maip2} alt="Cover A" />
@@ -116,112 +117,169 @@ export default function Discoveries() {
         </div>
       </section>
 
-      {/* ===== 3) Tu bloque existente con carrusel + otros componentes ===== */}
-      <section className="discoveries-layout container py-5">
-        <div className="row align-items-center g-5">
-          {/* Texto editorial (puedes ajustar o dejar así) */}
-          <div className="col-lg-6">
-            <p className="text-uppercase small fw-bold text-warning mb-2">
-              Discovery Highlight #1
-            </p>
-            <h1 className="display-5 fw-bold text-white">
-              Maip <span className="color">Macrothorax</span>
-            </h1>
-            <h2 className="h5 fw-semibold text-light">
-              The Largest Megaraptor Ever Discovered
-            </h2>
+      {/* ===== 3) Discovery highlight #2 — Notobatrachus ===== */}
+<section className="container py-5 notob-section ">
+  <div className="row align-items-start g-5">
+    {/* Columna izquierda con imágenes */}
+    <div className="col-lg-6 ">
+      <div className="notob-gallery">
+        <img src={trex1} alt="Notobatrachus support 1" />
+        <img src={maip2} alt="Notobatrachus support 2" />
+        <img src={trex2} alt="Notobatrachus support 3" />
+      </div>
+    </div>
 
-            <p className="text-light mt-4">
-              In 2019, near El Calafate in Patagonia, our team uncovered the
-              remains of a predator unlike any seen before:{" "}
-              <strong>Maip macrothorax</strong>.
-            </p>
-            <p className="text-light">
-              At <strong>10 meters (33 feet)</strong> long and{" "}
-              <strong>over five tons</strong>, with{" "}
-              <strong>claws up to 40 cm (16 in)</strong>, it was built for{" "}
-              <strong>lethal speed and power</strong>.
-            </p>
-            <p className="text-light">
-              Our team’s deep expertise and the richness of potential
-              discoveries in Patagonia (where fossils often lie above ground)
-              have allowed for a <strong>70–80% success rate</strong> in finding
-              new species or major discoveries with every excavation.
-            </p>
+    {/* Columna derecha con texto */}
+    <div className="col-lg-6">
+      <p className="text-uppercase small fw-bold text-warning mb-2">
+        Discovery highlight #2
+      </p>
+      <h2 className="display-6 fw-bold mb-1 text-dark">notobatrachus</h2>
+      <h3 className="h5 fw-semibold text-dark-50">
+        The 161-Million-Year-Old Tadpole
+      </h3>
+      <p className="fw-semibold text-secondary mb-3">
+        Discovered by accident during a game
+      </p>
+
+      <div className="text-body-secondary">
+        <p>
+          In the Jurassic wetlands of Patagonia, our team uncovered the
+          world’s oldest known tadpole fossil, preserved for over{" "}
+          <strong>161 million years</strong>. Measuring{" "}
+          <strong>16 cm (6 in)</strong>, this giant tadpole belonged to{" "}
+          <em>Notobatrachus degiustoi</em>, an extinct frog that lived
+          alongside dinosaurs.
+        </p>
+        <p>
+          The fossil is so exquisitely preserved that even delicate soft
+          tissues — eyes, nerves, and traces of gills — remain visible,
+          offering a rare snapshot of a creature caught just before its
+          transformation into a frog.
+        </p>
+        <p>
+          What makes the discovery even more remarkable is the way it
+          happened. After a long day of digging for dinosaurs, members of
+          our team were relaxing and tossing rocks when one noticed a
+          stone with a strange imprint. That “funny-looking rock” turned
+          out to be a scientific treasure: a <strong>161-million-year-old
+          tadpole</strong>, pushing back evidence of frog metamorphosis by
+          more than <strong>30 million years</strong>.
+        </p>
+        <p className="mb-2">
+          The story highlights the richness of Patagonia’s fossil beds — a
+          place where even casual moments can lead to world-changing
+          discoveries.
+        </p>
+       
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+{/* ===== 4) Discovery highlight #4 — Patagorhynchus ===== */}
+<section className="container py-5 patago-section">
+  <div className="row align-items-center g-5">
+    {/* Texto a la izquierda */}
+    <div className="col-lg-6">
+      <p className="text-uppercase small fw-bold text-warning mb-2">
+        Discovery highlight #4
+      </p>
+      <h2 className="display-6 fw-bold mb-1 text-dark">Patagorhynchus</h2>
+      <h3 className="h5 fw-semibold text-dark-50">
+        70-Million-Year-Old Egg-Layer Rewrites Evolution
+      </h3>
+
+      <div className="mt-4 text-body-secondary">
+        <p>
+          In 2019, our team unearthed a tiny molar in Patagonia’s Chorrillo
+          Formation. It belonged to <em>Patagorhynchus pascuali</em>, the oldest
+          platypus relative in South America, dating back{" "}
+          <strong>70 million years</strong>.
+        </p>
+        <p>
+          This discovery proved that monotremes — the egg-laying mammals that
+          include today’s platypus and echidna — lived in South America far
+          earlier than once believed (alongside dinosaurs). Previously,
+          scientists thought they came only from Australia after the dinosaurs’
+          extinction.
+        </p>
+        <p>
+          Named for Argentine paleomammalogist Rosendo Pascual,
+          Patagorhynchus lived in wetlands and likely fed on snails and insect
+          larvae, much like its modern descendant. Its presence shows that
+          monotremes once ranged across southern Gondwana, linking South
+          America, Australia, and Antarctica.
+        </p>
+        <p className="mb-2">
+          This single tooth didn’t just add to Patagonia’s fossil record — it{" "}
+          <strong>rewrote the evolutionary history</strong> of monotremes,
+          revealing that the ancestor of today’s platypus was Patagonian.
+        </p>
+        <p className="text-muted small mb-0">Artwork by Santiago Miner</p>
+      </div>
+    </div>
+
+    {/* Carrusel con 3 imágenes a la derecha */}
+    <div className="col-lg-6">
+      <div
+        id="patagoCarousel"
+        className="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div className="carousel-inner rounded shadow">
+          <div className="carousel-item active">
+            <img
+              src={maip2}
+              className="d-block w-100 carousel-img"
+              alt="Patagorhynchus image 1"
+            />
           </div>
-
-          {/* Carrusel Bootstrap con 4 imágenes */}
-          <div className="col-lg-6">
-            <div
-              id="maipCarousel"
-              className="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div className="carousel-inner rounded shadow">
-                <div className="carousel-item active">
-                  <img
-                    src={maip1}
-                    className="d-block w-100 carousel-img"
-                    alt="Maip Macrothorax 1"
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src={maip2}
-                    className="d-block w-100 carousel-img"
-                    alt="Maip Macrothorax 2"
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src={trex1}
-                    className="d-block w-100 carousel-img"
-                    alt="Expedition Image 1"
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src={trex2}
-                    className="d-block w-100 carousel-img"
-                    alt="Expedition Image 2"
-                  />
-                </div>
-              </div>
-              <button
-                className="carousel-control-prev"
-                type="button"
-                data-bs-target="#maipCarousel"
-                data-bs-slide="prev"
-              >
-                <span
-                  className="carousel-control-prev-icon"
-                  aria-hidden="true"
-                />
-                <span className="visually-hidden">Previous</span>
-              </button>
-              <button
-                className="carousel-control-next"
-                type="button"
-                data-bs-target="#maipCarousel"
-                data-bs-slide="next"
-              >
-                <span
-                  className="carousel-control-next-icon"
-                  aria-hidden="true"
-                />
-                <span className="visually-hidden">Next</span>
-              </button>
-            </div>
+          <div className="carousel-item">
+            <img
+              src={trex1}
+              className="d-block w-100 carousel-img"
+              alt="Patagorhynchus image 2"
+            />
+          </div>
+          <div className="carousel-item">
+            <img
+              src={trex2}
+              className="d-block w-100 carousel-img"
+              alt="Patagorhynchus image 3"
+            />
           </div>
         </div>
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#patagoCarousel"
+          data-bs-slide="prev"
+        >
+          <span className="carousel-control-prev-icon" aria-hidden="true" />
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#patagoCarousel"
+          data-bs-slide="next"
+        >
+          <span className="carousel-control-next-icon" aria-hidden="true" />
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
 
-        {/* Secciones adicionales que ya usas */}
-        <div className="mt-5">
-          <DiscoveryHighlights />
-        </div>
-      </section>
 
-      {/* <Impact /> si quieres mostrar impacto debajo */}
+
+      {/* Puedes seguir con más secciones o tus componentes */}
+      {/* <Impact /> */}
       <div>
         <LineaTiempo />
       </div>

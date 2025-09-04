@@ -19,7 +19,7 @@
 /* ====== Cascada tipo "cartas dinámicas" ====== */
 .cascade {
   position: relative;
-  height: 520px;
+  height: 577px!important;
   max-width: 520px;
   margin: 0 auto;
 }
@@ -54,7 +54,64 @@
 .img-c { animation: cardCycle 16s infinite; animation-delay: 8s; }
 .img-d { animation: cardCycle 16s infinite; animation-delay: 12s; }
 
+/* ===== Statement ===== */
+.disc-statement { background:#111; border-top:4px solid #ffc861; border-bottom:4px solid #ffc861; }
+.statement-text { font-size:1.6rem; font-weight:800; color:#fff; text-transform:uppercase; line-height:1.4; }
+.statement-text strong { color:#ffc861; }
+@media (max-width:768px){ .statement-text{ font-size:1.1rem; } }
 
+/* ===== Hero ===== */
+.disc-hero-bg{ background-size:cover; background-position:center; padding:90px 0; }
+.fw-extrabold{ font-weight:900; }
+.lh-tight{ line-height:1.05; }
+
+/* ===== Cascada con animación secuencial (siempre visible) ===== */
+.cascade{ position:relative; height:520px; max-width:520px; margin:0 auto; }
+.cascade-img{ position:absolute; width:68%; border-radius:18px; box-shadow:0 25px 60px rgba(0,0,0,.3); object-fit:cover; opacity:0; }
+
+/* posiciones base */
+.img-a{ top:0; left:0; }
+.img-b{ top:18%; right:-4%; }
+.img-c{ bottom:-4%; left:-2%; }
+.img-d{ bottom:14%; right:6%; }
+
+@keyframes cardCycle {
+  0%   { opacity:0; transform:scale(0.9) translateY(20px); z-index:0; }
+  5%   { opacity:1; transform:scale(1) translateY(0); z-index:3; }
+  25%  { opacity:1; transform:scale(1) translateY(0); z-index:3; }
+  30%  { opacity:0.8; transform:scale(0.95) translateY(-20px); z-index:2; }
+  100% { opacity:0; transform:scale(0.9) translateY(-30px); z-index:0; }
+}
+
+/* turnos con solapamiento para que nunca quede vacío */
+.img-a{ animation:cardCycle 16s infinite; animation-delay:0s; }
+.img-b{ animation:cardCycle 16s infinite; animation-delay:4s; }
+.img-c{ animation:cardCycle 16s infinite; animation-delay:8s; }
+.img-d{ animation:cardCycle 16s infinite; animation-delay:12s; }
+
+.cascade-shadow{ position:absolute; inset:auto 0 -30px 0; height:60px; filter:blur(22px); background:radial-gradient(closest-side, rgba(0,0,0,.25), transparent 70%); }
+
+/* ===== Notobatrachus section ===== */
+.notob-section{ border-top:1px solid #eee; }
+.notob-gallery{
+  display:grid; gap:14px;
+  grid-template-columns: 1fr;
+}
+.notob-gallery img{
+  width:100%; height:240px; object-fit:cover; border-radius:14px;
+  box-shadow: 0 12px 28px rgba(0,0,0,.16);
+}
+@media (min-width:992px){
+  .notob-gallery{
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+  }
+}
+@media (max-width:768px){
+  .disc-hero-bg{ padding:64px 0; }
+}
 
 
 
@@ -116,7 +173,9 @@
 
 /* Responsive */
 @media (max-width: 992px){
-  .cascade{ height: 460px; max-width: 480px; }
+  .cascade{ height: 460px;
+     max-width: 480px; 
+    }
 }
 @media (max-width: 768px){
   .disc-hero-bg{ padding: 64px 0; }
@@ -143,4 +202,18 @@
 }
 @media (max-width: 768px){
   .statement-text { font-size: 1.1rem; }
+}
+
+/* ====== 4)  ====== */
+
+.patago-section .carousel-inner {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.patago-section .carousel-img {
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
 }
