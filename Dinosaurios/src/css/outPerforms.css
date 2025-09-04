@@ -1,0 +1,282 @@
+/* ===== Why Argentina Outperforms ===== */
+
+/* Base */
+.whyar-page {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #1f2937;
+  width: 100%;
+  max-width: 100%;
+}
+
+.whyar-title {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  font-size: clamp(28px, 3vw, 40px);
+  margin: 0;
+}
+
+.whyar-sub {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0 0 8px;
+}
+
+/* Hero image + thumbs */
+.whyar-hero-img img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.whyar-thumbs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.whyar-thumbs img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+/* Meta stats */
+.whyar-stats {
+  display: grid;
+  gap: 8px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.stat-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 12px;
+  color: #111827;
+}
+
+.stat-kicker {
+  letter-spacing: 0.02em;
+}
+
+.whyar-stats .accent {
+  font-style: italic;
+  color: #111827;
+}
+
+/* Meta pills (ventajas) */
+.whyar-meta {
+  margin-top: 12px;
+  display: grid;
+  gap: 6px;
+}
+
+.whyar-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.whyar-meta-label {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.whyar-pill {
+  display: inline-block;
+  font-size: 12px;
+  padding: 6px 10px;
+  background: #01800984;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  color: #374151;
+}
+
+/* CTA button */
+.btn-cta {
+  background: var(--amber, #f59e0b);
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-cta:hover {
+  opacity: 0.9;
+}
+
+/* Fun Fact */
+.whyar-funfact.v2 {
+  border: 1px solid #e5e7eb;
+  background: linear-gradient(#ffffff, #fbfbfb);
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 0 rgba(17, 24, 39, 0.03);
+}
+
+/* Bloque comparativa */
+.whyar-block {
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background: #fff;
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+/* Columnas */
+.whyar-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.compare-card.v2 {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(17, 24, 39, 0.04);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.compare-card.v2:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(17, 24, 39, 0.06);
+}
+
+.compare-card.v2.highlight {
+  outline: 2px solid rgba(17, 24, 39, 0.06);
+}
+
+.compare-head.v2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  background: linear-gradient(180deg, #f9fafb, #f3f4f6);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.compare-head.v2 .flag {
+  font-size: 18px;
+}
+
+.compare-head.v2 .head-text h4 {
+  font-size: 16px;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.compare-head.v2 .head-sub {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.compare-body {
+  padding: 14px 16px;
+  display: grid;
+  gap: 14px;
+}
+
+.stat {
+  display: grid;
+  gap: 6px;
+}
+
+.clabel {
+  font-size: 12px;
+  color: #6b7280;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.cvalue {
+  font-size: 14px;
+  color: #1f2937;
+  line-height: 1.55;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #111827;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+}
+
+.chip.emphasis {
+  background: #eef2ff;
+  border-color: #c7d2fe;
+}
+
+.bullets {
+  margin: 0;
+  padding-left: 18px;
+  color: #1f2937;
+}
+.bullets li {
+  margin: 2px 0;
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
+  margin: 4px 0;
+}
+
+/* Narrativa */
+.whyar-narrative.v2 {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #374151;
+}
+.whyar-narrative.v2 p:first-child {
+  font-weight: 700;
+  color: #111827;
+}
+
+/* ROI box */
+.whyar-facts {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .whyar-columns {
+    grid-template-columns: 1fr;
+  }
+}

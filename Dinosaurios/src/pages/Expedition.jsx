@@ -19,6 +19,7 @@ import YourRole from "../components/Home/YourRole";
 import CardMedia from "../components/CardMedia";
 import Impact from "./Impact";
 import LineaTiempo from "../components/lineaTiempo";
+import { Outperforms } from "../components/outperforms";
 
 export default function Discoveries() {
   return (
@@ -280,188 +281,12 @@ export default function Discoveries() {
         </div>
       </section>
 
-      
       <div>
         <LineaTiempo />
       </div>
 
       {/* ===== 5) Why Argentina Outperforms ===== */}
-      <main className="whyar-page container py-4">
-  {/* Title */}
-  <header className="mb-3">
-    <h1 className="whyar-title">Why argentina outperforms</h1>
-  </header>
-
-  {/* Top grid (image + right column) */}
-  <section className="row g-4 align-items-start">
-    {/* Left: big image + thumbnails */}
-    <div className="col-lg-7">
-      <div className="whyar-hero-img">
-        <img src={maip1} alt="Fieldwork main" />
-      </div>
-      <div className="whyar-thumbs mt-3">
-        <img src={maip2} alt="thumb 1" />
-        <img src={trex1} alt="thumb 2" />
-        <img src={trex2} alt="thumb 3" />
-      </div>
-    </div>
-
-    {/* Right: text meta + CTA */}
-    <div className="col-lg-5">
-      <h2 className="whyar-sub">1X new species</h2>
-
-      {/* Mini–stack (mismo texto) */}
-      <div className="whyar-stats">
-        <div className="stat-chip">
-          <span className="stat-kicker">$5,000 vs. $500,000</span>
-        </div>
-        <p className="m-0">
-          In the US and Europe, a $150k campaign might uncover one or two scientifically
-          interesting specimens — usually of known species.
-        </p>
-        <p className="m-0">
-          In Patagonia, $5k funds a campaign that often results in world-first discoveries,
-          published in top journals, and rewriting paleontological history.
-        </p>
-        <p className="accent m-0">Your support directly uncovers a new species with us.</p>
-      </div>
-
-      {/* Meta pills (mapeadas a tu texto) */}
-      <div className="whyar-meta">
-        <div className="whyar-meta-row">
-          <span className="whyar-meta-label">Talent Advantage</span>
-          <span className="whyar-pill">Salaried paleontologists</span>
-        </div>
-        <div className="whyar-meta-row">
-          <span className="whyar-meta-label">Geology Advantage</span>
-          <span className="whyar-pill">Fossils at surface</span>
-        </div>
-        <div className="whyar-meta-row">
-          <span className="whyar-meta-label">Legal Advantage</span>
-          <span className="whyar-pill">State fossil ownership</span>
-        </div>
-        <div className="whyar-meta-row">
-          <span className="whyar-meta-label">Cost Advantage</span>
-          <span className="whyar-pill">Lean logistics</span>
-        </div>
-      </div>
-
-      {/* Quantity + CTA */}
-      <div className="d-flex align-items-center gap-2 mt-3">
-        <div className="qty">
-          <button aria-label="decrease">−</button>
-          <input type="text" value="1" readOnly aria-label="quantity" />
-          <button aria-label="increase">+</button>
-        </div>
-        <button className="btn-cta">Support a $5k dig</button>
-      </div>
-    </div>
-  </section>
-
-  {/* Bottom: Description + side card */}
-  <section className="row g-4 align-items-start mt-5">
-    {/* Description (left) */}
-    <div className="col-lg-8">
-      <h3 className="whyar-h3">Description</h3>
-
-      {/* Fun Fact */}
-      <div className="whyar-funfact">
-        <span className="ff-kicker">Fun Fact</span>
-        <p className="m-0">
-          The historic China-Canada Dinosaur Project (1986 - 1991) costed roughly $11 million USD over the course of 6 years, resulting in 11 new dinosaur species.
-        </p>
-      </div>
-
-      {/* Comparativa en 2 columnas */}
-      <div className="whyar-compare">
-        {/* US & Europe */}
-        <article className="compare-card">
-          <header className="compare-head">
-            <span className="flag">🇺🇸/🇪🇺</span>
-            <h4>US &amp; Europe</h4>
-          </header>
-          <ul className="compare-list">
-            <li>
-              <span className="clabel">Cost for 3 weeks/15+ people</span>
-              <div className="cvalue">
-                $75k–$100k (Lean Academic)<br />
-                $100k-$150k (Standard Baseline)<br />
-                $150k - $250k (High Profile)
-              </div>
-            </li>
-            <li>
-              <span className="clabel">Discovery Rate</span>
-              <div className="cvalue">
-                Mostly known species, fragments, 
-                or refinements; new species are rare
-              </div>
-            </li>
-            <li>
-              <span className="clabel">Notes</span>
-              <div className="cvalue">
-                Often funds heavy machinery, land leases, insurance, donor amenities
-              </div>
-            </li>
-          </ul>
-        </article>
-
-        {/* Patagonia */}
-        <article className="compare-card highlight">
-          <header className="compare-head">
-            <span className="flag">🇦🇷</span>
-            <h4>APASUR/LACEV – Patagonia</h4>
-          </header>
-          <ul className="compare-list">
-            <li>
-              <span className="clabel">Cost for 3 weeks/15+ people</span>
-              <div className="cvalue">$5,000~</div>
-            </li>
-            <li>
-              <span className="clabel">Discovery Rate</span>
-              <div className="cvalue">
-                70–80% yield new species or breakthrough fossils such as the first theropod nest in South America or the oldest tadpole fossil (161 million years old)
-              </div>
-            </li>
-          </ul>
-        </article>
-      </div>
-
-      {/* Narrativa breve (mismo texto) */}
-      <div className="whyar-narrative">
-        <p>
-          $5,000 vs. $500,000
-        </p>
-        <p>
-          In the US and Europe, a $150k campaign might uncover one or two scientifically interesting specimens — usually of known species. 
-        </p>
-        <p>
-          In Patagonia, $5k funds a campaign that often results in world-first discoveries, published in top journals, and rewriting paleontological history.
-        </p>
-        <p><em>Your support directly uncovers a new species with us.</em></p>
-      </div>
-
-      {/* ROI callout */}
-      <div className="whyar-facts">
-        <h4>Average “discovery ROI”</h4>
-        <p className="m-0">
-          $5k in Patagonia ≈ world-first discoveries; $150k in US/EU ≈ known species.
-        </p>
-      </div>
-    </div>
-
-    {/* Side media/card (right) */}
-    <aside className="col-lg-4">
-      <div className="whyar-sidecard">
-        <img src={maip2} alt="support image" />
-        <div className="sidecard-body">
-          <h4>Direct impact</h4>
-          <p className="m-0">Your support directly uncovers new species with us.</p>
-        </div>
-      </div>
-    </aside>
-  </section>
-</main>
-
+   <Outperforms/>
 
       {/* Puedes seguir con más secciones o tus componentes */}
       {/* <Impact /> */}
