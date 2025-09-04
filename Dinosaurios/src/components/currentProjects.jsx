@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/currentProjects.css";
+// import currentProject from "../../src/ImgCampanas/descubrimientos/currentProject.png"
 
 export function CurrentProjects() {
   return (

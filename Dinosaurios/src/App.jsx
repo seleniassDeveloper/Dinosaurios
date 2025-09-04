@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Expedition from "./pages/Expedition";
 import Impact from "./pages/Impact";
 import Press from "./pages/Press";
+import LivePreview from "./components/Home/LivePreview";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/expedition" element={<Expedition />} />
           <Route path="/impact" element={<Impact />} />
           <Route path="/press" element={<Press />} />
+          <Route path="/live" element={<LivePreview />} />
         </Routes>
       </div>
     </>
