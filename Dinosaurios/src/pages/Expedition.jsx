@@ -40,22 +40,24 @@ export default function Discoveries() {
             with the highest success rate in the world
           </h2>
           <p className="lead text-white mb-0">
-            Our team’s deep expertise and the richness of potential discoveries in Patagonia
-            (where fossils often lie above ground) have allowed for a <strong>70-80% success rate</strong> in
-            finding new species or major discoveries with every excavation.
+            Our team’s deep expertise and the richness of potential discoveries
+            in Patagonia (where fossils often lie above ground) have allowed for
+            a <strong>70-80% success rate</strong> in finding new species or
+            major discoveries with every excavation.
           </p>
         </div>
       </section>
 
       <section className="disc-statement text-center py-5">
-  <div className="container">
-    <p className="statement-text">
-      Every <strong>$5,000 EXCAVATION</strong> we <strong>EXECUTE</strong> has a{" "}
-      <strong>70–80% chance</strong> of yielding <strong>NEW SPECIES</strong> or
-      ground-breaking <strong>DISCOVERIES!</strong>
-    </p>
-  </div>
-</section>
+        <div className="container">
+          <p className="statement-text">
+            Every <strong>$5,000 EXCAVATION</strong> we <strong>EXECUTE</strong>{" "}
+            has a <strong>70–80% chance</strong> of yielding{" "}
+            <strong>NEW SPECIES</strong> or ground-breaking{" "}
+            <strong>DISCOVERIES!</strong>
+          </p>
+        </div>
+      </section>
 
       {/* ===== 2) Discovery highlight + cascada de imágenes ===== */}
       <section className="container py-5">
@@ -73,23 +75,29 @@ export default function Discoveries() {
 
             <div className="mt-4 text-body-secondary">
               <p>
-                In 2019, near El Calafate in Patagonia, our team uncovered the remains of a predator
-                unlike any seen before: <strong>Maip macrothorax</strong>.
+                In 2019, near El Calafate in Patagonia, our team uncovered the
+                remains of a predator unlike any seen before:{" "}
+                <strong>Maip macrothorax</strong>.
               </p>
               <p>
-                At <strong>10 meters (33 feet)</strong> long and <strong>over five tons</strong>, with{" "}
-                <strong>claws up to 40 cm (16 in)</strong>, it was built for <strong>lethal speed and power</strong>.
+                At <strong>10 meters (33 feet)</strong> long and{" "}
+                <strong>over five tons</strong>, with{" "}
+                <strong>claws up to 40 cm (16 in)</strong>, it was built for{" "}
+                <strong>lethal speed and power</strong>.
               </p>
               <p>
-                Nicknamed the “Shadow of Death,” Maip was named after an Aonikenk spirit said to kill
-                with icy winds. Its second name, <em>macrothorax</em>, reflects its enormous{" "}
-                <strong>1.2-meter-wide chest cavity</strong>. Unlike the bulky T. Rex, Maip was
-                lightweight, agile, and fast, making it the apex predator of southern Patagonia about{" "}
+                Nicknamed the “Shadow of Death,” Maip was named after an
+                Aonikenk spirit said to kill with icy winds. Its second name,{" "}
+                <em>macrothorax</em>, reflects its enormous{" "}
+                <strong>1.2-meter-wide chest cavity</strong>. Unlike the bulky
+                T. Rex, Maip was lightweight, agile, and fast, making it the
+                apex predator of southern Patagonia about{" "}
                 <strong>70 million years ago</strong>.
               </p>
               <p className="mb-0">
-                The discovery helped solve key mysteries about megaraptors — a family of carnivores spread
-                across South America, Asia, and Australia — and revealed one of the largest and southernmost
+                The discovery helped solve key mysteries about megaraptors — a
+                family of carnivores spread across South America, Asia, and
+                Australia — and revealed one of the largest and southernmost
                 megaraptors ever found.
               </p>
             </div>
@@ -124,43 +132,83 @@ export default function Discoveries() {
             </h2>
 
             <p className="text-light mt-4">
-              In 2019, near El Calafate in Patagonia, our team uncovered the remains of a predator unlike
-              any seen before: <strong>Maip macrothorax</strong>.
+              In 2019, near El Calafate in Patagonia, our team uncovered the
+              remains of a predator unlike any seen before:{" "}
+              <strong>Maip macrothorax</strong>.
             </p>
             <p className="text-light">
-              At <strong>10 meters (33 feet)</strong> long and <strong>over five tons</strong>, with{" "}
-              <strong>claws up to 40 cm (16 in)</strong>, it was built for <strong>lethal speed and power</strong>.
+              At <strong>10 meters (33 feet)</strong> long and{" "}
+              <strong>over five tons</strong>, with{" "}
+              <strong>claws up to 40 cm (16 in)</strong>, it was built for{" "}
+              <strong>lethal speed and power</strong>.
             </p>
             <p className="text-light">
-              Our team’s deep expertise and the richness of potential discoveries in Patagonia (where fossils
-              often lie above ground) have allowed for a <strong>70–80% success rate</strong> in finding new 
-              species or major discoveries with every excavation.
+              Our team’s deep expertise and the richness of potential
+              discoveries in Patagonia (where fossils often lie above ground)
+              have allowed for a <strong>70–80% success rate</strong> in finding
+              new species or major discoveries with every excavation.
             </p>
           </div>
 
           {/* Carrusel Bootstrap con 4 imágenes */}
           <div className="col-lg-6">
-            <div id="maipCarousel" className="carousel slide" data-bs-ride="carousel">
+            <div
+              id="maipCarousel"
+              className="carousel slide"
+              data-bs-ride="carousel"
+            >
               <div className="carousel-inner rounded shadow">
                 <div className="carousel-item active">
-                  <img src={maip1} className="d-block w-100 carousel-img" alt="Maip Macrothorax 1" />
+                  <img
+                    src={maip1}
+                    className="d-block w-100 carousel-img"
+                    alt="Maip Macrothorax 1"
+                  />
                 </div>
                 <div className="carousel-item">
-                  <img src={maip2} className="d-block w-100 carousel-img" alt="Maip Macrothorax 2" />
+                  <img
+                    src={maip2}
+                    className="d-block w-100 carousel-img"
+                    alt="Maip Macrothorax 2"
+                  />
                 </div>
                 <div className="carousel-item">
-                  <img src={trex1} className="d-block w-100 carousel-img" alt="Expedition Image 1" />
+                  <img
+                    src={trex1}
+                    className="d-block w-100 carousel-img"
+                    alt="Expedition Image 1"
+                  />
                 </div>
                 <div className="carousel-item">
-                  <img src={trex2} className="d-block w-100 carousel-img" alt="Expedition Image 2" />
+                  <img
+                    src={trex2}
+                    className="d-block w-100 carousel-img"
+                    alt="Expedition Image 2"
+                  />
                 </div>
               </div>
-              <button className="carousel-control-prev" type="button" data-bs-target="#maipCarousel" data-bs-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true" />
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#maipCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  className="carousel-control-prev-icon"
+                  aria-hidden="true"
+                />
                 <span className="visually-hidden">Previous</span>
               </button>
-              <button className="carousel-control-next" type="button" data-bs-target="#maipCarousel" data-bs-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true" />
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#maipCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  className="carousel-control-next-icon"
+                  aria-hidden="true"
+                />
                 <span className="visually-hidden">Next</span>
               </button>
             </div>
