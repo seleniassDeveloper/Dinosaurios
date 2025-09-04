@@ -20,6 +20,7 @@ import CardMedia from "../components/CardMedia";
 import Impact from "./Impact";
 import LineaTiempo from "../components/lineaTiempo";
 import { Outperforms } from "../components/outperforms";
+import { CurrentProjects } from "../components/currentProjects";
 
 export default function Discoveries() {
   return (
@@ -290,6 +291,8 @@ export default function Discoveries() {
 
       {/* Puedes seguir con más secciones o tus componentes */}
       {/* <Impact /> */}
+
+      <CurrentProjects />
     </>
   );
 }
