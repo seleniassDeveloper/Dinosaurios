@@ -3,7 +3,7 @@ import "../css/expedition.css";
 
 import maip1 from "../../src/ImgCampanas/discoveryImg/discovery5.jpeg";
 import maip2 from "../../src/imgCampanas/discoveryImg/discovery6.webp";
-import trex1 from "../../src/ImgCampanas/discoveryImg/discovery7.png";;
+// import trex1 from "../../src/ImgCampanas/discoveryImg/discovery7.png";;
 import trex2 from "../../src/ImgCampanas/expedition.jpeg";
 import esqueleto from "../../src/ImgCampanas/esqueletodiscovery.jpg";
 import esqueletoDesco from "../../src/ImgCampanas/esqueletoDesco.png"
