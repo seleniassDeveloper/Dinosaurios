@@ -1,8 +1,11 @@
-
+// src/pages/DiscoveriesLanding.jsx
 import React, { useEffect, useId, useRef, useState } from "react";
 import "../css/DiscoveriesLanding.css";
+import { useTranslation } from "react-i18next";
 
 export default function DiscoveriesLanding() {
+  const { t } = useTranslation();
+
   const nameId = useId();
   const emailId = useId();
   const msgId = useId();
@@ -13,14 +16,16 @@ export default function DiscoveriesLanding() {
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState({});
 
-  const onChange = (e) => setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
+  const onChange = (e) =>
+    setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
 
   function validate() {
     const e = {};
-    if (!form.name.trim()) e.name = "Required";
-    if (!form.email.trim()) e.email = "Required";
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = "Invalid email";
-    if (!form.message.trim()) e.message = "Required";
+    if (!form.name.trim()) e.name = t("press.required");
+    if (!form.email.trim()) e.email = t("press.required");
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email))
+      e.email = t("press.invalidEmail");
+    if (!form.message.trim()) e.message = t("press.required");
     setErrors(e);
     return Object.keys(e).length === 0;
   }
@@ -39,37 +44,49 @@ export default function DiscoveriesLanding() {
     }
   }
 
-  useEffect(() => { if (sent && sentRef.current) sentRef.current.focus(); }, [sent]);
+  useEffect(() => {
+    if (sent && sentRef.current) sentRef.current.focus();
+  }, [sent]);
 
   return (
     <main className="discoveries-landing dino-landing" role="main">
-      {/* HERO (solo H1 + CTA) */}
-      <section className="dl-hero container" aria-labelledby="dl-hero-title">
-        <h1 id="dl-hero-title" className="dl-title">Discoveries & Collaboration</h1>
-        <div className="dl-cta-row">
-          <a href="#contact" className="btn-amber">Get involved</a>
-        </div>
+      {/* HERO */}
+      <section className="py-5 container" aria-labelledby="dl-hero-title">
+        <h1 id="dl-hero-title" className="dl-title">
+          {t("press.title").toUpperCase()}
+        </h1>
       </section>
 
-      {/* CONTACT FORM (solo formulario) */}
-      <section id="contact" className="dl-contact dino-card container" aria-labelledby="contact-title">
-        <h2 id="contact-title" className="dl-h2">Contact us</h2>
-        <form className="contact-form" onSubmit={onSubmit} noValidate aria-live="polite">
+      {/* CONTACT FORM */}
+      <section
+        id="contact"
+        className="dl-contact dino-card container"
+        aria-labelledby="contact-title"
+      >
+        <h2 id="contact-title" className="dl-h2">
+          {t("press.contactUs").toUpperCase()}
+        </h2>
+        <form
+          className="contact-form"
+          onSubmit={onSubmit}
+          noValidate
+          aria-live="polite"
+        >
           {sent && (
             <div ref={sentRef} tabIndex={-1} className="sent" role="status">
-              Thanks! We’ll get back to you shortly.
+              {t("press.sent")}
             </div>
           )}
 
           <div className="form-row">
-            <label htmlFor={nameId}>Full name</label>
+            <label htmlFor={nameId}>{t("press.name")}</label>
             <input
               id={nameId}
               name="name"
               value={form.name}
               onChange={onChange}
               className={errors.name ? "error" : ""}
-              placeholder="Jane Doe"
+              placeholder={t("press.placeholderName")}
               autoComplete="name"
               aria-invalid={Boolean(errors.name)}
             />
@@ -77,7 +94,7 @@ export default function DiscoveriesLanding() {
           </div>
 
           <div className="form-row">
-            <label htmlFor={emailId}>Email</label>
+            <label htmlFor={emailId}>{t("press.email")}</label>
             <input
               id={emailId}
               name="email"
@@ -85,7 +102,7 @@ export default function DiscoveriesLanding() {
               value={form.email}
               onChange={onChange}
               className={errors.email ? "error" : ""}
-              placeholder="jane@example.org"
+              placeholder={t("press.placeholderEmail")}
               autoComplete="email"
               aria-invalid={Boolean(errors.email)}
             />
@@ -93,7 +110,7 @@ export default function DiscoveriesLanding() {
           </div>
 
           <div className="form-row">
-            <label htmlFor={msgId}>Message</label>
+            <label htmlFor={msgId}>{t("press.message")}</label>
             <textarea
               id={msgId}
               name="message"
@@ -101,7 +118,7 @@ export default function DiscoveriesLanding() {
               value={form.message}
               onChange={onChange}
               className={errors.message ? "error" : ""}
-              placeholder="How can we collaborate?"
+              placeholder={t("press.placeholderMessage")}
               aria-invalid={Boolean(errors.message)}
             />
             {errors.message && <span className="err">{errors.message}</span>}
@@ -109,9 +126,14 @@ export default function DiscoveriesLanding() {
 
           <div className="actions">
             <button type="submit" className="btn-amber" disabled={loading}>
-              {loading ? "Sending…" : "Send message"}
+              {loading ? t("press.sending") : t("press.send")}
             </button>
-            <a className="btn-ghost" href="mailto:contact@expedition.org?subject=Discoveries%20Collab">Email us</a>
+            <a
+              className="btn-ghost"
+              href="mailto:team@apasur.org?subject=Discoveries%20Collab"
+            >
+              {t("press.emailUs")}
+            </a>
           </div>
         </form>
       </section>

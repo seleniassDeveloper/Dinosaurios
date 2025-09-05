@@ -19,7 +19,17 @@
   border-bottom:1px solid rgba(0,0,0,.06);
   border-top:1px solid rgba(0,0,0,.04);
 }
-.dl-title{ margin:0 0 6px; line-height:1.05; font-weight:1000; letter-spacing:-.01em; font-size: clamp(30px, 4vw, 54px); color: var(--basalt); text-transform:uppercase; text-shadow:0 1px 0 #fff; }
+.dl-title{ 
+  margin:0 0 6px; 
+  line-height:1.05; 
+  font-weight:1000; 
+  letter-spacing:-.01em; 
+  font-size: clamp(30px, 4vw, 54px); 
+  color: var(--basalt); 
+  text-transform:uppercase; 
+  text-shadow:0 1px 0 #fff;
+  color: #0E5135!important;
+ }
 .dl-cta-row{ display:flex; gap:12px; flex-wrap:wrap; }
 
 /* Botones */
@@ -43,7 +53,12 @@
 /* .dl-contact::after { ... } — eliminado */
 
 /* Título dentro del form card */
-.dl-h2{ margin:0 0 6px; font-weight:1000; letter-spacing:-.01em; font-size: clamp(20px, 2.4vw, 30px); color: var(--clay); }
+.dl-h2{ 
+  margin:0 0 6px; 
+  font-weight:1000; 
+  letter-spacing:-.01em; 
+  font-size: clamp(20px, 2.4vw, 30px); 
+  color: black }
 
 /* Formulario */
 .contact-form{ display:grid; gap:12px; align-content:start; }

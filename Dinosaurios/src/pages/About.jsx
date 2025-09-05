@@ -2,7 +2,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "../css/About.css";
-import aboutUs from "../../src/ImgCampanas/abourUs2.jpg"
+import aboutUs from "../../src/ImgCampanas/abourUs2.jpg";
 import Grupo from "../../src/ImgCampanas/210.JPG";
 import antartida from "../../src/ImgCampanas/antantida2.png";
 import hueso from "../../src/ImgCampanas/hueso1.JPG";
@@ -19,11 +19,10 @@ export default function About() {
           {/* 1) HERO: imagen grande + título */}
           <header className="team-photo-hero">
             <img src={aboutUs} alt="APASUR Team" className="team-photo" />
-           
           </header>
-           <div className="hero-overlay-text">
-              <h1>{t("about.hero")}</h1>
-            </div>
+          <div className="hero-overlay-text">
+            <h1>{t("about.hero")}</h1>
+          </div>
 
           {/* 2) FEATURES (3 columnas) con imagen arriba */}
           <section className="about-columns container" id="features">
@@ -87,16 +86,10 @@ export default function About() {
                 <strong>{t("about.antarcticaMissionTitle")}</strong>{" "}
                 {t("about.antarcticaMission")}
               </p> */}
-              <p>
-                We have signed an exclusive five-year agreement with the
-                Argentine government to conduct paleontological expeditions in
-                Antarctica (2027–2032) in partnership with the Argentine
-                Antarctic Institute and CONICET.
-              </p>
-              <p>
-                <b>Our Mission</b>: Uncover new dinosaur fossils that have lived
-                70 million years ago on the frozen continent.
-              </p>
+              <p>{t("about.antartida")}</p>
+             <p>
+  <b>{t("about.ourMission").toUpperCase()}</b>: {t("about.newDino").toUpperCase()}
+</p>
             </div>
           </section>
         </div>

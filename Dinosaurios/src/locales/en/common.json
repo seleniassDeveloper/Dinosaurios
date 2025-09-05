@@ -1,5 +1,20 @@
 {
-
+ "press": {
+      "title": "Discoveries & Collaborations",
+      "contactUs": "Contact Us",
+      "name": "Full Name",
+      "email": "Email",
+      "organization": "Organization (optional)",
+      "message": "Message",
+      "placeholderName": "Jane Doe",
+      "placeholderEmail": "jane@example.org",
+      "placeholderOrg": "Museum / University / Media",
+      "placeholderMessage": "How can we collaborate?",
+      "send": "Send Message",
+      "emailUs": "Email Us Directly",
+      "sent": "Thanks! We’ll get back to you shortly.",
+      "note": "Info Pack includes copyright-cleared images for press kits."
+    },
 "impact": {
     "title": "Science Community Impact",
     "description": "With over 200 outreach initiatives between 2005 and 2025, our team has made science accessible to the public and contributed to educational development.",
@@ -14,6 +29,9 @@
   "about": {
     "hero": "world-class discoveries at 1/30th - 1/100th the cost with the highest success rate in the world ",
     "whoTitle": "Who are we?",
+    "antartida":"We have signed an exclusive five-year agreement with the Argentine government to conduct paleontological expeditions in Antarctica (2027–2032) in partnership with the Argentine Antarctic Institute and CONICET.",
+"ourMission":"Our Mission",
+"newDino":"   Uncover new dinosaur fossils that have lived 70 million years ago on the frozen continent",
     "whoP1": "APASUR is a nonprofit paleontological NGO based in Argentina. For over 20 years, we have carried out excavations in Patagonia, the Andes, and Antarctica—recovering, studying, and sharing the fossil heritage of South America.",
     "whoP2": "APASUR (La Asociación Paleontológica del Sur) is a non-profit organization created by the team of paleontologists and professionals from (LACEV-MACN) Laboratorio de Anatomía Comparada y Evolución de los Vertebrados del Museo Argentino de Ciencias Naturales.",
     "whoP3":"Its creation responds to the need for research promotion, investigation, public communication, and conservation projects for the paleontological heritage of Argentina and South America.",

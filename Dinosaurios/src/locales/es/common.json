@@ -1,5 +1,20 @@
 {
-
+  "press": {
+      "title": "Prensa y colaboraciones",
+      "contactUs": "Contáctanos",
+      "name": "Nombre Completo",
+      "email": "Correo electrónico",
+      "organization": "Organización (opcional)",
+      "message": "Mensaje",
+      "placeholderName": "Juan Pérez",
+      "placeholderEmail": "juan@ejemplo.com",
+      "placeholderOrg": "Museo / Universidad / Medio",
+      "placeholderMessage": "¿Cómo podemos colaborar?",
+      "send": "Enviar Mensaje",
+      "emailUs": "Envianos un Email Directamente",
+      "sent": "¡Gracias! Nos pondremos en contacto contigo pronto.",
+      "note": "El paquete de información incluye imágenes libres de derechos para kits de prensa."
+    },
   "impact": {
     "title": "Impacto en la comunidad científica",
     "description": "Con más de 200 iniciativas de divulgación entre 2005 y 2025, nuestro equipo ha hecho que la ciencia sea accesible al público y ha contribuido al desarrollo educativo.",
@@ -14,6 +29,9 @@
   "about": {
     "hero": "Descubrimientos de clase mundial a un costo entre 1/30 y 1/100 del costo con la tasa de éxito más alta del mundo",
     "whoTitle": "Quiénes somos?",
+    "antartida":"Hemos firmado un acuerdo exclusivo de cinco años con el gobierno argentino para realizar expediciones paleontológicas en la Antártida (2027–2032), en colaboración con el Instituto Antártico Argentino y el CONICET.",
+    "ourMission":"NUESTRA MISIÓN",
+    "newDino":"DESCUBRIR NUEVOS FÓSILES DE DINOSAURIOS QUE HABITARON EL CONTINENTE HELADO HACE 70 MILLONES DE AÑOS",
     "whoP1": "APASUR es una ONG paleontológica sin fines de lucro con base en Argentina. Desde hace más de 20 años, realizamos excavaciones en la Patagonia, los Andes y la Antártida—recuperando, estudiando y difundiendo el patrimonio fósil de Sudamérica.",
     "whoP2": "Nuestra misión es preservar y comprender la vida prehistórica, al mismo tiempo que promovemos la ciencia mediante la educación, el trabajo de campo y la colaboración internacional.",
    "whoP3":"Su creación responde a la necesidad de realizar proyectos de promoción, investigación, comunicación pública y conservación del patrimonio paleontológico de Argentina y Sudamérica.",
@@ -151,6 +169,9 @@
       "nest": "Nest"
     }
   },
+
+  
+
   "cta": {
     "title": "Make history with us",
     "copy": "We comply with the Argentine National Law and have official permits. Own laboratory for preparation.",
