@@ -15,7 +15,7 @@ export function Outperforms() {
     <main className="whyar-page py-4 dino-theme container">
       {/* Title */}
       <header className="mb-3 text-center">
-        <h1 className="whyar-title">Why argentina outperforms</h1>
+        <h1 className="whyar-title">{t("outPerfoms.why")}</h1>
       </header>
 
       {/* Top grid (image + right column) */}
@@ -89,7 +89,7 @@ export function Outperforms() {
 
           {/* CTA */}
           <div className="d-flex align-items-center gap-2 mt-3">
-            <button className="btn-cta">Donate</button>
+            <button className="btn-cta">{t("navbar.donate")}</button>
           </div>
         </div>
       </section>
@@ -109,88 +109,93 @@ export function Outperforms() {
             {/* Comparativa */}
             <div className="whyar-columns">
               {/* US & Europe */}
-              <article className="compare-card v2 dino-card" data-accent="us">
-                <header className="compare-head v2 dino-head">
-                  <span className="flag">🇺🇸/🇪🇺</span>
-                  <div className="head-text">
-                    <h4>US &amp; Europe</h4>
-                  </div>
-                </header>
+           <article className="compare-card v2 dino-card" data-accent="us">
+  <header className="compare-head v2 dino-head">
+    <span className="flag">{t("compare.us_eu.flag")}</span>
+    <div className="head-text">
+      <h4>{t("compare.us_eu.title")}</h4>
+    </div>
+  </header>
 
-                <div className="compare-body">
-                  <div className="stat">
-                    <span className="clabel">Cost for 3 weeks/15+ people</span>
-                    <div className="chips">
-                      <span className="chip">$75k–$100k</span>
-                      <span className="chip">$100k–$150k</span>
-                      <span className="chip">$150k–$250k</span>
-                    </div>
-                    <div className="notes tiny">
-                      Lean Academic / Standard Baseline / High Profile
-                    </div>
-                  </div>
+  <div className="compare-body">
+    <div className="stat">
+      <span className="clabel">{t("compare.us_eu.stats.cost.label")}</span>
+      <div className="chips">
+        <span className="chip">{t("compare.us_eu.stats.cost.chips.0")}</span>
+        <span className="chip">{t("compare.us_eu.stats.cost.chips.1")}</span>
+        <span className="chip">{t("compare.us_eu.stats.cost.chips.2")}</span>
+      </div>
+      <div className="notes tiny">
+        {t("compare.us_eu.stats.cost.notes")}
+      </div>
+    </div>
 
-                  <div className="divider"></div>
+    <div className="divider"></div>
 
-                  <div className="stat">
-                    <span className="clabel">Discovery Rate</span>
-                    <p className="cvalue">
-                      Mostly known species, fragments, or refinements;{" "}
-                      <strong>new species are rare</strong>
-                    </p>
-                  </div>
+    <div className="stat">
+      <span className="clabel">{t("compare.us_eu.stats.discoveryRate.label")}</span>
+      <p className="cvalue">
+        {t("compare.us_eu.stats.discoveryRate.value")}
+      </p>
+    </div>
 
-                  <div className="stat">
-                    <span className="clabel">Notes</span>
-                    <ul className="bullets">
-                      <li>Often funds heavy machinery</li>
-                      <li>Land leases &amp; insurance</li>
-                      <li>Donor amenities</li>
-                    </ul>
-                  </div>
-                </div>
-              </article>
+    <div className="stat">
+      <span className="clabel">{t("compare.us_eu.stats.notes.label")}</span>
+      <ul className="bullets">
+        <li>{t("compare.us_eu.stats.notes.bullets.0")}</li>
+        <li>{t("compare.us_eu.stats.notes.bullets.1")}</li>
+        <li>{t("compare.us_eu.stats.notes.bullets.2")}</li>
+      </ul>
+    </div>
+  </div>
+</article>
 
               {/* Patagonia */}
-              <article
-                className="compare-card v2 dino-card"
-                data-accent="patagonia"
-              >
-                <header className="compare-head v2 dino-head">
-                  <span className="flag">🇦🇷</span>
-                  <div className="head-text">
-                    <h4>APASUR/LACEV – Patagonia</h4>
-                  </div>
-                </header>
+           <article
+  className="compare-card v2 dino-card"
+  data-accent="patagonia"
+>
+  <header className="compare-head v2 dino-head">
+    <span className="flag">{t("compare1.patagonia.flag")}</span>
+    <div className="head-text">
+      <h4>{t("compare1.patagonia.title")}</h4>
+    </div>
+  </header>
 
-                <div className="compare-body">
-                  <div className="stat">
-                    <span className="clabel">Cost for 3 weeks/15+ people</span>
-                    <div className="chips">
-                      <span className="chip emphasis">$5,000~</span>
-                    </div>
-                  </div>
+  <div className="compare-body">
+    {/* Cost */}
+    <div className="stat">
+      <span className="clabel">{t("compare1.patagonia.stats.cost.label")}</span>
+      <div className="chips">
+        {t("compare1.patagonia.stats.cost.chips", { returnObjects: true }).map(
+          (chip, index) => (
+            <span key={index} className="chip emphasis">{chip}</span>
+          )
+        )}
+      </div>
+    </div>
 
-                  <div className="divider"></div>
+    <div className="divider"></div>
 
-                  <div className="stat">
-                    <span className="clabel">Discovery Rate</span>
-                    <p className="cvalue">
-                      <strong>70–80%</strong> yield new species or breakthrough
-                      fossils such as the first theropod nest in South America
-                      or the oldest tadpole fossil (161 million years old)
-                    </p>
-                    <div className="stat">
-                      <span className="clabel">Notes</span>
-                      <ul className="bullets">
-                        <li>Extremely lean operations</li>
-                        <li>Funds only science</li> 
-                        {/* <li>Donor amenities</li> */}
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </article>
+    {/* Discovery Rate */}
+    <div className="stat">
+      <span className="clabel">{t("compare1.patagonia.stats.discoveryRate.label")}</span>
+      <p className="cvalue">{t("compare1.patagonia.stats.discoveryRate.value")}</p>
+    </div>
+
+    {/* Notes */}
+    <div className="stat">
+      <span className="clabel">{t("compare1.patagonia.stats.notes.label")}</span>
+      <ul className="bullets">
+        {t("compare1.patagonia.stats.notes.bullets", { returnObjects: true }).map(
+          (note, index) => (
+            <li key={index}>{note}</li>
+          )
+        )}
+      </ul>
+    </div>
+  </div>
+</article>
             </div>
           </div>
         </div>

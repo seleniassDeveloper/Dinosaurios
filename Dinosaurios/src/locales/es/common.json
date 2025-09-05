@@ -1,6 +1,90 @@
 {
-
+   "currentProjects": {
+    "title": "Fósiles revolucionarios bajo estudio hoy, preparados para transformar la ciencia del mañana",
+    "kicker": "EL PRÓXIMO CAPÍTULO DEL DESCUBRIMIENTO",
+    "cards": [
+      {
+        "id": "cp1",
+        "heading": "El primer nido de terópodo en Sudamérica",
+        "text": "Hace 90 millones de años – siete huevos y los restos de una serpiente enrollada a su alrededor. ¿Era un depredador o un habitante del nido? La investigación está en curso."
+      },
+      {
+        "id": "cp2",
+        "heading": "60+ nuevos huesos de Bonapartenykus",
+        "text": "Un extraño dinosaurio de brazos cortos, que ayudará a completar la reconstrucción esquelética de esta enigmática especie."
+      },
+      {
+        "id": "cp3",
+        "heading": "Una nueva especie de dinosaurio carnívoro con músculos y tejidos sanguíneos preservados",
+        "text": "La primera evidencia de tejidos blandos en dinosaurios sudamericanos. Publicación prevista para finales de 2025."
+      },
+      {
+        "id": "cp4",
+        "heading": "60+ nuevos huesos de Patagopelta",
+        "text": "Un anquilosáurido de pequeño tamaño y uno de los más completos del continente."
+      },
+      {
+        "id": "cp5",
+        "heading": "Una nueva especie de raptor de la Patagonia",
+        "text": "Aporta información clave sobre los ecosistemas de alta latitud."
+      },
+      {
+        "id": "cp6",
+        "heading": "Un marsupial con colmillos de sable",
+        "text": "Del tamaño de un león con colmillos de 20 cm, que data de hace 20 millones de años. Publicación prevista para finales de 2025."
+      }
+    ]
+  },
+  "compare1": {
+  "patagonia": {
+    "flag": "🇦🇷",
+    "title": "APASUR/LACEV – Patagonia",
+    "stats": {
+      "cost": {
+        "label": "Costo por 3 semanas/15+ personas",
+        "chips": ["$5,000~"]
+      },
+      "discoveryRate": {
+        "label": "Tasa de descubrimiento",
+        "value": "70–80% produce nuevas especies o fósiles revolucionarios como el primer nido de terópodo en Sudamérica o el renacuajo más antiguo (161 millones de años)"
+      },
+      "notes": {
+        "label": "Notas",
+        "bullets": [
+          "Operaciones extremadamente eficientes",
+          "Fondos destinados únicamente a la ciencia"
+        ]
+      }
+    }
+  }
+},
+"compare": {
+  "us_eu": {
+    "flag": "🇺🇸/🇪🇺",
+    "title": "EE. UU. y Europa",
+    "stats": {
+      "cost": {
+        "label": "Costo por 3 semanas/15+ personas",
+        "chips": ["$75k–$100k", "$100k–$150k", "$150k–$250k"],
+        "notes": "Académico reducido / Estándar / Alto perfil"
+      },
+      "discoveryRate": {
+        "label": "Tasa de descubrimiento",
+        "value": "Mayormente especies conocidas, fragmentos o refinamientos; las nuevas especies son raras"
+      },
+      "notes": {
+        "label": "Notas",
+        "bullets": [
+          "A menudo financia maquinaria pesada",
+          "Arrendamientos de tierras e seguros",
+          "Comodidades para donantes"
+        ]
+      }
+    }
+  }
+},
   "outPerfoms": {
+    "why":"¿Por qué Argentina supera?",
     "factdes":"El histórico Proyecto de Dinosaurios China-Canadá (1986-1991) costó aproximadamente 11 millones de dólares a lo largo de seis años, aunque sólo dio como resultado 11 nuevas especies de dinosaurios.",
     "fun":"Hecho Gracioso",
     "p1": "Nueva especie de dinosaurio por 5.000 dólares en lugar de hasta 500.000 dólares",
@@ -136,7 +220,7 @@
     "expedition": "Expedition",
     "impact": "Impact",
     "press": "Press",
-    "donate": "Donate"
+    "donate": "Donar"
   },
   "nav": {
     "home": "Inicio",

@@ -1,6 +1,92 @@
 {
-
+  
+  "currentProjects": {
+    "title": "Groundbreaking Fossils Under Study Today, Preparing To Reshape Tomorrow’s Science",
+    "kicker": "THE NEXT CHAPTER OF DISCOVERY",
+    "cards": [
+      {
+        "id": "cp1",
+        "heading": "The First Theropod Nest in South America",
+        "text": "90 million years old – seven eggs and the remains of a snake curled around them. Was it a predator or a nest inhabitant? Research is underway."
+      },
+      {
+        "id": "cp2",
+        "heading": "60+ New Bones of Bonapartenykus",
+        "text": "A bizarre short-armed dinosaur, will help complete the skeletal reconstruction of this enigmatic species."
+      },
+      {
+        "id": "cp3",
+        "heading": "A New Carnivorous Dinosaur Species With Preserved Muscles and Blood Tissues",
+        "text": "The first evidence of soft tissues in South American dinosaurs. Publication expected by late 2025."
+      },
+      {
+        "id": "cp4",
+        "heading": "60+ New Bones of Patagopelta",
+        "text": "A small-size Ankylosaurid and one of the most complete of the continent."
+      },
+      {
+        "id": "cp5",
+        "heading": "A New Raptor Species from Patagonia",
+        "text": "Adding key insights into high-latitude ecosystems."
+      },
+      {
+        "id": "cp6",
+        "heading": "A Saber-Toothed Marsupial",
+        "text": "The size of a lion with 20 cm canines, dating back 20 million years. Publication expected by late 2025."
+      }
+    ]
+  
+},
+  "compare1": {
+  "patagonia": {
+    "flag": "🇦🇷",
+    "title": "APASUR/LACEV – Patagonia",
+    "stats": {
+      "cost": {
+        "label": "Cost for 3 weeks/15+ people",
+        "chips": ["$5,000~"]
+      },
+      "discoveryRate": {
+        "label": "Discovery Rate",
+        "value": "70–80% yield new species or breakthrough fossils such as the first theropod nest in South America or the oldest tadpole fossil (161 million years old)"
+      },
+      "notes": {
+        "label": "Notes",
+        "bullets": [
+          "Extremely lean operations",
+          "Funds only science"
+        ]
+      }
+    }
+  }
+},
+ "compare": {
+    "us_eu": {
+      "flag": "🇺🇸/🇪🇺",
+      "title": "US & Europe",
+      "stats": {
+        "cost": {
+          "label": "Cost for 3 weeks/15+ people",
+          "chips": ["$75k–$100k", "$100k–$150k", "$150k–$250k"],
+          "notes": "Lean Academic / Standard Baseline / High Profile"
+        },
+        "discoveryRate": {
+          "label": "Discovery Rate",
+          "value": "Mostly known species, fragments, or refinements; new species are rare"
+        },
+        "notes": {
+          "label": "Notes",
+          "bullets": [
+            "Often funds heavy machinery",
+            "Land leases & insurance",
+            "Donor amenities"
+          ]
+        }
+      }
+    }
+  },
   "outPerfoms": {
+    "why":"Why argentina outperforms",
      "fun":"Fun Fact",
      "factdes":"The historic China-Canada Dinosaur Project (1986 - 1991) cost roughly $11 million USD over the course of 6 years, though only resulting in 11 new dinosaur species.",
     "p1": "Nueva especie de dinosaurio por 5.000 dólares en lugar de hasta 500.000 dólares",
