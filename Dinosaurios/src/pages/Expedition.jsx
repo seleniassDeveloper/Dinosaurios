@@ -6,7 +6,7 @@ import maip2 from "../../src/imgCampanas/discoveryImg/discovery6.webp";
 import trex1 from "../../src/ImgCampanas/discoveryImg/discovery7.png";;
 import trex2 from "../../src/ImgCampanas/expedition.jpeg";
 import esqueleto from "../../src/ImgCampanas/esqueletodiscovery.jpg";
-
+import esqueletoDesco from "../../src/ImgCampanas/esqueletoDesco.png"
 
 import disc1 from "../../src/ImgCampanas/discoveryImg/discovery7.png";
 import disc2 from "../../src/ImgCampanas/discoveryImg/discovery8.jpg";
@@ -92,7 +92,7 @@ export default function Discoveries() {
             <div className="cascade">
               
               <img className="cascade-img img-a" src={maip2} alt="Cover A" />
-              <img className="cascade-img img-b" src={trex1} alt="Cover B" />
+              <img className="cascade-img img-b" src={esqueletoDesco} alt="Cover B" />
               <img className="cascade-img img-c" src={trex2} alt="Cover C" />
               <img className="cascade-img img-d" src={maip1} alt="Cover D" />
               <div className="cascade-shadow" />
