@@ -1,0 +1,111 @@
+/* ===== Paleta suave tipo “museo” ===== */
+:root{
+  --bone:#F7F2EA; --paper:#FFFEFC; --ink:#1F2937; --slate:#6B7280;
+  --sage:#7FA37D; --amber:#D97706; --tape:#EAD7A1; --shadow:0 16px 40px rgba(0,0,0,.06);
+}
+
+.pd-wrap{
+  background:
+    radial-gradient(1100px 380px at 50% -200px,#fff 0,var(--bone) 70%,transparent 100%);
+  padding: clamp(18px,3vw,28px) 0 40px;
+}
+
+.pd-container{
+  max-width: 1100px; margin: 0 auto;
+  display: grid; gap: 22px;
+  grid-template-columns: 1.1fr 1.3fr;
+  align-items: start;
+  padding: 0 clamp(12px,3vw,24px);
+}
+
+.pd-tape{
+  width: 160px; height: 24px; margin: 0 auto 8px; border-radius:6px;
+  background: repeating-linear-gradient(90deg,#f5e6ba 0 12px,#f1dca7 12px 24px);
+  box-shadow: 0 6px 18px rgba(0,0,0,.12);
+  opacity:.9;
+}
+
+/* ===== Galería tipo polaroid ===== */
+.pd-gallery{ display:grid; gap:16px; position: relative; }
+.pd-polaroid{
+  background: var(--paper); border:1px solid #e5e7eb; border-radius:12px;
+  padding:10px; box-shadow: var(--shadow); position: relative;
+}
+.pd-polaroid img{
+  width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:8px;
+}
+.pd-polaroid figcaption{
+  margin-top:8px; font-size:12px; color:var(--slate); text-align:center;
+}
+.pd-polaroid::before{
+  content:""; position:absolute; inset:auto 40% calc(100% + 6px) auto;
+  width:120px; height:18px; border-radius:6px; background: var(--tape);
+  transform: rotate(-4deg); box-shadow: 0 4px 10px rgba(0,0,0,.12);
+}
+.tilt-l{ transform: rotate(-2deg); }
+.tilt-r{ transform: rotate(1.6deg); }
+.tilt-s{ transform: rotate(-0.6deg); }
+
+.pd-chip{
+  position:absolute; top:10px; left:10px;
+  font-size:11px; font-weight:800; letter-spacing:.06em; text-transform:uppercase;
+  background:#e5f0e6; color:#0E5135; border:1px solid #cbe3cf; border-radius:999px;
+  padding:4px 8px; box-shadow: 0 2px 10px rgba(0,0,0,.06);
+}
+.pd-chip.amber{ background:#fff3dc; color:#7C3A02; border-color:#ffe0b0; }
+
+/* ===== Texto ===== */
+.pd-text{ display:grid; gap:14px; }
+.pd-head .pd-label{
+  display:inline-block; font-weight:900; font-size:12px; letter-spacing:.08em;
+  text-transform:uppercase; background:#eef2ff; color:#3730a3;
+  padding:6px 10px; border-radius:999px;
+}
+.pd-title{
+  margin:.4rem 0 0; font-size: clamp(28px,3.2vw,40px); font-weight:1000; letter-spacing:-.01em; color:var(--ink);
+}
+.pd-sub{ margin:6px 0 6px; color:#374151; font-weight:800; }
+
+.pd-quote{
+  margin:2px 0 6px; padding:12px 14px; font-style: italic; color:#0E5135;
+  background: linear-gradient(180deg,#E6F4EA,#EDEFE6);
+  border:1px solid #cfe9d7; border-radius:12px;
+}
+
+.pd-card{
+  background: linear-gradient(180deg,#FFFFFF,#FFFEFC);
+  border:1px solid #ece7dc; border-radius:14px; padding:12px 14px;
+  box-shadow: var(--shadow);
+}
+.pd-card p{ margin:0; line-height:1.65; color:var(--ink); }
+
+
+.pd-note{
+  background:#f7faf7; border:1px solid #d7ead9; border-radius:12px;
+  padding:10px 12px; color:#245b33; font-size:14px;
+}
+.pd-badge{
+  display:inline-block; margin-bottom:6px; font-size:11px; font-weight:900;
+  letter-spacing:.06em; text-transform:uppercase; color:#0E5135;
+  background:#e8f6ed; border:1px solid #cbe3cf; border-radius:999px; padding:3px 8px;
+}
+
+/* Destacado final */
+.pd-highlight{
+  border-left:6px solid var(--amber);
+  background: linear-gradient(180deg,#FFF7ED,#FFF3E6);
+  border-radius:12px; padding:12px 14px; color:#7C3A02; font-weight:700;
+  box-shadow: var(--shadow);
+}
+.pd-highlight p{ margin:0; }
+
+/* Créditos */
+.pd-credits{
+  display:flex; gap:12px; flex-wrap:wrap; color:var(--slate); font-style: italic;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 980px){
+  .pd-container{ grid-template-columns: 1fr; }
+  .pd-card.grid2{ grid-template-columns: 1fr; }
+}

@@ -1,4 +1,20 @@
-{
+{   "discoveries": [
+    {
+      "title": "Un ovíparo de 70 millones de años reescribe la evolución",
+      "subtitle": "Descubrimiento destacado #4",
+      "name": "Patagorhynchus",
+      "paragraphs": [
+        "En 2019, nuestro equipo halló un diminuto molar en la Formación Chorrillo de la Patagonia. Pertenecía a Patagorhynchus pascuali, el pariente más antiguo del ornitorrinco en Sudamérica, con 70 millones de años de antigüedad.",
+        "El descubrimiento demostró que los monotremas —mamíferos que ponen huevos como el ornitorrinco y el equidna— vivieron en Sudamérica mucho antes de lo pensado, junto a los dinosaurios. Antes se creía que provenían solo de Australia tras su extinción.",
+        "Nombrado en honor al paleomastozólogo argentino Rosendo Pascual, Patagorhynchus habitaba humedales y probablemente comía caracoles y larvas, como su descendiente moderno. Su presencia revela que los monotremas se extendieron por el sur de Gondwana, conectando Sudamérica, Australia y la Antártida.",
+        "Este único diente no solo amplió el registro fósil de la Patagonia — reescribió la historia evolutiva de los monotremas, revelando que el antepasado del ornitorrinco actual era patagónico."
+     ],
+      "credits": [
+        "Ilustración de Santiago Miner",
+        "Ilustración De Gabriel Lio"
+      ]
+    }
+  ],
    "currentProjects": {
     "title": "Fósiles revolucionarios bajo estudio hoy, preparados para transformar la ciencia del mañana",
     "kicker": "EL PRÓXIMO CAPÍTULO DEL DESCUBRIMIENTO",
@@ -93,23 +109,23 @@
     "discovery": [
       {
         "pill": "Ventaja de Talento",
-        "label": "Paleontólogos asalariados",
+        "label": "Paleontólogos asalariados que trabajan en instituciones de clase mundial",
         "description": "Paleontólogos asalariados trabajando en instituciones de clase mundial."
       },
       {
         "pill": "Ventaja Geológica",
-        "label": "Fósiles en superficie",
-        "description": "Abundantes fósiles expuestos en la superficie, no se requieren excavadoras."
+        "ladescriptionbel": "Fósiles en superficie",
+        "label": "Abundantes fósiles expuestos en la superficie, no se requieren excavadoras."
       },
       {
         "pill": "Ventaja Legal",
-        "label": "Propiedad estatal de fósiles",
-        "description": "La propiedad estatal de los fósiles evita costosas disputas por tierras privadas."
+        "description": "Propiedad estatal de fósiles",
+        "label": "La propiedad estatal de los fósiles evita costosas disputas por tierras privadas."
       },
       {
         "pill": "Ventaja de Costos",
-        "label": "Logística eficiente",
-        "description": "Sin primas de seguros masivas; logística simplificada y económica."
+        "description": "Logística eficiente",
+        "label": "Sin primas de seguros masivas; logística simplificada y económica."
       }
     ]
 },
@@ -120,7 +136,7 @@
     "hero": {
       "title1": "de clase mundial",
       "title2": "descubrimientos",
-      "subtitle_line1": "a 1/30 - 1/100 del costo",
+      "subtitle_line1": "A 1/30 - 1/100 del Costo",
       "subtitle_line2": "Con la Tasa de Exito más Alta del Mundo",
       "lead": "La profunda experiencia de nuestro equipo y la riqueza de posibles hallazgos en la Patagonia (donde los fósiles a menudo afloran en superficie) han permitido una tasa de éxito del 70–80% en encontrar nuevas especies o descubrimientos importantes en cada excavación."
     },
@@ -158,6 +174,7 @@
   },
   "press": {
     "title": "Kit de medios ",
+    "title2":"Prensa y colaboraciones",
     "contactUs": "Contáctanos",
     "name": "Nombre Completo",
     "email": "Correo electrónico",

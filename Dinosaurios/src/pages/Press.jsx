@@ -55,7 +55,7 @@ export default function DiscoveriesLanding() {
       {/* HERO */}
       <section className="py-5 container" aria-labelledby="dl-hero-title">
         <h1 id="dl-hero-title" className="dl-title">
-          {t("press.title").toUpperCase()}
+          {t("press.title2").toUpperCase()}
         </h1>
       </section>
 

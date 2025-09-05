@@ -26,6 +26,7 @@ import LineaTiempo from "../components/lineaTiempo";
 import { Outperforms } from "../components/outperforms";
 import { CurrentProjects } from "../components/currentProjects";
 import { useTranslation } from "react-i18next";
+import DescubrimientoDescovery from "./componentes/descubrimientoDescovery";
 
 export default function Discoveries() {
   const { t } = useTranslation();
@@ -188,6 +189,10 @@ export default function Discoveries() {
           </div>
         </div>
       </section>
+
+      <div>
+        <DescubrimientoDescovery/>
+      </div>
 
       <div>
         <LineaTiempo />

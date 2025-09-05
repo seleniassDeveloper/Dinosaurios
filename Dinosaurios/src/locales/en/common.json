@@ -1,5 +1,20 @@
 {
-  
+   "discoveries": [
+    {
+      "title": "70-Million-Year-Old Egg-Layer Rewrites Evolution",
+      "subtitle": "Discovery highlight #4",
+      "name": "Patagorhynchus",
+      "paragraphs": [
+        "In 2019, our team unearthed a tiny molar in Patagonia’s Chorrillo Formation. It belonged to Patagorhynchus pascuali, the oldest platypus relative in South America, dating back 70 million years.",
+        "This discovery proved that monotremes — the egg-laying mammals that include today’s platypus and echidna — lived in South America far earlier than once believed (alongside dinosaurs). Previously, scientists thought they came only from Australia after the dinosaurs’ extinction.",
+        "Named for Argentine paleomammalogist Rosendo Pascual, Patagorhynchus lived in wetlands and likely fed on snails and insect larvae, much like its modern descendant. Its presence shows that monotremes once ranged across southern Gondwana, linking South America, Australia, and Antarctica.",
+        "This single tooth didn’t just add to Patagonia’s fossil record — it rewrote the evolutionary history of monotremes, revealing that the ancestor of today’s platypus was Patagonian."
+      ],
+      "credits": [
+        "Artwork by Santiago Miner"
+      ]
+    }
+  ],
   "currentProjects": {
     "title": "Groundbreaking Fossils Under Study Today, Preparing To Reshape Tomorrow’s Science",
     "kicker": "THE NEXT CHAPTER OF DISCOVERY",
@@ -89,9 +104,9 @@
     "why":"Why argentina outperforms",
      "fun":"Fun Fact",
      "factdes":"The historic China-Canada Dinosaur Project (1986 - 1991) cost roughly $11 million USD over the course of 6 years, though only resulting in 11 new dinosaur species.",
-    "p1": "Nueva especie de dinosaurio por 5.000 dólares en lugar de hasta 500.000 dólares",
-    "p2": "En EE. UU. y Europa, una campaña de 150.000 dólares podría descubrir uno o dos especímenes de interés científico, generalmente de especies conocidas.",
-    "p3": "En la Patagonia, 5.000 dólares financian una campaña que a menudo da como resultado descubrimientos pioneros a nivel mundial, publicados en las revistas más prestigiosas, y que reescriben la historia paleontológica.",
+    "p1": "New dinosaur species for $5,000 instead of up to $500,000",
+   "p2": "In the US and Europe, a $150,000 campaign might uncover one or two specimens of scientific interest, usually of known species.",
+    "p3": "In Patagonia, $5,000 funds a campaign that often results in world-leading discoveries, published in the most prestigious journals, and rewrites paleontological history.",
     "discovery": [
        {
       "pill": "Talent Advantage",
@@ -162,6 +177,7 @@
   },
   "press": {
     "title": "Media Kit ",
+    "title2":"Press & Collaborations",
     "contactUs": "Contact Us",
     "name": "Full Name",
     "email": "Email",
