@@ -35,20 +35,31 @@
   grid-template-columns: repeat(12, 1fr);
   gap: 14px;
 }
+
+/* Card base */
 .cp-card{
   grid-column: span 6;
   position: relative;
-  padding: 16px;
+  padding: 0;                     /* usamos overlay para el contenido */
   border-radius: 16px;
   background: linear-gradient(180deg,#ffffff,#FCFBF9);
-  border: 1px dashed rgba(217,119,6,.45);     /* dashed = unpublished */
+  border: 1px dashed rgba(217,119,6,.45);   /* dashed = unpublished */
   box-shadow: 0 6px 20px rgba(0,0,0,.05);
   overflow: hidden;
+
+  /* — Soporte de fondo de imagen — */
+  background-size: cover;         /* que ocupe toda la tarjeta */
+  background-position: center;    /* centrado */
+  background-repeat: no-repeat;
+  min-height: 340px;              /* altura mínima agradable */
+  display: flex;
+  align-items: flex-end;          /* overlay al pie */
+  isolation: isolate;             /* asegura capas correctas */
 }
 
-/* Ribbon “Under study / Unpublished” (no modifica tu texto) */
+/* Ribbon “Research In Progress” */
 .cp-card[data-status="unpublished"]::after{
-  content: "Under study · Unpublished";
+  content: "Research In Progress";
   position: absolute;
   top: 12px; right: -40px;
   transform: rotate(14deg);
@@ -61,32 +72,49 @@
   border: 1px solid rgba(217,119,6,.35);
   border-radius: 999px;
   box-shadow: 0 3px 10px rgba(124,58,2,.12);
+  z-index: 3;
 }
 
-/* Header con “estratos” sutiles (reutiliza dino theme si lo tienes) */
+/* Header “estratos” sutil — más transparente para no tapar la foto */
 .cp-card::before{
   content:"";
   position:absolute; left:0; right:0; top:0; height:42px;
   background:
-    linear-gradient(180deg,#f9fafb,#f3f4f6),
+    linear-gradient(180deg, rgba(249,250,251,.84), rgba(243,244,246,.50)),
     repeating-linear-gradient( to right,
       rgba(192,125,82,.06) 0 18px,
       rgba(156,175,136,.06) 18px 36px,
       rgba(43,47,54,.04) 36px 54px);
-  opacity:.8;
+  z-index: 2;
 }
-.cp-card > *:first-child{ margin-top: 46px; } /* deja espacio al header decorativo */
+
+/* Overlay para el texto sobre la imagen */
+.cp-overlay{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 16px 16px 18px;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.55) 100%);
+  color: #fff;
+  border-radius: 0 0 16px 16px;
+}
 
 /* Tipografía del contenido EXACTO */
+.cp-heading{
+  margin: 0 0 8px 0;
+  font-size: 1.15rem;
+  font-weight: 900;
+  letter-spacing: -.01em;
+}
 .cp-text{
   margin: 0 0 8px 0;
-  color: #1f2937;
+  color: #f3f4f6;
   font-size: 15px;
   line-height: 1.55;
 }
 .cp-note{
   margin: 2px 0 0 0;
-  color: #6b7280;
+  color: #e5e7eb;
   font-size: 13px;
   font-style: italic;
 }
@@ -94,10 +122,11 @@
 /* Hover sutil */
 .cp-card:hover{
   transform: translateY(-2px);
-  box-shadow: 0 10px 28px rgba(0,0,0,.08);
+  box-shadow: 0 10px 28px rgba(0,0,0,.10);
 }
 
 /* Responsive */
 @media (max-width: 992px){
   .cp-card{ grid-column: span 12; }
+  .cp-card{ min-height: 300px; }
 }

@@ -17,7 +17,7 @@ import carusel2 from "../../src/ImgCampanas/discoveryImg/carusel2.jpg";
 import carusel3 from "../../src/ImgCampanas/discoveryImg/carusel3.jpg";
 import carusel4 from "../../src/ImgCampanas/discoveryImg/carusel4.jpg";
 
-
+// import mainP from "../../src/ImgCampanas/mainP.JPG"
 
 
 

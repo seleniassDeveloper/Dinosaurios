@@ -1,13 +1,16 @@
 import React from "react";
-import maip1 from "../../src/ImgCampanas/expedition.jpeg";
-import maip2 from "../../src/imgCampanas/expedition2.jpg";
-import trex1 from "../../src/ImgCampanas/expedition3.jpeg";
-import trex2 from "../../src/ImgCampanas/expedition4.jpg";
+// import maip1 from "../../src/ImgCampanas/expedition.jpeg";
+// import maip2 from "../../src/imgCampanas/expedition2.jpg";
+
 import "../css/outPerforms.css";
 import { useTranslation } from "react-i18next";
+import mainImg from "../ImgCampanas/mainP.JPG";
+import cuadro from "../ImgCampanas/cuadro.jpg";
+import cuadro2 from "../ImgCampanas/cuadro2.jpg";
+import cuadro3 from "../ImgCampanas/cuadro3.jpg";
 
 export function Outperforms() {
-   const { t } = useTranslation();
+  const { t } = useTranslation();
   return (
     <main className="whyar-page py-4 dino-theme container">
       {/* Title */}
@@ -20,61 +23,69 @@ export function Outperforms() {
         {/* Left: big image + thumbnails */}
         <div className="col-lg-7">
           <div className="whyar-hero-img">
-            <img src={maip1} alt="Fieldwork main" />
+            <img src={mainImg} alt="Fieldwork main" />
           </div>
           <div className="whyar-thumbs mt-3">
-            <img src={maip2} alt="thumb 1" />
-            <img src={trex1} alt="thumb 2" />
-            <img src={trex2} alt="thumb 3" />
+            <img src={cuadro} alt="thumb 1" />
+            <img src={cuadro2} alt="thumb 2" />
+            <img src={cuadro3} alt="thumb 3" />
           </div>
         </div>
 
         {/* Right: text meta + CTA */}
         <div className="col-lg-5">
-        
-
           {/* Mini–stack (mismo texto) */}
           <div className="whyar-stats ">
             <div className="stat-chip ">
               <span className="stat-kicker">{t("outPerfoms.p1")}</span>
             </div>
-            <p className="m-0">
-    {t("outPerfoms.p2")}
-            </p>
-            <p className="m-0">
-           
-            </p>
-            <p className="accent m-0">
-               {t("outPerfoms.p3")}
-            </p>
+            <p className="m-0">{t("outPerfoms.p2")}</p>
+            <p className="m-0"></p>
+            <p className="accent m-0">{t("outPerfoms.p3")}</p>
           </div>
 
           {/* Meta pills */}
-         <div className="whyar-meta">
-  <div className="whyar-meta-row">
-    <span className="whyar-pill">{t("outPerfoms.discovery.0.pill")}</span>
-    <span className="whyar-meta-label">{t("outPerfoms.discovery.0.label")}</span>
-    {/* <p>{t("outPerfoms.discovery.0.description")}</p> */}
-  </div>
+          <div className="whyar-meta">
+            <div className="whyar-meta-row">
+              <span className="whyar-pill">
+                {t("outPerfoms.discovery.0.pill")}
+              </span>
+              <span className="whyar-meta-label">
+                {t("outPerfoms.discovery.0.label")}
+              </span>
+              {/* <p>{t("outPerfoms.discovery.0.description")}</p> */}
+            </div>
 
-  <div className="whyar-meta-row">
-    <span className="whyar-pill">{t("outPerfoms.discovery.1.pill")}</span>
-    <span className="whyar-meta-label">{t("outPerfoms.discovery.1.label")}</span>
-    {/* <p>{t("outPerfoms.discovery.1.description")}</p> */}
-  </div>
+            <div className="whyar-meta-row">
+              <span className="whyar-pill">
+                {t("outPerfoms.discovery.1.pill")}
+              </span>
+              <span className="whyar-meta-label">
+                {t("outPerfoms.discovery.1.label")}
+              </span>
+              {/* <p>{t("outPerfoms.discovery.1.description")}</p> */}
+            </div>
 
-  <div className="whyar-meta-row">
-    <span className="whyar-pill">{t("outPerfoms.discovery.2.pill")}</span>
-    <span className="whyar-meta-label">{t("outPerfoms.discovery.2.label")}</span>
-    {/* <p>{t("outPerfoms.discovery.2.description")}</p> */}
-  </div>
+            <div className="whyar-meta-row">
+              <span className="whyar-pill">
+                {t("outPerfoms.discovery.2.pill")}
+              </span>
+              <span className="whyar-meta-label">
+                {t("outPerfoms.discovery.2.label")}
+              </span>
+              {/* <p>{t("outPerfoms.discovery.2.description")}</p> */}
+            </div>
 
-  <div className="whyar-meta-row">
-    <span className="whyar-pill">{t("outPerfoms.discovery.3.pill")}</span>
-    <span className="whyar-meta-label">{t("outPerfoms.discovery.3.label")}</span>
-    {/* <p>{t("outPerfoms.discovery.3.description")}</p> */}
-  </div>
-</div>
+            <div className="whyar-meta-row">
+              <span className="whyar-pill">
+                {t("outPerfoms.discovery.3.pill")}
+              </span>
+              <span className="whyar-meta-label">
+                {t("outPerfoms.discovery.3.label")}
+              </span>
+              {/* <p>{t("outPerfoms.discovery.3.description")}</p> */}
+            </div>
+          </div>
 
           {/* CTA */}
           <div className="d-flex align-items-center gap-2 mt-3">
@@ -90,9 +101,8 @@ export function Outperforms() {
             {/* Fun Fact */}
             <div className="whyar-funfact v2 dino-funfact">
               <p className="m-0">
-               <b className="me-2">{t("outPerfoms.fun")}:</b> 
-               {t("outPerfoms.factdes")}
-             
+                <b className="me-2">{t("outPerfoms.fun")}:</b>
+                {t("outPerfoms.factdes")}
               </p>
             </div>
 
@@ -170,16 +180,19 @@ export function Outperforms() {
                       fossils such as the first theropod nest in South America
                       or the oldest tadpole fossil (161 million years old)
                     </p>
+                    <div className="stat">
+                      <span className="clabel">Notes</span>
+                      <ul className="bullets">
+                        <li>Extremely lean operations</li>
+                        <li>Funds only science</li> 
+                        {/* <li>Donor amenities</li> */}
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </article>
             </div>
-
-            
           </div>
-
-      
-         
         </div>
       </section>
     </main>
