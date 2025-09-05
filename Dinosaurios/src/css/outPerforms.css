@@ -251,6 +251,26 @@
   padding-left: 22px;
   margin: 2px 0;
 }
+
+.whyar-meta-row p {
+  margin: 6px 0 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #2e2e2e;
+  font-weight: 400;
+  background: #f9f9f9;
+  border-left: 4px solid #386641; /* verde científico */
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.whyar-meta-row p:hover {
+  background: #f0fdf4; /* verde muy suave */
+  transform: translateX(2px);
+}
+
 .bullets li::before {
   content: "";
   position: absolute;

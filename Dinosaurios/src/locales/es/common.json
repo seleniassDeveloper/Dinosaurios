@@ -1,5 +1,38 @@
 {
-   "discovery": {
+
+  "outPerfoms": {
+    "factdes":"El histórico Proyecto de Dinosaurios China-Canadá (1986-1991) costó aproximadamente 11 millones de dólares a lo largo de seis años, aunque sólo dio como resultado 11 nuevas especies de dinosaurios.",
+    "fun":"Hecho Gracioso",
+    "p1": "Nueva especie de dinosaurio por 5.000 dólares en lugar de hasta 500.000 dólares",
+    "p2": "En EE. UU. y Europa, una campaña de 150.000 dólares podría descubrir uno o dos especímenes de interés científico, generalmente de especies conocidas.",
+    "p3": "En la Patagonia, 5.000 dólares financian una campaña que a menudo da como resultado descubrimientos pioneros a nivel mundial, publicados en las revistas más prestigiosas, y que reescriben la historia paleontológica.",
+    "discovery": [
+      {
+        "pill": "Ventaja de Talento",
+        "label": "Paleontólogos asalariados",
+        "description": "Paleontólogos asalariados trabajando en instituciones de clase mundial."
+      },
+      {
+        "pill": "Ventaja Geológica",
+        "label": "Fósiles en superficie",
+        "description": "Abundantes fósiles expuestos en la superficie, no se requieren excavadoras."
+      },
+      {
+        "pill": "Ventaja Legal",
+        "label": "Propiedad estatal de fósiles",
+        "description": "La propiedad estatal de los fósiles evita costosas disputas por tierras privadas."
+      },
+      {
+        "pill": "Ventaja de Costos",
+        "label": "Logística eficiente",
+        "description": "Sin primas de seguros masivas; logística simplificada y económica."
+      }
+    ]
+},
+  "timeline": {
+    "title": "Campana Exitosa en un: 70-80% "
+  },
+  "discovery": {
     "hero": {
       "title1": "de clase mundial",
       "title2": "descubrimientos",
@@ -40,21 +73,21 @@
     }
   },
   "press": {
-      "title": "Kit de medios ",
-      "contactUs": "Contáctanos",
-      "name": "Nombre Completo",
-      "email": "Correo electrónico",
-      "organization": "Organización (opcional)",
-      "message": "Mensaje",
-      "placeholderName": "Juan Pérez",
-      "placeholderEmail": "juan@ejemplo.com",
-      "placeholderOrg": "Museo / Universidad / Medio",
-      "placeholderMessage": "¿Cómo podemos colaborar?",
-      "send": "Enviar Mensaje",
-      "emailUs": "Envianos un Email Directamente",
-      "sent": "¡Gracias! Nos pondremos en contacto contigo pronto.",
-      "note": "El paquete de información incluye imágenes libres de derechos para kits de prensa."
-    },
+    "title": "Kit de medios ",
+    "contactUs": "Contáctanos",
+    "name": "Nombre Completo",
+    "email": "Correo electrónico",
+    "organization": "Organización (opcional)",
+    "message": "Mensaje",
+    "placeholderName": "Juan Pérez",
+    "placeholderEmail": "juan@ejemplo.com",
+    "placeholderOrg": "Museo / Universidad / Medio",
+    "placeholderMessage": "¿Cómo podemos colaborar?",
+    "send": "Enviar Mensaje",
+    "emailUs": "Envianos un Email Directamente",
+    "sent": "¡Gracias! Nos pondremos en contacto contigo pronto.",
+    "note": "El paquete de información incluye imágenes libres de derechos para kits de prensa."
+  },
   "impact": {
     "title": "Impacto en la comunidad científica",
     "description": "Con más de 200 iniciativas de divulgación entre 2005 y 2025, nuestro equipo ha hecho que la ciencia sea accesible al público y ha contribuido al desarrollo educativo.",
@@ -69,18 +102,18 @@
   "about": {
     "hero": "Descubrimientos de clase mundial a un costo entre 1/30 y 1/100 del costo con la tasa de éxito más alta del mundo",
     "whoTitle": "Quiénes somos?",
-    "antartida":"Hemos firmado un acuerdo exclusivo de cinco años con el gobierno argentino para realizar expediciones paleontológicas en la Antártida (2027–2032), en colaboración con el Instituto Antártico Argentino y el CONICET.",
-    "ourMission":"NUESTRA MISIÓN",
-    "newDino":"DESCUBRIR NUEVOS FÓSILES DE DINOSAURIOS QUE HABITARON EL CONTINENTE HELADO HACE 70 MILLONES DE AÑOS",
+    "antartida": "Hemos firmado un acuerdo exclusivo de cinco años con el gobierno argentino para realizar expediciones paleontológicas en la Antártida (2027–2032), en colaboración con el Instituto Antártico Argentino y el CONICET.",
+    "ourMission": "NUESTRA MISIÓN",
+    "newDino": "DESCUBRIR NUEVOS FÓSILES DE DINOSAURIOS QUE HABITARON EL CONTINENTE HELADO HACE 70 MILLONES DE AÑOS",
     "whoP1": "APASUR es una ONG paleontológica sin fines de lucro con base en Argentina. Desde hace más de 20 años, realizamos excavaciones en la Patagonia, los Andes y la Antártida—recuperando, estudiando y difundiendo el patrimonio fósil de Sudamérica.",
     "whoP2": "Nuestra misión es preservar y comprender la vida prehistórica, al mismo tiempo que promovemos la ciencia mediante la educación, el trabajo de campo y la colaboración internacional.",
-   "whoP3":"Su creación responde a la necesidad de realizar proyectos de promoción, investigación, comunicación pública y conservación del patrimonio paleontológico de Argentina y Sudamérica.",
+    "whoP3": "Su creación responde a la necesidad de realizar proyectos de promoción, investigación, comunicación pública y conservación del patrimonio paleontológico de Argentina y Sudamérica.",
     "teamTitle": "Nuestro Equipo",
     "teamP1": "Somos uno de los equipos de paleontología más destacados de Argentina, compuesto por más de 11 investigadores, más de 5 técnicos profesionales, más de 2 divulgadores científicos y educativos, y más de 10 estudiantes. Nuestro equipo se encuentra en el Museo de Ciencias Naturales Bernardino Rivadavia (Buenos Aires). Con más de 400 artículos de investigación publicados en revistas nacionales e internacionales y más de 20 años de experiencia, nuestro equipo ha descubierto y nombrado más del 26 % de las nuevas especies de dinosaurios en Sudamérica entre 2005 y 2025.",
     "teamP2": "A lo largo de los años, descubrimos y nombramos 33 especies de dinosaurios en Argentina (el 22% de todas las especies conocidas en el país), además de 5 en la Antártida y otras partes de América Latina. Publicamos más de 400 artículos científicos y aparecimos 5 veces en la portada de la revista Nature.",
-   "teamP3":"Con más de 400 artículos de investigación publicados en revistas nacionales e internacionales y más de 20 años de experiencia, nuestro equipo ha descubierto y nombrado más del 26% de las nuevas especies de dinosaurios en América del Sur entre 2005 y 2025.",
+    "teamP3": "Con más de 400 artículos de investigación publicados en revistas nacionales e internacionales y más de 20 años de experiencia, nuestro equipo ha descubierto y nombrado más del 26% de las nuevas especies de dinosaurios en América del Sur entre 2005 y 2025.",
     "excavationP1": "El 70-80% de nuestras campañas de excavación resultaron en nuevas especies de dinosaurios o descubrimientos revolucionarios.",
-   "excavationP2": "33 especies nombradas, 400+ publicaciones, 5 portadas en Nature.",
+    "excavationP2": "33 especies nombradas, 400+ publicaciones, 5 portadas en Nature.",
     "button": "Ver más",
     "antarcticaTitle": "Exploración en la Antártida",
     "antarcticaP1": "En alianza con el Instituto Antártico Argentino y CONICET, lanzamos un proyecto a largo plazo para buscar fósiles de dinosaurios cerca de la Cuenca James Ross, en condiciones extremas y con apoyo logístico de las bases científicas.",
@@ -90,7 +123,6 @@
     "impactP1": "Más allá de la ciencia, compartimos nuestros descubrimientos con escuelas rurales, museos y el público general. Diseñamos exhibiciones, damos charlas y creamos materiales educativos.",
     "impactP2": "Nuestro trabajo inspira a futuras generaciones de científicos y promueve el valor del patrimonio fósil argentino."
   },
-
   "mainSection": {
     "kicker": "La ciencia impulsada por la exploración",
     "titleStart": "Sé parte de la historia.",
@@ -106,67 +138,58 @@
     "press": "Press",
     "donate": "Donate"
   },
- "nav": {
-  "home": "Inicio",
-  "about": "Sobre Nosotros",
-  "expedition": "Descubrimientos",
-  "live": "Excavación en Vivo",
-  "press": "Prensa",
-  "donate": "Donar"
-},
-
-
-
-
-
-"countdown": {
-  "heading": "EXCAVACIÓN EN VIVO",
-  "date": "Comienza el 25 de septiembre de 2025",
-  "days": "Días",
-  "hours": "Horas",
-  "minutes": "Minutos",
-  "seconds": "Segundos"
-},
-"social": {
-  "follow": "Síguenos en nuestras redes sociales:"
-},
-
-
-"partners": {
-  "title": "Prensa y Colaboradores",
-  "alt": "Logotipos de nuestra presencia en prensa y entidades colaboradoras"
-},
-
-"welcome": {
-  "title": "Completando las páginas perdidas de la evolución,",
-  "titleHighlight": "un fósil a la vez — en la Patagonia.",
-  "p1": "Somos un equipo de paleontólogos, profesores, estudiantes y naturalistas del Laboratorio de Anatomía Comparada y Evolución de los Vertebrados (LACEV).",
-  "p2": "Desde hace más de 20 años buscamos, extraemos, preparamos, investigamos y comunicamos públicamente la paleontología en la Patagonia, descubriendo el 26% de las nuevas especies de dinosaurios de Sudamérica.",
-  "p4": "Se descubre el 26 % de las nuevas especies de dinosaurios en Sudamérica.", 
-  "p3": "Hemos descubierto el 26% de las nuevas especies de dinosaurios en Sudamérica."
-},
-
-"hero": {
-  "alt": "Excavación",
-  "title": "Sé parte de la historia.",
-  "highlight": "Míralo en vivo",
-  "description": "Transmitiremos en vivo desde Río Negro, Argentina, mientras nuestro equipo busca nuevas especies de dinosaurios. Por primera vez, podrás presenciar una excavación en tiempo real: cada hueso, cada hallazgo, mientras apoyas directamente una de las campañas de paleontología más innovadoras del mundo.",
-  "quote": "Con más de 40 especies descubiertas, nuestro equipo lidera la Paleontología en Sudamérica",
-  "urgency": {
-    "prefix": "Solo",
-    "days": "quedan 7 días",
-    "suffix": "para participar en el sorteo de un fósil original"
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Nosotros",
+    "expedition": "Descubrimientos",
+    "live": "Excavación en Vivo",
+    "press": "Prensa",
+    "donate": "Donar"
   },
-  "cta1": "Ver transmisión en vivo",
-  "cta2": "Ver plan de expedición"
-},
+  "countdown": {
+    "heading": "EXCAVACIÓN EN VIVO",
+    "date": "Comienza el 25 de septiembre de 2025",
+    "days": "Días",
+    "hours": "Horas",
+    "minutes": "Minutos",
+    "seconds": "Segundos"
+  },
+  "social": {
+    "follow": "Síguenos en nuestras redes sociales:"
+  },
+  "partners": {
+    "title": "Prensa y Colaboradores",
+    "alt": "Logotipos de nuestra presencia en prensa y entidades colaboradoras"
+  },
+  "welcome": {
+    "title": "Completando las páginas perdidas de la evolución,",
+    "titleHighlight": "un fósil a la vez — en la Patagonia.",
+    "p1": "Somos un equipo de paleontólogos, profesores, estudiantes y naturalistas del Laboratorio de Anatomía Comparada y Evolución de los Vertebrados (LACEV).",
+    "p2": "Desde hace más de 20 años buscamos, extraemos, preparamos, investigamos y comunicamos públicamente la paleontología en la Patagonia, descubriendo el 26% de las nuevas especies de dinosaurios de Sudamérica.",
+    "p4": "Se descubre el 26 % de las nuevas especies de dinosaurios en Sudamérica.",
+    "p3": "Hemos descubierto el 26% de las nuevas especies de dinosaurios en Sudamérica."
+  },
+  "hero": {
+    "alt": "Excavación",
+    "title": "Sé parte de la historia.",
+    "highlight": "Míralo en vivo",
+    "description": "Transmitiremos en vivo desde Río Negro, Argentina, mientras nuestro equipo busca nuevas especies de dinosaurios. Por primera vez, podrás presenciar una excavación en tiempo real: cada hueso, cada hallazgo, mientras apoyas directamente una de las campañas de paleontología más innovadoras del mundo.",
+    "quote": "Con más de 40 especies descubiertas, nuestro equipo lidera la Paleontología en Sudamérica",
+    "urgency": {
+      "prefix": "Solo",
+      "days": "quedan 7 días",
+      "suffix": "para participar en el sorteo de un fósil original"
+    },
+    "cta1": "Ver transmisión en vivo",
+    "cta2": "Ver plan de expedición"
+  },
   "goal": {
     "kicker": "Our track record",
     "title": "20+ years of discoveries that open new paths",
     "desc": {
       "p1": "We are 11 researchers, 5 professional technicians, 2 educators/science communicators, and 10+ students based at the Argentine Museum of Natural Sciences (Buenos Aires). We’ve achieved 5 Nature covers and 400+ scientific publications.",
       "p2": "Over the past two decades we discovered and named 33 new dinosaur species in Argentina (22% of the country’s known species) plus 5 additional species in Antarctica, Brazil, Chile, and Ecuador. We also described 20+ other Mesozoic vertebrates (mammals, marine reptiles, crocodiles, turtles, and more).",
-   "p3": "Highlights: Maip macrothorax (a 10 m predator with a claw over 30 cm), Patagorhynchus (the oldest South American platypus), a near-complete skeleton of Taurovenator violantei, and the world’s oldest tadpole. Supported by organizations such as National Geographic (4), The Explorers Club (3), and Jurassic Foundation (3)."
+      "p3": "Highlights: Maip macrothorax (a 10 m predator with a claw over 30 cm), Patagorhynchus (the oldest South American platypus), a near-complete skeleton of Taurovenator violantei, and the world’s oldest tadpole. Supported by organizations such as National Geographic (4), The Explorers Club (3), and Jurassic Foundation (3)."
     },
     "badges": {
       "natgeo": "National Geographic (4)",
@@ -209,9 +232,6 @@
       "nest": "Nest"
     }
   },
-
-  
-
   "cta": {
     "title": "Make history with us",
     "copy": "We comply with the Argentine National Law and have official permits. Own laboratory for preparation.",
@@ -222,12 +242,12 @@
     "title": "Dinosaurs"
   },
   "exp": {
-"hero": {
-  "kicker": "Science powered by exploration",
-  "titleBefore": "Be part of history.",
-  "titleHighlight": "Watch live",
-  "titleAfter": "as we search for a new dinosaur species."
-},
+    "hero": {
+      "kicker": "Science powered by exploration",
+      "titleBefore": "Be part of history.",
+      "titleHighlight": "Watch live",
+      "titleAfter": "as we search for a new dinosaur species."
+    },
     "methods": {
       "title": "How we work in the field",
       "intro": "A full cycle: from prospecting to peer-reviewed science and outreach.",

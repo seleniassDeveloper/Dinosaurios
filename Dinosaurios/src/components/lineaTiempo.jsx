@@ -7,6 +7,7 @@ import dino2 from "../ImgCampanas/imgDibujosDinosaurios/dinosaurio2.jpeg";
 import dino3 from "../ImgCampanas/imgDibujosDinosaurios/dinosaurio3.png";
 import dino4 from "../ImgCampanas/imgDibujosDinosaurios/dinosaurio4.png";
 import dino5 from "../ImgCampanas/imgDibujosDinosaurios/dinosaurio5.png";
+import { useTranslation } from "react-i18next";
 
 const timelineData = [
   { year: "2016", image: dino1, title: "Taurovenator", description: "Apex predator, 11m long. Found in Río Negro." },
@@ -21,12 +22,13 @@ const timelineData = [
 ];
 
 export default function LineaTiempo() {
+  const { t } = useTranslation();
   // Duplicamos el array para un bucle visual sin cortes
   const trackData = useMemo(() => [...timelineData, ...timelineData], []);
 
   return (
     <section className="timeline-section" aria-label="Major Discoveries Timeline">
-      <h2 className="timeline-title">Major Discoveries by Year</h2>
+      <h2 className="timeline-title">{t("timeline.title")}</h2>
 
       <div className="timeline-viewport">
         {/* Línea base */}

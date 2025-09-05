@@ -12,10 +12,10 @@ import disc1 from "../../src/ImgCampanas/discoveryImg/discovery7.png";
 import disc2 from "../../src/ImgCampanas/discoveryImg/discovery8.jpg";
 import disc4 from "../../src/ImgCampanas/discoveryImg/discovery9.jpg";
 
-// import carusel1 from "../../src/ImgCampanas/discoveryImg/carousel1.JPG";
-// import carusel2 from "../../src/ImgCampanas/discoveryImg/carousel2.jpg";
-// import carusel3 from "../../src/ImgCampanas/discoveryImg/carousel3.jpg";
-// import carusel4 from "../../src/ImgCampanas/discoveryImg/carousel4.jpg";
+import carusel1 from "../../src/ImgCampanas/discoveryImg/carusel1.JPG";
+import carusel2 from "../../src/ImgCampanas/discoveryImg/carusel2.jpg";
+import carusel3 from "../../src/ImgCampanas/discoveryImg/carusel3.jpg";
+import carusel4 from "../../src/ImgCampanas/discoveryImg/carusel4.jpg";
 
 
 
@@ -164,13 +164,16 @@ export default function Discoveries() {
             <div id="patagoCarousel" className="carousel slide" data-bs-ride="carousel">
               <div className="carousel-inner rounded shadow">
                 <div className="carousel-item active">
-                  <img src={maip2} className="d-block w-100 carousel-img" alt="Patagorhynchus image 1" />
+                  <img src={carusel1} className="d-block w-100 carousel-img" alt="Patagorhynchus image 1" />
                 </div>
                 <div className="carousel-item">
-                  <img src={trex1} className="d-block w-100 carousel-img" alt="Patagorhynchus image 2" />
+                  <img src={carusel2} className="d-block w-100 carousel-img" alt="Patagorhynchus image 2" />
                 </div>
                 <div className="carousel-item">
-                  <img src={trex2} className="d-block w-100 carousel-img" alt="Patagorhynchus image 3" />
+                  <img src={carusel3} className="d-block w-100 carousel-img" alt="Patagorhynchus image 3" />
+                </div>
+                     <div className="carousel-item">
+                  <img src={carusel4} className="d-block w-100 carousel-img" alt="Patagorhynchus image 3" />
                 </div>
               </div>
               <button className="carousel-control-prev" type="button" data-bs-target="#patagoCarousel" data-bs-slide="prev">

@@ -64,7 +64,7 @@
 
 /* Pausa animación en hover (para leer) */
 .timeline-viewport:hover .timeline-track{
-  animation-play-state: paused;
+  animation-play-state: running;
 }
 
 /* Cada ítem */

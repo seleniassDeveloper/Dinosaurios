@@ -4,8 +4,10 @@ import maip2 from "../../src/imgCampanas/expedition2.jpg";
 import trex1 from "../../src/ImgCampanas/expedition3.jpeg";
 import trex2 from "../../src/ImgCampanas/expedition4.jpg";
 import "../css/outPerforms.css";
+import { useTranslation } from "react-i18next";
 
 export function Outperforms() {
+   const { t } = useTranslation();
   return (
     <main className="whyar-page py-4 dino-theme container">
       {/* Title */}
@@ -29,48 +31,50 @@ export function Outperforms() {
 
         {/* Right: text meta + CTA */}
         <div className="col-lg-5">
-          <h2 className="whyar-sub">1X new species</h2>
+        
 
           {/* Mini–stack (mismo texto) */}
           <div className="whyar-stats ">
             <div className="stat-chip ">
-              <span className="stat-kicker">$5,000 vs. $500,000</span>
+              <span className="stat-kicker">{t("outPerfoms.p1")}</span>
             </div>
             <p className="m-0">
-              In the US and Europe, a $150k campaign might uncover one or two
-              scientifically interesting specimens — usually of known species.
+    {t("outPerfoms.p2")}
             </p>
             <p className="m-0">
-              In Patagonia, $5k funds a campaign that often results in
-              world-first discoveries, published in top journals, and
-              rewriting paleontological history.
+           
             </p>
             <p className="accent m-0">
-              Your support directly uncovers a new species with us.
+               {t("outPerfoms.p3")}
             </p>
           </div>
 
           {/* Meta pills */}
-          <div className="whyar-meta">
-            <div className="whyar-meta-row">
-              <span className="whyar-pill">Talent Advantage</span>
-              <span className="whyar-meta-label">
-                Salaried paleontologists
-              </span>
-            </div>
-            <div className="whyar-meta-row">
-              <span className="whyar-pill">Geology Advantage</span>
-              <span className="whyar-meta-label">Fossils at surface</span>
-            </div>
-            <div className="whyar-meta-row">
-              <span className="whyar-pill">Legal Advantage</span>
-              <span className="whyar-meta-label">State fossil ownership</span>
-            </div>
-            <div className="whyar-meta-row">
-              <span className="whyar-pill">Cost Advantage</span>
-              <span className="whyar-meta-label">Lean logistics</span>
-            </div>
-          </div>
+         <div className="whyar-meta">
+  <div className="whyar-meta-row">
+    <span className="whyar-pill">{t("outPerfoms.discovery.0.pill")}</span>
+    <span className="whyar-meta-label">{t("outPerfoms.discovery.0.label")}</span>
+    {/* <p>{t("outPerfoms.discovery.0.description")}</p> */}
+  </div>
+
+  <div className="whyar-meta-row">
+    <span className="whyar-pill">{t("outPerfoms.discovery.1.pill")}</span>
+    <span className="whyar-meta-label">{t("outPerfoms.discovery.1.label")}</span>
+    {/* <p>{t("outPerfoms.discovery.1.description")}</p> */}
+  </div>
+
+  <div className="whyar-meta-row">
+    <span className="whyar-pill">{t("outPerfoms.discovery.2.pill")}</span>
+    <span className="whyar-meta-label">{t("outPerfoms.discovery.2.label")}</span>
+    {/* <p>{t("outPerfoms.discovery.2.description")}</p> */}
+  </div>
+
+  <div className="whyar-meta-row">
+    <span className="whyar-pill">{t("outPerfoms.discovery.3.pill")}</span>
+    <span className="whyar-meta-label">{t("outPerfoms.discovery.3.label")}</span>
+    {/* <p>{t("outPerfoms.discovery.3.description")}</p> */}
+  </div>
+</div>
 
           {/* CTA */}
           <div className="d-flex align-items-center gap-2 mt-3">
@@ -86,9 +90,9 @@ export function Outperforms() {
             {/* Fun Fact */}
             <div className="whyar-funfact v2 dino-funfact">
               <p className="m-0">
-                The historic China-Canada Dinosaur Project (1986 - 1991) costed
-                roughly $11 million USD over the course of 6 years, resulting in
-                11 new dinosaur species.
+               <b className="me-2">{t("outPerfoms.fun")}:</b> 
+               {t("outPerfoms.factdes")}
+             
               </p>
             </div>
 
