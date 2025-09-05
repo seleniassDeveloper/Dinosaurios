@@ -2,6 +2,8 @@
 import React, { useEffect, useId, useRef, useState } from "react";
 import "../css/DiscoveriesLanding.css";
 import { useTranslation } from "react-i18next";
+import MediaKit from "./mediakit";
+
 
 export default function DiscoveriesLanding() {
   const { t } = useTranslation();
@@ -136,7 +138,10 @@ export default function DiscoveriesLanding() {
             </a>
           </div>
         </form>
+
       </section>
+
+      <MediaKit/>
     </main>
   );
 }
