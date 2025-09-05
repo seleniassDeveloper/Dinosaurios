@@ -1,4 +1,44 @@
 {
+   "discovery": {
+    "hero": {
+      "title1": "de clase mundial",
+      "title2": "descubrimientos",
+      "subtitle_line1": "a 1/30 - 1/100 del costo",
+      "subtitle_line2": "Con la Tasa de Exito más Alta del Mundo",
+      "lead": "La profunda experiencia de nuestro equipo y la riqueza de posibles hallazgos en la Patagonia (donde los fósiles a menudo afloran en superficie) han permitido una tasa de éxito del 70–80% en encontrar nuevas especies o descubrimientos importantes en cada excavación."
+    },
+    "statement": {
+      "text": "¡Cada EXCAVACIÓN de $5,000 que EJECUTAMOS tiene un 70–80% de probabilidad de producir NUEVAS ESPECIES o DESCUBRIMIENTOS revolucionarios!"
+    },
+    "maip": {
+      "label": "Discovery highlight #1",
+      "title": "Maip macrothorax",
+      "subtitle": "El megaraptor más grande jamás descubierto",
+      "p1": "En 2019, cerca de El Calafate en la Patagonia, nuestro equipo desenterró los restos de un depredador como nunca antes se había visto: Maip macrothorax.",
+      "p2": "Con 10 metros (33 pies) de longitud y más de cinco toneladas, y con garras de hasta 40 cm (16 in), estaba construido para la velocidad y la potencia letales.",
+      "p3": "Apodado la “Sombra de la Muerte”, Maip fue nombrado por un espíritu aonikenk al que se le atribuye matar con vientos helados. Su segundo nombre, macrothorax, refleja su enorme cavidad torácica de 1,2 metros de ancho. A diferencia del corpulento T. rex, Maip era ligero, ágil y rápido, lo que lo convertía en el depredador ápice de la Patagonia austral hace unos 70 millones de años.",
+      "p4": "El hallazgo ayudó a resolver claves sobre los megaraptores —una familia de carnívoros distribuida por Sudamérica, Asia y Australia— y reveló uno de los megaraptores más grandes y australes jamás encontrados."
+    },
+    "notob": {
+      "label": "Discovery highlight #2",
+      "title": "Notobatrachus",
+      "subtitle": "El renacuajo de 161 millones de años",
+      "tag": "Descubierto por Accidente Durante un Juego",
+      "p1": "En los humedales jurásicos de la Patagonia, nuestro equipo encontró el renacuajo fósil más antiguo conocido en el mundo, preservado por más de 161 millones de años. Con 16 cm (6 in) de longitud, este renacuajo gigante pertenecía a Notobatrachus degiustoi, una rana extinta que vivió junto a los dinosaurios.",
+      "p2": "El fósil está tan exquisitamente preservado que incluso tejidos blandos delicados —ojos, nervios y restos de branquias— son visibles, ofreciendo una rara instantánea de una criatura justo antes de transformarse en rana.",
+      "p3": "Este depredador, que vivió hace 90 millones de años, dominó los bosques de Gondwana. Su descubrimiento en la Reserva Pueblo Blanco (Río Negro) consolida a la Patagonia como una de las fronteras fósiles más ricas del mundo y muestra la temible diversidad de superdepredadores que antaño acechaban los continentes australes.",
+      "p4": "La historia resalta la riqueza de los yacimientos fosilíferos de la Patagonia: un lugar donde incluso momentos casuales pueden conducir a descubrimientos que cambian al mundo."
+    },
+    "patago": {
+      "label": "Discovery highlight #3",
+      "title": "Taurovenator Violantei",
+      "subtitle": "El rival patagónico del Tyrannosaurus Rex",
+      "p1": "En las tierras baldías de la Patagonia, nuestro equipo desenterró uno de los esqueletos más completos jamás encontrados de un depredador gigante sudamericano: el Taurovenator violantei, el 'Cazador de Toro'. Con 11 metros (36 pies) de largo y un peso aproximado de cinco toneladas, este dinosaurio se encontraba entre los mejores cazadores de su época, un verdadero rival del Tyrannosaurus rex.",
+      "p2": "El esqueleto incluye el cráneo, el cuello y las vértebras de la espalda, brazos casi completos, patas traseras y costillas: un tesoro que permite a los científicos reconstruir su poder con extraordinario detalle. El cuello de Taurovenator fue reforzado con conexiones óseas adicionales, lo que le confirió la fuerza necesaria para sostener un cráneo colosal de 1,3 metros con crestas en forma de cuerno sobre los ojos.",
+      "p4": "Este único diente no solo añadió información al registro fósil patagónico: reescribió la historia evolutiva de los monotremas, revelando que el ancestro del ornitorrinco actual fue patagónico.",
+      "credit": "Ilustración de Santiago Miner"
+    }
+  },
   "press": {
       "title": "Kit de medios ",
       "contactUs": "Contáctanos",

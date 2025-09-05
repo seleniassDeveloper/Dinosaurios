@@ -48,6 +48,9 @@
   100% { opacity: 0; transform: scale(0.9) translateY(-30px); z-index: 0; }
 }
 
+.display-4 {
+  color: #fdd835!important;
+}
 /* Cada imagen tiene su turno, con delays parejos */
 .img-a { animation: cardCycle 16s infinite; animation-delay: 0s; }
 .img-b { animation: cardCycle 16s infinite; animation-delay: 4s; }
@@ -61,8 +64,8 @@
 @media (max-width:768px){ .statement-text{ font-size:1.1rem; } }
 
 /* ===== Hero ===== */
-.disc-hero-bg{ background-size:cover; background-position:center; padding:90px 0; }
-.fw-extrabold{ font-weight:900; }
+
+
 .lh-tight{ line-height:1.05; }
 
 /* ===== Cascada con animación secuencial (siempre visible) ===== */
@@ -148,7 +151,7 @@
 
 .discoveries-layout strong { font-weight: 700; color: #ffffff; }
 
-.text-success { color: #4ae96a !important; }
+.text-success { color: #046918  !important; }
 .text-warning { color: #fdd835 !important; }
 .color{ color: green; }
 

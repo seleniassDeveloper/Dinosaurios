@@ -100,7 +100,6 @@ export function Outperforms() {
                   <span className="flag">🇺🇸/🇪🇺</span>
                   <div className="head-text">
                     <h4>US &amp; Europe</h4>
-                    <span className="head-sub">Typical academic expedition</span>
                   </div>
                 </header>
 
@@ -147,7 +146,6 @@ export function Outperforms() {
                   <span className="flag">🇦🇷</span>
                   <div className="head-text">
                     <h4>APASUR/LACEV – Patagonia</h4>
-                    <span className="head-sub">Lean, field-first expeditions</span>
                   </div>
                 </header>
 
@@ -173,32 +171,11 @@ export function Outperforms() {
               </article>
             </div>
 
-            {/* Narrativa */}
-            <div className="whyar-narrative v2 fossil-sep px-5 py-5">
-              <p>$5,000 vs. $500,000</p>
-              <p>
-                In the US and Europe, a $150k campaign might uncover one or two
-                scientifically interesting specimens — usually of known species.
-              </p>
-              <p>
-                In Patagonia, $5k funds a campaign that often results in
-                world-first discoveries, published in top journals, and
-                rewriting paleontological history.
-              </p>
-              <p>
-                <em>Your support directly uncovers a new species with us.</em>
-              </p>
-            </div>
+            
           </div>
 
-          {/* ROI callout */}
-          <div className="whyar-facts dino-card mt-3">
-            <h4>Average “discovery ROI”</h4>
-            <p className="m-0">
-              $5k in Patagonia ≈ world-first discoveries; $150k in US/EU ≈
-              known species.
-            </p>
-          </div>
+      
+         
         </div>
       </section>
     </main>
