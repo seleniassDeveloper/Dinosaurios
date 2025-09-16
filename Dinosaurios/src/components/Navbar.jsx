@@ -22,52 +22,20 @@ export default function Navbar() {
       <div className="navbar-content">
 
         {/* Logo */}
-        <div className="navbar-logo">
-          <Link to="/" className="navbar-logo-link">
-            <img src={logo1} alt="Logo APA SUR" className="logo-img" />
-            <img src={logo2} alt="Logo LACEV" className="logo-img" />
-          </Link>
-        </div>
+        <Link to="/" className="navbar-logo-link">
+          <img src={logo1} alt="Logo APA SUR" className="logo-img" />
+          <img src={logo2} alt="Logo LACEV" className="logo-img" />
+        </Link>
 
-        {/* Botón hamburguesa en mobile */}
-        <div>
-               <button
-          className="menu-toggle"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
-          ☰
-        </button>
-        </div>
-   
-
-        {/* Menú de navegación */}
-        <nav className={`navbar-links ${menuOpen ? "show" : ""}`}>
-          <Link className={isActive("/")} to="/" onClick={() => setMenuOpen(false)}>
-            {t("nav.home") || "Home"}
-          </Link>
-          <Link className={isActive("/about")} to="/about" onClick={() => setMenuOpen(false)}>
-            {t("nav.about") || "About Us"}
-          </Link>
-          <Link className={isActive("/expedition")} to="/expedition" onClick={() => setMenuOpen(false)}>
-            {t("nav.expedition") || "Discoveries"}
-          </Link>
-          <Link className={isActive("/live")} to="/live" onClick={() => setMenuOpen(false)}>
-            {t("nav.live") || "Live Dig Hub"}
-          </Link>
-          <Link className={isActive("/press")} to="/press" onClick={() => setMenuOpen(false)}>
-            {t("nav.press") || "Press"}
-          </Link>
-        </nav>
-
-        {/* Idioma */}
-        <div className="navbar-lang">
+        {/* Language selector */}
+        <div className="lang-switcher">
           <button
             className={`lang-btn ${i18n.language.startsWith("es") ? "active-lang" : ""}`}
             onClick={() => changeLang("es")}
           >
             ES
           </button>
+          <span className="lang-separator">/</span>
           <button
             className={`lang-btn ${i18n.language.startsWith("en") ? "active-lang" : ""}`}
             onClick={() => changeLang("en")}
@@ -75,7 +43,25 @@ export default function Navbar() {
             EN
           </button>
         </div>
+
+        {/* Burger icon */}
+        <button
+          className="menu-toggle"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          ☰
+        </button>
       </div>
+
+      {/* Mobile menu */}
+      <nav className={`mobile-menu ${menuOpen ? "show" : ""}`}>
+        <Link className={isActive("/")} to="/" onClick={() => setMenuOpen(false)}>{t("nav.home")}</Link>
+        <Link className={isActive("/about")} to="/about" onClick={() => setMenuOpen(false)}>{t("nav.about")}</Link>
+        <Link className={isActive("/expedition")} to="/expedition" onClick={() => setMenuOpen(false)}>{t("nav.expedition")}</Link>
+        <Link className={isActive("/live")} to="/live" onClick={() => setMenuOpen(false)}>{t("nav.live")}</Link>
+        <Link className={isActive("/press")} to="/press" onClick={() => setMenuOpen(false)}>{t("nav.press")}</Link>
+      </nav>
     </header>
   );
 }

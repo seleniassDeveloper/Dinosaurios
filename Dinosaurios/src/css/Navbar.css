@@ -4,10 +4,9 @@
   --forest: #386641;
   --amber: #f4a300;
   --ash: #111111;
-  --dust: #eae0d5;
 }
 
-/* ==== Navbar Base ==== */
+/* ==== Navbar General ==== */
 .navbar-container {
   background-color: white;
   border-bottom: 2px solid var(--earth);
@@ -19,176 +18,102 @@
 }
 
 .navbar-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 12px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  padding: 12px 16px;
 }
 
+/* ==== Logo ==== */
 .navbar-logo-link {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-
 .logo-img {
-  height: 64px;
-  object-fit: contain;
-  border-radius: 8px;
+  height: 38px;
+  border-radius: 6px;
 }
 
-/* ==== LINKS ==== */
-.navbar-links {
+/* ==== Idiomas ==== */
+.lang-switcher {
   display: flex;
-  flex: 1;
-  justify-content: center;
-  gap: 28px;
+  align-items: center;
+  gap: 4px;
 }
-
-.nav-link {
-  font-weight: 700;
-  font-size: 1rem;
-  text-decoration: none;
-  color: var(--ash);
-  background-color: transparent;
-  padding: 6px 14px;
-  border-radius: 999px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* HOVER - solo aplica si no está activo */
-.nav-link:hover:not(.nav-link-active) {
-  background-color: var(--amber);
-  color: var(--ash);
-    padding: 6px 14px!important;
-}
-
-/* ACTIVO - color verde y texto blanco */
-.nav-link-active {
-  background-color: var(--forest) !important;
-  color: white !important;
-  font-weight: 700;
-  padding: 6px 14px!important;
-  border-radius: 999px;
-}
-
-/* ==== Language Switch ==== */
-.navbar-lang {
-  display: flex;
-  gap: 6px;
-  background: #ddd;
-  border-radius: 999px;
-  padding: 2px;
-}
-
 .lang-btn {
   border: none;
   background: transparent;
-  padding: 6px 12px;
+  font-size: 14px;
+  padding: 4px 8px;
   border-radius: 999px;
-  cursor: pointer;
   font-weight: 600;
-  color: var(--ash);
+  cursor: pointer;
 }
-
 .lang-btn.active-lang {
   background: var(--amber);
-  color: var(--ash);
+  color: white;
+}
+.lang-separator {
+  font-weight: bold;
+  margin: 0 2px;
 }
 
-/* ==== Responsive ==== */
-/* === Mobile Hamburger Menu === */
+/* ==== Burger Menu ==== */
 .menu-toggle {
-
-  display: none;
-  justify-content: end;
-  background: transparent;
-  border: none;
   font-size: 24px;
-  cursor: pointer;
-  color: var(--ash);
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .navbar-links {
-    display: none;
-    flex-direction: column;
-    background: var(--bone);
-    padding: 12px 0;
-    border-top: 1px solid var(--earth);
-    width: 100%;
-    gap: 8px;
-  }
-
-  .navbar-links.show {
-    display: flex;
-    animation: fadeIn 0.3s ease;
-  }
-
-  .navbar-content {
-    align-items: flex-start;
-  }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-6px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.menu-toggle {
-  display: none;
-  background: transparent;
+  background: none;
   border: none;
-  font-size: 28px;
-  color: var(--ash);
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
+/* ==== Mobile Menu Dropdown ==== */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: var(--bone);
+  padding: 12px 16px;
+}
+.mobile-menu a {
+  padding: 10px;
+  margin-bottom: 4px;
+  text-decoration: none;
+  color: var(--ash);
+  border-radius: 6px;
+  font-weight: 600;
+}
+.mobile-menu a:hover {
+  background-color: var(--amber);
+  color: white;
+}
+.nav-link-active {
+  background-color: var(--forest);
+  color: white;
+}
 
-  .navbar-links {
+.mobile-menu.show {
+  display: flex;
+}
+
+/* ==== Desktop ocultar mobile menu ==== */
+@media (min-width: 769px) {
+  .menu-toggle,
+  .mobile-menu {
     display: none;
-    flex-direction: column;
-    background-color: var(--bone);
-    width: 100%;
-    padding: 12px 0;
-    border-top: 1px solid var(--earth);
-    gap: 10px;
-  }
-
-  .navbar-links.show {
-    display: flex;
-    animation: fadeIn 0.3s ease;
   }
 
   .navbar-content {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 12px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
-  .navbar-lang {
-    justify-content: center;
+  .lang-switcher {
+    margin-left: auto;
+    margin-right: 16px;
   }
-}
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-6px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  .desktop-menu {
+    display: flex;
+    gap: 18px;
   }
 }
