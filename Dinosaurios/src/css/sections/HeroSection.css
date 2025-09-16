@@ -148,3 +148,102 @@
   color: white;
   border-color: #f4a300;
 }
+
+
+/* ========== RESPONSIVE: Hero Editorial Magazine ========== */
+
+@media (max-width: 1024px) {
+  .hero-magazine {
+    flex-direction: column;
+    padding: 32px 18px;
+    gap: 20px;
+  }
+
+  .hero-left,
+  .hero-right {
+    max-width: 100%;
+  }
+
+  .hero-text-overlay {
+    bottom: 12px;
+    left: 12px;
+    max-width: 88%;
+    font-size: 0.92rem;
+    padding: 14px;
+  }
+
+  .hero-overlay-title {
+    font-size: 1.4rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    padding: 10px 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-text-overlay {
+    position: static;
+    transform: none;
+    box-shadow: none;
+    background: transparent;
+    padding: 0;
+    margin-top: 16px;
+  }
+
+  .hero-overlay-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .hero-right {
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-description {
+    text-align: left;
+    font-size: 0.92rem;
+    padding: 12px;
+    margin-inline: auto;
+  }
+
+  .hero-quote {
+    font-size: 0.76rem;
+  }
+
+  .hero-img {
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-description {
+    font-size: 0.88rem;
+    padding: 10px;
+  }
+
+  .hero-btn {
+    font-size: 0.82rem;
+    padding: 8px 16px;
+  }
+
+  .hero-urgency {
+    font-size: 0.78rem;
+  }
+
+  .hero-overlay-title {
+    font-size: 1.05rem;
+  }
+}

@@ -20,55 +20,33 @@ export function Outperforms() {
       {/* Top grid (image + right column) */}
       <section className="row g-4 align-items-start">
         {/* Left: hero + thumbs */}
-        <div className="col-lg-7">
-          <figure className="whyar-hero-img dino-card">
-            <img src={mainImg} alt="Fieldwork main" loading="lazy" />
-          </figure>
+ <div className="col-lg-7">
+  <figure className="whyar-hero-img dino-card">
+    <img src={ cuadro3} alt="Fieldwork main" loading="lazy" />
+  </figure>
 
-          <div className="whyar-thumbs">
-            <img src={cuadro} alt="thumb 1" loading="lazy" />
-            <img src={cuadro2} alt="thumb 2" loading="lazy" />
-            <img src={cuadro3} alt="thumb 3" loading="lazy" />
-          </div>
-        </div>
+  <div className="whyar-thumbs">
+    <img src={cuadro} alt="thumb 1" loading="lazy" />
+    <img src={cuadro2} alt="thumb 2" loading="lazy" />
+    <img src={mainImg} alt="thumb 3" loading="lazy" />
+    <span></span>
+  </div>
+</div>
 
         {/* Right: text + pills + CTA */}
         <div className="col-lg-5">
-          <div className="whyar-stats mb-3 ">
-            <div className="stat-chip">
-              <span className="stat-kicker">{t("outPerfoms.p1")}</span>
-            </div>
-            <p className="m-0">{t("outPerfoms.p2")}</p>
-            <p className="accent m-0">{t("outPerfoms.p3")}</p>
-          </div>
+       
 
-          <div className="whyar-meta ">
-            <div className="whyar-meta-row">
-              <span className="whyar-pill">{t("outPerfoms.discovery.0.pill")}</span>
-              <span className="whyar-meta-label">{t("outPerfoms.discovery.0.label")}</span>
-            </div>
-            <div className="whyar-meta-row">
-              <span className="whyar-pill">{t("outPerfoms.discovery.1.pill")}</span>
-              <span className="whyar-meta-label">{t("outPerfoms.discovery.1.label")}</span>
-            </div>
-            <div className="whyar-meta-row">
-              <span className="whyar-pill">{t("outPerfoms.discovery.2.pill")}</span>
-              <span className="whyar-meta-label">{t("outPerfoms.discovery.2.label")}</span>
-            </div>
-            <div className="whyar-meta-row">
-              <span className="whyar-pill">{t("outPerfoms.discovery.3.pill")}</span>
-              <span className="whyar-meta-label">{t("outPerfoms.discovery.3.label")}</span>
-            </div>
-          </div>
+      
 
-          <div className="d-flex align-items-center gap-2 mt-3">
+          {/* <div className="d-flex align-items-center gap-2 mt-3">
             <button className="btn-cta">{t("navbar.donate")}</button>
-          </div>
+          </div> */}
         </div>
       </section>
 
       {/* Bottom: Fun fact + compare */}
-      <section className="row g-4 align-items-start mt-5">
+      <section className=" d-none row g-4 align-items-start mt-5">
         <div className="col-lg-12">
           <div className="whyar-block dino-card">
             <div className="whyar-funfact dino-funfact">

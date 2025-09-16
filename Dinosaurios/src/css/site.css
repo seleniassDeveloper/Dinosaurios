@@ -45,3 +45,66 @@ img{max-width:100%;display:block}
 .bg-surface{background:var(--surface)}
 .bg-brand{background:var(--brand);color:#fff}
 .border-line{border:1px solid var(--line)}
+
+/* ========== RESPONSIVE BREAKPOINTS ========== */
+
+/* Breakpoint: hasta 768px (tablets y móviles) */
+@media (max-width: 768px) {
+  :root {
+    --nav-h: 64px;
+    --maxw: 95vw; /* reducimos el ancho máximo para mejor ajuste en pantallas pequeñas */
+  }
+
+  .container {
+    padding-inline: 12px;
+  }
+
+  .pad-y {
+    padding-block: 18px;
+  }
+
+  .pad-b {
+    padding-bottom: 18px;
+  }
+
+  /* Ajuste general de textos */
+  body {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
+
+/* Breakpoint: hasta 480px (móviles pequeños) */
+@media (max-width: 480px) {
+  :root {
+    --nav-h: 56px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .container {
+    padding-inline: 10px;
+  }
+
+  .pad-y {
+    padding-block: 14px;
+  }
+
+  .pad-b {
+    padding-bottom: 14px;
+  }
+}

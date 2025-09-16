@@ -19,6 +19,7 @@ export default function About() {
           {/* 1) HERO: imagen grande + título */}
           <header className="team-photo-hero">
             <img src={aboutUs} alt="APASUR Team" className="team-photo" />
+            <span className="photo-author">Ph: Armando Vega</span>
           </header>
           <div className="hero-overlay-text">
             <h1>{t("about.hero")}</h1>
@@ -72,7 +73,7 @@ export default function About() {
           </section>
 
           {/* 4) SPLIT: imagen izquierda / texto derecha */}
-          <section className="hueso2-section container">
+          {/* <section className="hueso2-section container">
             <img
               src={antartida}
               alt="Antarctica Expedition"
@@ -81,17 +82,13 @@ export default function About() {
             <div className="hueso2-text">
               <h3>{t("about.antarcticaTitle").toUpperCase()}</h3>
 
-              {/* <p>{t("about.antarcticaP1")}</p> */}
-              {/* <p>
-                <strong>{t("about.antarcticaMissionTitle")}</strong>{" "}
-                {t("about.antarcticaMission")}
-              </p> */}
+            
               <p>{t("about.antartida")}</p>
-             <p>
-  <b>{t("about.ourMission").toUpperCase()}</b>: {t("about.newDino").toUpperCase()}
-</p>
+              <p>
+                <b>{t("about.ourMission").toUpperCase()}</b>: {t("about.newDino").toUpperCase()}
+              </p>
             </div>
-          </section>
+          </section> */}
         </div>
       </section>
 

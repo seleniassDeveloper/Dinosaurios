@@ -33,6 +33,7 @@ export default function Impact() {
               alt={t("impact.photoAlt", { defaultValue: "Comunidad en campaña paleontológica" })}
               loading="lazy"
             />
+            <span className="photo-author">Ph: Armando Vega</span>
             <figcaption id="impacto-foto-caption">
               {/* {t("impact.photoCaption", { defaultValue: "Voluntariado en sitio de excavación" })} */}
             </figcaption>

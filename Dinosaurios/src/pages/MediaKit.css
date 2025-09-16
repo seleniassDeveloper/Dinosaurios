@@ -182,3 +182,80 @@
   filter: brightness(0.96);
   transform: translateY(-2px);
 }
+
+@media (max-width: 480px) {
+  .media-kit {
+    padding: 28px 0 48px;
+  }
+
+  .mk-title {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  .mk-sub {
+    font-size: 0.92rem;
+    padding-inline: 8px;
+    text-align: center;
+  }
+
+  .mk-grid {
+    gap: 16px;
+  }
+
+  .mk-card {
+    padding: 12px;
+    border-radius: 14px;
+  }
+
+  .mk-figure {
+    padding: 8px;
+    max-height: 320px;
+    border-radius: 12px;
+  }
+
+  .mk-figure img {
+    max-height: 280px;
+    border-radius: 8px;
+  }
+
+  .mk-figure figcaption {
+    font-size: 0.86rem;
+    margin-top: 6px;
+  }
+
+  .mk-chip {
+    font-size: 0.72rem;
+    padding: 5px 8px;
+    top: 8px;
+    left: 8px;
+    border-radius: 8px;
+  }
+
+  .mk-tape {
+    width: 90px;
+    height: 18px;
+    top: -10px;
+  }
+
+  .mk-meta {
+    margin-top: 8px;
+  }
+
+  .mk-desc {
+    font-size: 0.9rem;
+  }
+
+  .mk-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .mk-btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.92rem;
+    border-radius: 10px;
+  }
+}

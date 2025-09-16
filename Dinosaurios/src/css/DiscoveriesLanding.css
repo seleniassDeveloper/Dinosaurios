@@ -82,3 +82,138 @@ input.error, textarea.error{ border-color:#ef4444; box-shadow:0 0 0 3px rgba(239
 @media (max-width: 640px){
   .btn-amber, .btn-ghost{ width:100%; text-align:center; }
 }
+
+
+/* ========== RESPONSIVE BREAKPOINTS ========== */
+
+/* Breakpoint: hasta 768px (tablets y móviles) */
+@media (max-width: 768px) {
+  :root {
+    --nav-h: 64px;
+    --maxw: 95vw; /* reducimos el ancho máximo para mejor ajuste en pantallas pequeñas */
+  }
+
+  .container {
+    padding-inline: 12px;
+  }
+
+  .pad-y {
+    padding-block: 18px;
+  }
+
+  .pad-b {
+    padding-bottom: 18px;
+  }
+
+  /* Ajuste general de textos */
+  body {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
+
+/* Breakpoint: hasta 480px (móviles pequeños) */
+@media (max-width: 480px) {
+  :root {
+    --nav-h: 56px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .container {
+    padding-inline: 10px;
+  }
+
+  .pad-y {
+    padding-block: 14px;
+  }
+
+  .pad-b {
+    padding-bottom: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dl-hero {
+    gap: 14px;
+    padding-top: 36px;
+  }
+
+  .dl-title {
+    font-size: 1.8rem;
+    line-height: 1.15;
+    text-align: center;
+    text-wrap: balance;
+  }
+
+  .dl-cta-row {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .btn-amber,
+  .btn-ghost {
+    padding: 14px;
+    font-size: 0.95rem;
+    border-radius: 12px;
+    width: 100%;
+  }
+
+  .dl-contact {
+    padding: 18px 14px;
+    border-radius: 16px;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .contact-form {
+    gap: 10px;
+  }
+
+  .dl-h2 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  input,
+  textarea {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  .form-row label {
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+
+  .sent {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .dl-note {
+    margin-top: 18px;
+    text-align: center;
+  }
+
+  .tiny {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+}

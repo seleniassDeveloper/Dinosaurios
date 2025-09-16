@@ -19,14 +19,17 @@ export function DescubrimientoDescovery() {
         <aside className="pd-gallery" aria-label="Image gallery">
           <figure className="pd-polaroid tilt-l">
             <img src={disco1} alt={t("discoveries.0.images.0.alt")} loading="lazy" />
+            <span>Gabriel Lio</span>
           </figure>
 
           <figure className="pd-polaroid tilt-r">
             <img src={disco2} alt={t("discoveries.0.images.1.alt")} loading="lazy" />
+          <span>Santiago Miner</span>
           </figure>
 
           <figure className="pd-polaroid tilt-s">
             <img src={disco3} alt={t("discoveries.0.images.2.alt")} loading="lazy" />
+       
           </figure>
         </aside>
 
@@ -38,23 +41,29 @@ export function DescubrimientoDescovery() {
             <h3 className="pd-sub">{t("discoveries.0.title")}</h3>
           </header>
 
-          <section className="pd-card">
-            <p>{t("discoveries.0.paragraphs.0")}</p>
-          </section>
+<section className="pd-card">
+  <p dangerouslySetInnerHTML={{ __html: t("discoveries.0.paragraphs.0") }} />
+</section>
 
-          <section className="pd-card">
-            <p>{t("discoveries.0.paragraphs.1")}</p>
-          </section>
+<section className="pd-card grid2">
+  <p dangerouslySetInnerHTML={{ __html: t("discoveries.0.paragraphs.1") }} />
+</section>
 
-          <section className="pd-card grid2">
-            <p>{t("discoveries.0.paragraphs.2")}</p>
-          </section>
+<section className="pd-card">
+  <p dangerouslySetInnerHTML={{ __html: t("discoveries.0.paragraphs.2") }} />
+</section>
 
-          <section className="pd-highlight">
-            <p>
-              {t("discoveries.0.paragraphs.3")}
-            </p>
-          </section>
+<section className="pd-highlight">
+  <p dangerouslySetInnerHTML={{ __html: t("discoveries.0.paragraphs.3") }} />
+</section>
+
+<section className="pd-credits mt-4">
+  <p className="text-muted small">
+    {t("discoveries.0.credits.0")}
+    <br />
+    {t("discoveries.0.credits.1")}
+  </p>
+</section>
 
         </main>
       </article>

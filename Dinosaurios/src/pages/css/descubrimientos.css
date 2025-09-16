@@ -109,3 +109,111 @@
   .pd-container{ grid-template-columns: 1fr; }
   .pd-card.grid2{ grid-template-columns: 1fr; }
 }
+
+
+@media (max-width: 480px) {
+  .pd-wrap {
+    padding: 32px 12px;
+    background: var(--bone);
+  }
+
+  .pd-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 12px;
+  }
+
+  .pd-gallery {
+    gap: 12px;
+  }
+
+  .pd-polaroid {
+    padding: 8px;
+    border-radius: 10px;
+  }
+
+  .pd-polaroid img {
+    border-radius: 6px;
+    aspect-ratio: 4 / 3;
+  }
+
+  .pd-polaroid::before {
+    width: 80px;
+    height: 14px;
+    inset: auto 35% calc(100% + 4px) auto;
+  }
+
+  .pd-chip {
+    font-size: 10px;
+    padding: 3px 6px;
+    top: 6px;
+    left: 6px;
+  }
+
+  .pd-text {
+    gap: 10px;
+  }
+
+  .pd-label {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+
+  .pd-title {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .pd-sub {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .pd-quote {
+    font-size: 0.92rem;
+    padding: 10px 12px;
+  }
+
+  .pd-card {
+    padding: 10px 12px;
+    border-radius: 10px;
+  }
+
+  .pd-card p {
+    font-size: 0.94rem;
+  }
+
+  .pd-note {
+    font-size: 0.85rem;
+    padding: 8px 10px;
+  }
+
+  .pd-highlight {
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+  }
+
+  .pd-highlight p {
+    line-height: 1.5;
+  }
+
+  .pd-badge {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+
+  .pd-credits {
+    flex-direction: column;
+    font-size: 0.85rem;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .tilt-l,
+  .tilt-r,
+  .tilt-s {
+    transform: rotate(0deg); /* opcional para evitar recortes */
+  }
+}

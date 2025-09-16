@@ -1,18 +1,19 @@
-{   "discoveries": [
+{  
+   "discoveries": [
     {
-      "title": "Un ovíparo de 70 millones de años reescribe la evolución",
-      "subtitle": "Descubrimiento destacado #4",
-      "name": "Patagorhynchus",
-      "paragraphs": [
-        "En 2019, nuestro equipo halló un diminuto molar en la Formación Chorrillo de la Patagonia. Pertenecía a Patagorhynchus pascuali, el pariente más antiguo del ornitorrinco en Sudamérica, con 70 millones de años de antigüedad.",
-        "El descubrimiento demostró que los monotremas —mamíferos que ponen huevos como el ornitorrinco y el equidna— vivieron en Sudamérica mucho antes de lo pensado, junto a los dinosaurios. Antes se creía que provenían solo de Australia tras su extinción.",
-        "Nombrado en honor al paleomastozólogo argentino Rosendo Pascual, Patagorhynchus habitaba humedales y probablemente comía caracoles y larvas, como su descendiente moderno. Su presencia revela que los monotremas se extendieron por el sur de Gondwana, conectando Sudamérica, Australia y la Antártida.",
-        "Este único diente no solo amplió el registro fósil de la Patagonia — reescribió la historia evolutiva de los monotremas, revelando que el antepasado del ornitorrinco actual era patagónico."
-     ],
-      "credits": [
-        "Ilustración de Santiago Miner",
-        "Ilustración De Gabriel Lio"
-      ]
+ "title": "Un ovíparo de 70 millones de años reescribe la evolución",
+  "subtitle": "Descubrimiento destacado #4",
+  "name": "Patagorhynchus",
+  "paragraphs": [
+    "En 2019, nuestro equipo halló un diminuto molar en la Formación Chorrillo de la Patagonia. Pertenecía a <i>Patagorhynchus pascuali</i>, el pariente más antiguo del ornitorrinco en Sudamérica, con 70 millones de años de antigüedad.",
+    "El descubrimiento demostró que los monotremas —mamíferos que ponen huevos como el ornitorrinco y el equidna— vivieron en Sudamérica mucho antes de lo pensado, junto a los dinosaurios. Antes se creía que provenían solo de Australia tras su extinción.",
+    "Nombrado en honor al paleomastozólogo argentino Rosendo Pascual, <i>Patagorhynchus</i> habitaba humedales y probablemente comía caracoles y larvas, como su descendiente moderno. Su presencia revela que los monotremas se extendieron por el sur de Gondwana, conectando Sudamérica, Australia y la Antártida.",
+    "Este único diente no solo amplió el registro fósil de la Patagonia — reescribió la historia evolutiva de los monotremas, revelando que el antepasado del ornitorrinco actual era patagónico."
+  ],
+  "credits": [
+    "Ilustración de Santiago Miner",
+    "Ilustración de Gabriel Lío"
+  ]
     }
   ],
    "currentProjects": {
@@ -134,43 +135,44 @@
   },
   "discovery": {
     "hero": {
-      "title1": "de clase mundial",
-      "title2": "descubrimientos",
+      "title1": "",
+      "title2": "Descubrimientos de importancia mundial",
       "subtitle_line1": "A 1/30 - 1/100 del Costo",
       "subtitle_line2": "Con la Tasa de Exito más Alta del Mundo",
       "lead": "La profunda experiencia de nuestro equipo y la riqueza de posibles hallazgos en la Patagonia (donde los fósiles a menudo afloran en superficie) han permitido una tasa de éxito del 70–80% en encontrar nuevas especies o descubrimientos importantes en cada excavación."
     },
     "statement": {
-      "text": "¡Cada EXCAVACIÓN de $5,000 que EJECUTAMOS tiene un 70–80% de probabilidad de producir NUEVAS ESPECIES o DESCUBRIMIENTOS revolucionarios!"
+      "text": "¡Cada EXCAVACIÓN EJECUTAMOS tiene un 70–80% de probabilidad de producir NUEVAS ESPECIES o DESCUBRIMIENTOS revolucionarios!"
     },
-    "maip": {
-      "label": "Discovery highlight #1",
-      "title": "Maip macrothorax",
-      "subtitle": "El megaraptor más grande jamás descubierto",
-      "p1": "En 2019, cerca de El Calafate en la Patagonia, nuestro equipo desenterró los restos de un depredador como nunca antes se había visto: Maip macrothorax.",
-      "p2": "Con 10 metros (33 pies) de longitud y más de cinco toneladas, y con garras de hasta 40 cm (16 in), estaba construido para la velocidad y la potencia letales.",
-      "p3": "Apodado la “Sombra de la Muerte”, Maip fue nombrado por un espíritu aonikenk al que se le atribuye matar con vientos helados. Su segundo nombre, macrothorax, refleja su enorme cavidad torácica de 1,2 metros de ancho. A diferencia del corpulento T. rex, Maip era ligero, ágil y rápido, lo que lo convertía en el depredador ápice de la Patagonia austral hace unos 70 millones de años.",
-      "p4": "El hallazgo ayudó a resolver claves sobre los megaraptores —una familia de carnívoros distribuida por Sudamérica, Asia y Australia— y reveló uno de los megaraptores más grandes y australes jamás encontrados."
-    },
-    "notob": {
-      "label": "Discovery highlight #2",
-      "title": "Notobatrachus",
-      "subtitle": "El renacuajo de 161 millones de años",
-      "tag": "Descubierto por Accidente Durante un Juego",
-      "p1": "En los humedales jurásicos de la Patagonia, nuestro equipo encontró el renacuajo fósil más antiguo conocido en el mundo, preservado por más de 161 millones de años. Con 16 cm (6 in) de longitud, este renacuajo gigante pertenecía a Notobatrachus degiustoi, una rana extinta que vivió junto a los dinosaurios.",
-      "p2": "El fósil está tan exquisitamente preservado que incluso tejidos blandos delicados —ojos, nervios y restos de branquias— son visibles, ofreciendo una rara instantánea de una criatura justo antes de transformarse en rana.",
-      "p3": "Este depredador, que vivió hace 90 millones de años, dominó los bosques de Gondwana. Su descubrimiento en la Reserva Pueblo Blanco (Río Negro) consolida a la Patagonia como una de las fronteras fósiles más ricas del mundo y muestra la temible diversidad de superdepredadores que antaño acechaban los continentes australes.",
-      "p4": "La historia resalta la riqueza de los yacimientos fosilíferos de la Patagonia: un lugar donde incluso momentos casuales pueden conducir a descubrimientos que cambian al mundo."
-    },
-    "patago": {
-      "label": "Discovery highlight #3",
-      "title": "Taurovenator Violantei",
-      "subtitle": "El rival patagónico del Tyrannosaurus Rex",
-      "p1": "En las tierras baldías de la Patagonia, nuestro equipo desenterró uno de los esqueletos más completos jamás encontrados de un depredador gigante sudamericano: el Taurovenator violantei, el 'Cazador de Toro'. Con 11 metros (36 pies) de largo y un peso aproximado de cinco toneladas, este dinosaurio se encontraba entre los mejores cazadores de su época, un verdadero rival del Tyrannosaurus rex.",
-      "p2": "El esqueleto incluye el cráneo, el cuello y las vértebras de la espalda, brazos casi completos, patas traseras y costillas: un tesoro que permite a los científicos reconstruir su poder con extraordinario detalle. El cuello de Taurovenator fue reforzado con conexiones óseas adicionales, lo que le confirió la fuerza necesaria para sostener un cráneo colosal de 1,3 metros con crestas en forma de cuerno sobre los ojos.",
-      "p4": "Este único diente no solo añadió información al registro fósil patagónico: reescribió la historia evolutiva de los monotremas, revelando que el ancestro del ornitorrinco actual fue patagónico.",
-      "credit": "Ilustración de Santiago Miner"
-    }
+"maip": {
+  "label": "Discovery highlight #1",
+  "title": "Maip macrothorax",
+  "subtitle": "El megaraptor más grande jamás descubierto",
+  "p1": "En 2019, cerca de El Calafate en la Patagonia, nuestro equipo desenterró los restos de un depredador como nunca antes se había visto: <i>Maip macrothorax</i>.",
+  "p2": "Con 10 metros (33 pies) de longitud y más de cinco toneladas, y con garras de hasta 40 cm (16 in), estaba construido para la velocidad y la potencia letales.",
+  "p3": "Apodado la “Sombra de la Muerte”, <i>Maip</i> fue nombrado por un espíritu aonikenk al que se le atribuye matar con vientos helados. Su segundo nombre, <i>macrothorax</i>, refleja su enorme cavidad torácica de 1,2 metros de ancho. A diferencia del corpulento <i>T. rex</i>, <i>Maip</i> era ligero, ágil y rápido, lo que lo convertía en el depredador ápice de la Patagonia austral hace unos 70 millones de años.",
+  "p4": "El hallazgo ayudó a resolver claves sobre los megaraptores —una familia de carnívoros distribuida por Sudamérica, Asia y Australia— y reveló uno de los megaraptores más grandes y australes jamás encontrados."
+},
+  "notob": {
+  "label": "Discovery highlight #2",
+  "title": "Notobatrachus",
+  "subtitle": "El renacuajo de 161 millones de años",
+  "tag": "Descubierto por Accidente Durante un Juego",
+  "p1": "En los humedales jurásicos de la Patagonia, nuestro equipo encontró el renacuajo fósil más antiguo conocido en el mundo, preservado por más de 161 millones de años. Con 16 cm (6 in) de longitud, este renacuajo gigante pertenecía a <i>Notobatrachus degiustoi</i>, una rana extinta que vivió junto a los dinosaurios.",
+  "p2": "El fósil está tan exquisitamente preservado que incluso tejidos blandos delicados —ojos, nervios y restos de branquias— son visibles, ofreciendo una rara instantánea de una criatura justo antes de transformarse en rana.",
+  "p3": "La historia resalta la riqueza de los yacimientos fosilíferos de la Patagonia: un lugar donde incluso momentos casuales pueden conducir a descubrimientos que cambian al mundo.",
+  "p4": ""
+},
+"patago": {
+  "label": "Discovery highlight #3",
+  "title": "Taurovenator Violantei",
+  "subtitle": "El rival patagónico del Tyrannosaurus rex",
+  "p1": "En las tierras baldías de la Patagonia, nuestro equipo desenterró uno de los esqueletos más completos jamás encontrados de un depredador gigante sudamericano: <i>Taurovenator violantei</i>, el 'Cazador de Toro'. Con 11 metros (36 pies) de largo y un peso aproximado de cinco toneladas, este dinosaurio se encontraba entre los mejores cazadores de su época, un verdadero rival del <i>Tyrannosaurus rex</i>.",
+  "p2": "El esqueleto incluye el cráneo, el cuello y las vértebras de la espalda, brazos casi completos, patas traseras y costillas: un tesoro que permite a los científicos reconstruir su poder con extraordinario detalle. El cuello de <i>Taurovenator</i> fue reforzado con conexiones óseas adicionales, lo que le confirió la fuerza necesaria para sostener un cráneo colosal de 1,3 metros con crestas en forma de cuerno sobre los ojos.",
+  "p3": "Vivió hace 90 millones de años y dominó los bosques de Gondwana. Su hallazgo en la Reserva Pueblo Blanco (Río Negro) consolida a la Patagonia como una de las fronteras fósiles más ricas del mundo y evidencia la temible diversidad de superdepredadores que acechaban los continentes australes.",
+  "p4": "",
+  "credit": "Ilustración: Gabriel Lío"
+}
   },
   "press": {
     "title": "Kit de medios ",
@@ -210,7 +212,7 @@
     "whoP2": "Nuestra misión es preservar y comprender la vida prehistórica, al mismo tiempo que promovemos la ciencia mediante la educación, el trabajo de campo y la colaboración internacional.",
     "whoP3": "Su creación responde a la necesidad de realizar proyectos de promoción, investigación, comunicación pública y conservación del patrimonio paleontológico de Argentina y Sudamérica.",
     "teamTitle": "Nuestro Equipo",
-    "teamP1": "Somos uno de los equipos de paleontología más destacados de Argentina, compuesto por más de 11 investigadores, más de 5 técnicos profesionales, más de 2 divulgadores científicos y educativos, y más de 10 estudiantes. Nuestro equipo se encuentra en el Museo de Ciencias Naturales Bernardino Rivadavia (Buenos Aires). Con más de 400 artículos de investigación publicados en revistas nacionales e internacionales y más de 20 años de experiencia, nuestro equipo ha descubierto y nombrado más del 26 % de las nuevas especies de dinosaurios en Sudamérica entre 2005 y 2025.",
+    "teamP1": "Somos uno de los equipos de paleontología más destacados de la Argentina, integrado por 5 investigadores, 6 becarios doctorales y posdoctorales, 4 técnicos profesionales, 2 divulgadores científicos y educativos, 2 ilustradores científicos y 12 estudiantes. Nuestro equipo forma parte del Museo Argentino de Ciencias Naturales “Bernardino Rivadavia” (Buenos Aires, Argentina), una de las instituciones más importantes de Sudamérica. Hemos publicado más de 400 artículos de investigación en revistas nacionales e internacionales y participado en el descubrimiento de más del 26% de las nuevas especies de dinosaurios identificadas en Sudamérica entre 2005 y 2025. ",
     "teamP2": "A lo largo de los años, descubrimos y nombramos 33 especies de dinosaurios en Argentina (el 22% de todas las especies conocidas en el país), además de 5 en la Antártida y otras partes de América Latina. Publicamos más de 400 artículos científicos y aparecimos 5 veces en la portada de la revista Nature.",
     "teamP3": "Con más de 400 artículos de investigación publicados en revistas nacionales e internacionales y más de 20 años de experiencia, nuestro equipo ha descubierto y nombrado más del 26% de las nuevas especies de dinosaurios en América del Sur entre 2005 y 2025.",
     "excavationP1": "El 70-80% de nuestras campañas de excavación resultaron en nuevas especies de dinosaurios o descubrimientos revolucionarios.",
@@ -266,7 +268,7 @@
     "title": "Completando las páginas perdidas de la evolución,",
     "titleHighlight": "un fósil a la vez — en la Patagonia.",
     "p1": "Somos un equipo de paleontólogos, profesores, estudiantes y naturalistas del Laboratorio de Anatomía Comparada y Evolución de los Vertebrados (LACEV).",
-    "p2": "Desde hace más de 20 años buscamos, extraemos, preparamos, investigamos y comunicamos públicamente la paleontología en la Patagonia, descubriendo el 26% de las nuevas especies de dinosaurios de Sudamérica.",
+    "p2": "Desde hace más de 20 años buscamos, extraemos, preparamos, investigamos y difundimos la paleontología de la Patagonia y de todo el Cono Sur. En este recorrido hemos descubierto y participado en el estudio del 26% de las especies de dinosaurios conocidas en Sudamérica.",
     "p4": "Se descubre el 26 % de las nuevas especies de dinosaurios en Sudamérica.",
     "p3": "Hemos descubierto el 26% de las nuevas especies de dinosaurios en Sudamérica."
   },
@@ -275,7 +277,7 @@
     "title": "Sé parte de la historia.",
     "highlight": "Míralo en vivo",
     "description": "Transmitiremos en vivo desde Río Negro, Argentina, mientras nuestro equipo busca nuevas especies de dinosaurios. Por primera vez, podrás presenciar una excavación en tiempo real: cada hueso, cada hallazgo, mientras apoyas directamente una de las campañas de paleontología más innovadoras del mundo.",
-    "quote": "Con más de 40 especies descubiertas, nuestro equipo lidera la Paleontología en Sudamérica",
+    "quote": "Con más de 40 especies descubiertas y más de 300 artículos científicos de impacto, nuestro equipo irrumpe con fuerza en la escena de la paleontología sudamericana.",
     "urgency": {
       "prefix": "Solo",
       "days": "quedan 7 días",

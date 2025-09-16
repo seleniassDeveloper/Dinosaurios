@@ -120,3 +120,147 @@
   font-size: 20px;
   cursor: pointer;
 }
+
+@media (max-width: 480px) {
+  .container {
+    padding-inline: 12px;
+  }
+
+  .live-title {
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+
+  .live-sub {
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  .head-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .btn, .pill {
+    font-size: 0.85rem;
+    padding: 8px 10px;
+    border-radius: 10px;
+  }
+
+  .pill .dot {
+    width: 6px;
+    height: 6px;
+    box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.25);
+  }
+
+  .live-grid {
+    gap: 14px;
+  }
+
+  .player-card,
+  .side-card {
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .player-tabs {
+    gap: 4px;
+    padding-bottom: 6px;
+    margin-bottom: 8px;
+  }
+
+  .tab {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  .ratio {
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+  }
+
+  .upcoming-overlay {
+    padding: 8px 10px;
+    font-size: 0.86rem;
+    border-radius: 10px;
+  }
+
+  .upcoming-overlay .label {
+    font-size: 11px;
+  }
+
+  .upcoming-overlay .countdown {
+    font-size: 0.9rem;
+    gap: 6px;
+  }
+
+  .offline-overlay {
+    padding: 18px;
+    font-size: 0.9rem;
+  }
+
+  .side-title {
+    font-size: 0.94rem;
+  }
+
+  .agenda li {
+    grid-template-columns: 52px 1fr;
+    gap: 8px;
+  }
+
+  .agenda .time {
+    font-size: 0.92rem;
+  }
+
+  .agenda .item {
+    font-size: 0.88rem;
+  }
+
+  .now h4 {
+    font-size: 0.88rem;
+  }
+
+  .now p {
+    font-size: 0.85rem;
+  }
+
+  .clips-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .clip-label {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+
+  .chat-window {
+    width: 95%;
+    border-radius: 10px;
+  }
+
+  .chat-header {
+    padding: 8px 12px;
+    font-size: 0.92rem;
+  }
+
+  .chat-messages {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .chat-form {
+    padding: 8px;
+    gap: 6px;
+  }
+
+  .chat-form input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .close-btn {
+    font-size: 18px;
+  }
+}

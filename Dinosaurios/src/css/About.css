@@ -246,3 +246,83 @@
   .team-photo-hero .team-photo { height: 240px; }
   .hero-overlay-text h1 { font-size: 1.1rem; }
 }
+
+@media (max-width: 480px) {
+  .container {
+    width: 92%;
+    padding-inline: 12px;
+  }
+
+  .team-photo-hero .team-photo {
+    height: 200px;
+    object-position: center;
+  }
+
+  .hero-overlay-text h1 {
+    font-size: 1rem;
+    padding: 8px;
+    line-height: 1.2;
+  }
+
+  .about-columns .column {
+    padding: 14px;
+  }
+
+  .column-image {
+    height: 160px;
+  }
+
+  .bold-metric {
+    padding: 14px;
+    font-size: 0.95rem;
+    margin: 16px 0;
+  }
+
+  .sticker-cta {
+    font-size: 0.82rem;
+    padding: 8px 10px;
+  }
+
+  .sticker-cta::before {
+    width: 48px;
+    height: 14px;
+    left: 12px;
+  }
+
+  .hueso2-section {
+    padding: 16px;
+    gap: 14px;
+  }
+
+  .hueso2-text h3 {
+    font-size: 1.1rem;
+    line-height: 1.3;
+  }
+
+  .hueso2-text p {
+    font-size: 0.95rem;
+  }
+
+  .antarctica-button {
+    font-size: 0.72rem;
+    padding: 6px 10px;
+    border-radius: 999px;
+    margin-top: 8px;
+  }
+
+  .cta-button button {
+    font-size: 0.85rem;
+    padding: 10px 18px;
+  }
+}
+
+.photo-author {
+  padding: 2px 8px;
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--ink-600); /* o un gris elegante */
+  font-style: italic;
+  text-align: right;
+  opacity: 0.7;
+}
