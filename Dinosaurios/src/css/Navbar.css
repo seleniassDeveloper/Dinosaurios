@@ -70,11 +70,11 @@
 }
 .desktop-menu a:hover:not(.nav-link-active) {
   background-color: var(--amber);
-  color: white;
+  color: rgb(255, 255, 255)!important;
 }
 .nav-link-active {
   background-color: var(--forest);
-  color: white !important;
+  color: #028d1d!important;
 }
 
 /* Idioma */
