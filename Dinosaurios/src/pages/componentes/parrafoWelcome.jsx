@@ -11,7 +11,7 @@ export default function ParrafoWelcome() {
   const { t } = useTranslation();
 
   return (
-    <section className="parrafo-welcome-grid">
+    <section className="parrafo-welcome-grid container">
       <div className="parrafo-texto">
         <h2 className="parrafo-titulo">
           {t("welcome.title")}{" "}
@@ -26,27 +26,14 @@ export default function ParrafoWelcome() {
         </p>
       </div>
 
-      <div className="parrafo-imagenes">
-        <img
-          src={dinoBrush}
-          className="cascada-img img1"
-          alt="Nature cover 1"
-        />
-        <img
-          src={dinoBrush2}
-          className="cascada-img img2"
-          alt="Nature cover 2"
-        />
-        <img
-          src={dinoBrush3}
-          className="cascada-img img3"
-          alt="Nature cover 3"
-        />
-        <img
-          src={dinoBrush4}
-          className="cascada-img img4"
-          alt="Nature cover 4"
-        />
+      {/* Wrapper para scroll horizontal solo en mobile */}
+      <div className="scroll-wrapper">
+        <div className="parrafo-imagenes">
+          <img src={dinoBrush} className="cascada-img img1" alt="Nature cover 1" />
+          <img src={dinoBrush2} className="cascada-img img2" alt="Nature cover 2" />
+          <img src={dinoBrush3} className="cascada-img img3" alt="Nature cover 3" />
+          <img src={dinoBrush4} className="cascada-img img4" alt="Nature cover 4" />
+        </div>
       </div>
     </section>
   );

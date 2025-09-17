@@ -112,27 +112,82 @@
 /* ==== RESPONSIVE ==== */
 @media (max-width: 950px) {
   .parrafo-welcome-grid {
-    grid-template-columns: 1fr;
-    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+
+    box-sizing: border-box;
+  }
+
+  .parrafo-texto {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 8px;
+    box-sizing: border-box;
+  }
+
+  .parrafo-titulo {
+    font-size: 2.2rem;
+    line-height: 1.3;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    word-break: break-word;
+  }
+
+  .parrafo-descripcion {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+    text-align: justify;
+    word-wrap: break-word;
+  }
+
+  .parrafo-final {
+    font-size: 1.25rem;
+    text-align: center;
   }
 
   .parrafo-imagenes {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 16px;
-    height: auto;
-    margin-top: 40px;
-    position: static;
+    justify-content: flex-start;
+    overflow-x: auto;
+    gap: 9px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
   }
 
   .cascada-img {
+    flex-shrink: 0;
+    width: 90px;
+    height: auto;
+    border-radius: 12px;
+    scroll-snap-align: start;
+    box-shadow: 5px 14px 22px rgba(3, 3, 4, 0.3);
     position: relative;
-    top: auto;
-    left: auto;
-    z-index: unset;
-    width: 120px;
   }
 
- 
+  .img1,
+  .img2,
+  .img3,
+  .img4 {
+    height: 200px!important;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    margin: 0;
+    z-index: auto;
+  }
+
+  .parrafo-imagenes::after {
+    display: none;
+  }
+
+  .cascada-img:hover {
+    transform: scale(1.05);
+    z-index: 5;
+  }
 }

@@ -22,7 +22,7 @@ export default function Home() {
         <ParrafoWelcome />
       </div>
       <div className="pb-5">
-        <Colaboradores />
+        {/* <Colaboradores /> */}
       </div>
       
     </main>
