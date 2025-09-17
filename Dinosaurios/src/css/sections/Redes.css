@@ -44,3 +44,30 @@
 .stream-link.youtube:hover { background: #ff0000; }
 .stream-link.twitter:hover { background: #1da1f2; }
 .stream-link.discord:hover { background: #5865f2; }
+
+@media (max-width: 768px) {
+  .redes-streams {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: 0 10px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .stream-link {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    width: 48px;
+    height: 48px;
+    font-size: 1.5rem;
+  }
+
+  .redes-container {
+    margin-top: 1.5rem;
+  }
+
+  .redes-follow-label {
+    font-size: 0.9rem;
+  }
+}

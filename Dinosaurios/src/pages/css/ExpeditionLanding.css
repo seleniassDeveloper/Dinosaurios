@@ -273,7 +273,7 @@
 /* ===== HERO ===== */
 .hero{background:linear-gradient(180deg,#f6eddc 0%,#eadcc5 100%);padding:36px 0}
 .hero-inner{display:grid;grid-template-columns:1.1fr 1fr;gap:22px;align-items:center;max-width:1100px;margin:0 auto;padding:0 16px}
-.hero-left .hero-inner{grid-template-columns:1fr 1.1fr}
+
 .kicker{color:var(--brand);font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin:0 0 6px}
 
 

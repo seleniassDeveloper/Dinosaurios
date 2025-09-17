@@ -19,7 +19,8 @@ export default function MainSection() {
         </h1>
       </div>
 
-    <div className="mag-dino d-none d-md-block">
+      {/* Dino decorativo más chico */}
+      <div className="mag-dino">
         <img src={trex} alt="Tyrannosaurus rex" />
       </div>
     </section>
