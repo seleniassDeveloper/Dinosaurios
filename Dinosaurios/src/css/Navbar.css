@@ -6,7 +6,7 @@
   --ash: #111111;
 }
 
-/* ==== Navbar General ==== */
+/* Contenedor principal */
 .navbar-container {
   background-color: white;
   border-bottom: 2px solid var(--earth);
@@ -17,38 +17,83 @@
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 
+/* Layout general */
 .navbar-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 16px;
+  padding: 12px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
-/* ==== Logo ==== */
-.navbar-logo-link {
+.navbar-section-left{
+  display: flex!important;
+  
+}
+.navbar-section-center,
+.navbar-section-right {
   display: flex;
   align-items: center;
-  gap: 8px;
-}
-.logo-img {
-  height: 38px;
-  border-radius: 6px;
 }
 
-/* ==== Idiomas ==== */
+.navbar-section-center {
+  flex: 1;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar-section-right {
+  gap: 10px;
+}
+
+/* Logo */
+.logo-img {
+  height: 60px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+.large-logo {
+  height: 60px;
+}
+
+/* Links desktop */
+.desktop-menu a {
+  font-weight: 600;
+  text-decoration: none;
+  padding: 6px 14px;
+  color: var(--ash);
+  border-radius: 999px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.desktop-menu a:hover:not(.nav-link-active) {
+  background-color: var(--amber);
+  color: white;
+}
+.nav-link-active {
+  background-color: var(--forest);
+  color: white !important;
+}
+
+/* Idioma */
 .lang-switcher {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
+  background: #eee;
+  border-radius: 999px;
+  padding: 2px 8px;
 }
 .lang-btn {
   border: none;
   background: transparent;
-  font-size: 14px;
-  padding: 4px 8px;
-  border-radius: 999px;
   font-weight: 600;
   cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 999px;
+  color: var(--ash);
 }
 .lang-btn.active-lang {
   background: var(--amber);
@@ -56,64 +101,54 @@
 }
 .lang-separator {
   font-weight: bold;
-  margin: 0 2px;
+  color: var(--ash);
 }
 
-/* ==== Burger Menu ==== */
+/* Botón hamburguesa */
 .menu-toggle {
-  font-size: 24px;
-  background: none;
+  display: none;
+  background: transparent;
   border: none;
+  font-size: 24px;
   cursor: pointer;
+  color: var(--ash);
 }
 
-/* ==== Mobile Menu Dropdown ==== */
+/* Mobile menu */
 .mobile-menu {
-  display: none;
+  display: flex;
   flex-direction: column;
-  background-color: var(--bone);
+  background: var(--bone);
   padding: 12px 16px;
+  gap: 10px;
 }
 .mobile-menu a {
-  padding: 10px;
-  margin-bottom: 4px;
   text-decoration: none;
   color: var(--ash);
-  border-radius: 6px;
   font-weight: 600;
 }
-.mobile-menu a:hover {
-  background-color: var(--amber);
-  color: white;
-}
-.nav-link-active {
-  background-color: var(--forest);
-  color: white;
-}
 
-.mobile-menu.show {
-  display: flex;
-}
-
-/* ==== Desktop ocultar mobile menu ==== */
-@media (min-width: 769px) {
-  .menu-toggle,
-  .mobile-menu {
+/* Responsive */
+@media (max-width: 768px) {
+  .desktop-menu {
     display: none;
   }
 
+  .menu-toggle {
+    display: block;
+  }
+
+  .large-logo {
+    height: 40px;
+  }
+
   .navbar-content {
-    max-width: 1200px;
-    margin: 0 auto;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    overflow-x: auto;
   }
 
-  .lang-switcher {
-    margin-left: auto;
-    margin-right: 16px;
-  }
-
-  .desktop-menu {
-    display: flex;
-    gap: 18px;
+  .navbar-section-center {
+    display: none;
   }
 }
