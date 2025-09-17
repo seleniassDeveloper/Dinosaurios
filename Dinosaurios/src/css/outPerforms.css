@@ -219,6 +219,10 @@
   opacity:.7;
 }
 
+.sectionsss{
+  display: flex;
+  justify-content: center!important;
+}
 /* ===== Fun Fact ===== */
 .dino-funfact{
   background:linear-gradient(180deg,#FFF7ED,#FFF3E6);

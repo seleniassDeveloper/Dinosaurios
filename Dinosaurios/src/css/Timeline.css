@@ -1,5 +1,4 @@
-:root{
-  /* Ajusta la velocidad (cuanto menor, más rápido) */
+:root {
   --speed: 40s;
   --gap: 100px;
   --bg: #f8f8f8;
@@ -22,19 +21,20 @@
   margin-bottom: 36px;
 }
 
-/* ===== Viewport con máscara lateral para mejor look ===== */
-.timeline-viewport{
+/* ===== Viewport con máscara lateral ===== */
+.timeline-viewport {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  overflow: hidden; /* ocultar la pista fuera de vista */
+  overflow: hidden;
+  padding-block: 140px; /* espacio para texto arriba y abajo */
 }
 
-/* Línea horizontal base */
+/* Línea base */
 .timeline-line {
   position: absolute;
   top: 50%;
-  left: -2000px;  /* extra ancho para cubrir animación */
+  left: -2000px;
   right: -2000px;
   height: 4px;
   background-color: var(--line);
@@ -43,27 +43,26 @@
   border-radius: 2px;
 }
 
-/* Pista desplazándose en loop */
-.timeline-track{
+/* Pista en movimiento */
+.timeline-track {
   position: relative;
   display: inline-flex;
   align-items: center;
   gap: var(--gap);
   will-change: transform;
   animation: scroll-loop var(--speed) linear infinite;
-  padding-inline: 40px; /* margen interno para que no pegue a los bordes */
+  padding-inline: 40px;
   z-index: 2;
 }
 
 @keyframes scroll-loop {
-  /* Se desplaza exactamente el ancho de la mitad de la pista (porque duplicamos data) */
   0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
 
-/* Pausa animación en hover (para leer) */
-.timeline-viewport:hover .timeline-track{
-  animation-play-state: running;
+/* Pausar en hover */
+.timeline-viewport:hover .timeline-track {
+  animation-play-state: paused;
 }
 
 /* Cada ítem */
@@ -72,7 +71,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 200px; /* coherente con tu diseño */
+  min-width: 200px;
 }
 
 /* Nodo con imagen */
@@ -82,7 +81,7 @@
   border-radius: 50%;
   border: 6px solid var(--node);
   background: #fff;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   z-index: 3;
 }
@@ -94,117 +93,111 @@
   border-radius: 50%;
 }
 
-/* Info: texto superior e inferior alternado */
-.timeline-info {
-  max-width: 220px;
-  padding: 10px;
-  background: none;
-  text-align: center;
-}
-
+/* Info superior (año y título) */
 .timeline-info.top {
   position: absolute;
-  top: -130px;
+  top: -120px;
+  text-align: center;
+  max-width: 200px;
 }
 
-.timeline-info.bottom {
-  position: absolute;
-  bottom: -130px;
-}
-
-.timeline-info h3 {
+.timeline-info.top h3 {
   margin: 0;
   font-size: 1rem;
-  color: #0a7b17; /* verde visible */
+  color: #0a7b17;
 }
 
-.timeline-info strong {
+.timeline-info.top strong {
   display: block;
   font-size: 1rem;
   font-weight: 800;
   color: var(--ink);
-  margin: 4px 0;
+  margin: 4px 0 0;
 }
 
-.timeline-info p {
+/* Info inferior (descripción) */
+.timeline-info.bottom {
+  position: absolute;
+  bottom: -100px;
+  text-align: center;
+  max-width: 220px;
+}
+
+.timeline-info.bottom p {
   font-size: 0.92rem;
   color: var(--muted);
   margin: 0;
 }
 
 /* Gradientes laterales */
-.fade-left, .fade-right{
+.fade-left,
+.fade-right {
   position: absolute;
-  top: 0; bottom: 0; width: 60px; z-index: 5; pointer-events: none;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  z-index: 5;
+  pointer-events: none;
 }
-.fade-left{ left: 0; background: linear-gradient(90deg, var(--bg), transparent); }
-.fade-right{ right: 0; background: linear-gradient(-90deg, var(--bg), transparent); }
+.fade-left {
+  left: 0;
+  background: linear-gradient(90deg, var(--bg), transparent);
+}
+.fade-right {
+  right: 0;
+  background: linear-gradient(-90deg, var(--bg), transparent);
+}
 
-/* ===== Accesibilidad: reduce motion ===== */
-@media (prefers-reduced-motion: reduce){
-  .timeline-track{ animation: none; }
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  .timeline-track {
+    animation: none;
+  }
 }
 
 /* ===== Responsive ===== */
-@media (max-width: 768px){
-  .timeline-viewport{ padding: 100px 0; }
-  .timeline-node{ width: 84px; height: 84px; }
-  .timeline-info.top{ top: -120px; }
-  .timeline-info.bottom{ bottom: -120px; }
-}
-
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .timeline-section {
     padding: 50px 16px;
   }
 
-  .timeline-title {
-    font-size: 1.5rem;
-    margin-bottom: 28px;
-  }
-
   .timeline-viewport {
-    padding: 90px 0;
+    padding-block: 120px;
   }
 
   .timeline-track {
-    gap: 60px;
+    gap: 80px;
     padding-inline: 24px;
   }
 
   .timeline-item {
-    min-width: 160px;
+    min-width: 180px;
   }
 
   .timeline-node {
-    width: 68px;
-    height: 68px;
+    width: 84px;
+    height: 84px;
     border: 4px solid var(--node);
   }
 
-  .timeline-info {
-    max-width: 180px;
-    padding: 6px;
-  }
-
   .timeline-info.top {
-    top: -100px;
+    top: -110px;
   }
 
   .timeline-info.bottom {
-    bottom: -100px;
+    bottom: -90px;
   }
 
-  .timeline-info h3 {
-    font-size: 0.85rem;
-  }
-
-  .timeline-info strong {
+  .timeline-info.top h3 {
     font-size: 0.9rem;
   }
 
-  .timeline-info p {
-    font-size: 0.82rem;
+  .timeline-info.top strong {
+    font-size: 0.95rem;
+  }
+
+  .timeline-info.bottom p {
+    font-size: 0.85rem;
   }
 
   .fade-left,

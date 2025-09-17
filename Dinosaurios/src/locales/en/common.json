@@ -132,9 +132,81 @@
     ]
   },
 
-  "timeline": {
-    "title": "Campaign Success Rate: 70-80% "
-  },
+"timeline": {
+  "title": "Successful Campaign: 70–80% Discovery Rate",
+  "items": [
+    {
+      "year": "2016",
+      "title": "Taurovenator",
+      "description": "Apex predator, 11m long. Found in Río Negro."
+    },
+    {
+      "year": "2017",
+      "title": "2 New Species",
+      "description": "Fieldwork led to the discovery of two new dinosaur species."
+    },
+    {
+      "year": "2018",
+      "title": "6 New Species",
+      "description": "Record-breaking season with six new species uncovered."
+    },
+    {
+      "year": "2019",
+      "title": "4 New Species",
+      "description": "Patagonia expedition yielded four new vertebrate species."
+    },
+    {
+      "year": "2020",
+      "title": "7 New Species + Tadpole",
+      "description": "Includes the oldest tadpole fossil ever found."
+    },
+    {
+      "year": "2021",
+      "title": "Additional Remains",
+      "description": "Confirmed presence of three previously unidentified species."
+    },
+    {
+      "year": "2022",
+      "title": "5 New Species",
+      "description": "Notable finds include ornithopods and theropods."
+    },
+    {
+      "year": "2023",
+      "title": "5 New Species",
+      "description": "Ongoing surveys in Southern Patagonia deliver more results."
+    },
+    {
+      "year": "2024",
+      "title": "3 Species + Nest",
+      "description": "Includes the first theropod nest ever found in South America."
+    },
+    {
+      "year": "2025",
+      "title": "3 New Species",
+      "description": "Latest season confirms three new dinosaur species."
+    },
+    {
+      "year": "2025",
+      "title": "Antarctic Project",
+      "description": "First vertebrate fossils uncovered in Antarctica by our team."
+    },
+    {
+      "year": "2027",
+      "title": "Next Expedition",
+      "description": "New sites in Southern Patagonia to be explored in 2027–2028."
+    },
+    {
+      "year": "2028",
+      "title": "High-Latitude Raptor",
+      "description": "New raptor species; key high-latitude ecosystem clues."
+    },
+    {
+      "year": "2029",
+      "title": "Theropod Nest",
+      "description": "First theropod nest in South America published."
+    }
+  ]
+},
   "discovery": {
     "hero": {
       "title1": "",
