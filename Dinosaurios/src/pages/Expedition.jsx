@@ -151,93 +151,107 @@ export default function Discoveries() {
       </section>
 
       {/* ===== 4) Discovery highlight #4 — Patagorhynchus ===== */}
-    <section className="container py-5 patago-section">
-  <div className="row align-items-center g-5">
-    <div className="col-lg-6">
-      <p className="text-uppercase small fw-bold text-warning mb-2">
-        {t("discovery.patago.label")}
-      </p>
-      <h2 className="display-6 fw-bold mb-1 text-dark">
-        {t("discovery.patago.title")}
-      </h2>
-      <h3 className="h5 fw-semibold text-dark-50">
-        {t("discovery.patago.subtitle")}
-      </h3>
+      <section className="container py-5 patago-section">
+        <div className="row align-items-center g-5">
+          <div className="col-lg-6">
+            <p className="text-uppercase small fw-bold text-warning mb-2">
+              {t("discovery.patago.label")}
+            </p>
+            <h2 className="display-6 fw-bold mb-1 text-dark">
+              {t("discovery.patago.title")}
+            </h2>
+            <h3 className="h5 fw-semibold text-dark-50">
+              {t("discovery.patago.subtitle")}
+            </h3>
 
-      <div className="mt-4 text-body-secondary">
-        <p dangerouslySetInnerHTML={{ __html: t("discovery.patago.p1") }} />
-        <p dangerouslySetInnerHTML={{ __html: t("discovery.patago.p2") }} />
-        <p dangerouslySetInnerHTML={{ __html: t("discovery.patago.p3") }} />
-        {t("discovery.patago.p4") && (
-          <p dangerouslySetInnerHTML={{ __html: t("discovery.patago.p4") }} />
-        )}
-      </div>
-    </div>
+            <div className="mt-4 text-body-secondary">
+              <p
+                dangerouslySetInnerHTML={{ __html: t("discovery.patago.p1") }}
+              />
+              <p
+                dangerouslySetInnerHTML={{ __html: t("discovery.patago.p2") }}
+              />
+              <p
+                dangerouslySetInnerHTML={{ __html: t("discovery.patago.p3") }}
+              />
+              {t("discovery.patago.p4") && (
+                <p
+                  dangerouslySetInnerHTML={{ __html: t("discovery.patago.p4") }}
+                />
+              )}
+            </div>
+          </div>
 
-    <div className="col-lg-6">
-      <div
-        id="patagoCarousel"
-        className="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div className="carousel-inner rounded shadow">
-          <div className="carousel-item active">
-            <img
-              src={carusel1}
-              className="d-block w-100 carousel-img"
-              alt="Taurovenator image 1"
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src={carusel2}
-              className="d-block w-100 carousel-img"
-              alt="Taurovenator image 2"
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src={carusel3}
-              className="d-block w-100 carousel-img"
-              alt="Taurovenator image 3"
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src={carusel4}
-              className="d-block w-100 carousel-img"
-              alt="Taurovenator image 4"
-            />
+          <div className="col-lg-6">
+            <div
+              id="patagoCarousel"
+              className="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div className="carousel-inner rounded shadow">
+                <div className="carousel-item active">
+                  <img
+                    src={carusel1}
+                    className="d-block w-100 carousel-img"
+                    alt="Taurovenator image 1"
+                  />
+                </div>
+                <div className="carousel-item">
+                  <img
+                    src={carusel2}
+                    className="d-block w-100 carousel-img"
+                    alt="Taurovenator image 2"
+                  />
+                </div>
+                <div className="carousel-item">
+                  <img
+                    src={carusel3}
+                    className="d-block w-100 carousel-img"
+                    alt="Taurovenator image 3"
+                  />
+                </div>
+                <div className="carousel-item">
+                  <img
+                    src={carusel4}
+                    className="d-block w-100 carousel-img"
+                    alt="Taurovenator image 4"
+                  />
+                </div>
+              </div>
+
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#patagoCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  className="carousel-control-prev-icon"
+                  aria-hidden="true"
+                />
+                <span className="visually-hidden">Previous</span>
+              </button>
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#patagoCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  className="carousel-control-next-icon"
+                  aria-hidden="true"
+                />
+                <span className="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            {/* Crédito de ilustración */}
+            <p className="text-muted small mt-2">
+              {t("discovery.patago.credit")}
+            </p>
           </div>
         </div>
-
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#patagoCarousel"
-          data-bs-slide="prev"
-        >
-          <span className="carousel-control-prev-icon" aria-hidden="true" />
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#patagoCarousel"
-          data-bs-slide="next"
-        >
-          <span className="carousel-control-next-icon" aria-hidden="true" />
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div>
-
-      {/* Crédito de ilustración */}
-      <p className="text-muted small mt-2">
-        {t("discovery.patago.credit")}
-      </p>
-    </div>
-  </div>
-</section>
+      </section>
 
       <div>
         <DescubrimientoDescovery />

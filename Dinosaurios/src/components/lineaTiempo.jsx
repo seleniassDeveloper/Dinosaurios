@@ -3,13 +3,18 @@ import React, { useMemo } from "react";
 import "../css/Timeline.css";
 import { useTranslation } from "react-i18next";
 
-import dino1 from "../ImgCampanas/imgDibujosDinosaurios/dinosaurio.png";
-import dino2 from "../ImgCampanas/imgDibujosDinosaurios/dinosaurio2.jpeg";
-import dino3 from "../ImgCampanas/imgDibujosDinosaurios/dinosaurio3.png";
-import dino4 from "../ImgCampanas/imgDibujosDinosaurios/dinosaurio4.png";
-import dino5 from "../ImgCampanas/imgDibujosDinosaurios/dinosaurio5.png";
+import dino1 from "../ImgCampanas/2017.png";
+import dino2 from "../ImgCampanas/2018.png";
+import dino3 from "../ImgCampanas/2019.png";
+import dino4 from "../ImgCampanas/2020.png";
+import dino5 from "../ImgCampanas/2021.png";
+import dino6 from "../ImgCampanas/2022.png";
+import dino7 from "../ImgCampanas/2023.png";
+import dino8 from "../ImgCampanas/2024.png";
+import dino9 from "../ImgCampanas/2025.png";
 
-const images = [dino1, dino2, dino3, dino4, dino5];
+
+const images = [dino1, dino2, dino3, dino4, dino5, dino6, dino7, dino8, dino9];
 
 export default function LineaTiempo() {
   const { t } = useTranslation();
