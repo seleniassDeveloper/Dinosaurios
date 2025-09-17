@@ -246,4 +246,8 @@
   .hero-overlay-title {
     font-size: 1.05rem;
   }
+
+  .hero-btn.primary {
+    margin-top: 40px;
+  }
 }

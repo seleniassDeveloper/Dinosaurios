@@ -1,4 +1,3 @@
-// src/components/MainSection.jsx
 import React from "react";
 import { useTranslation } from "react-i18next";
 import trex from "../../ImgCampanas/dinorex.png";
@@ -7,21 +6,20 @@ export default function MainSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="mag-hero ">
+    <section className="mag-hero">
       <div className="mag-veil" />
 
-      <div className="mag-hero-inner px-5 py-5">
+      <div className="mag-hero-inner">
         <p className="mag-kicker">{t("mainSection.kicker")}</p>
 
         <h1 className="mag-title">
-          {t("mainSection.titleStart")}{" "} 
+          {t("mainSection.titleStart")}{" "}
           <span className="resaltado">{t("mainSection.titleHighlight")}</span>{" "}
-          {t("mainSection.titleEnd")} 
+          {t("mainSection.titleEnd")}
         </h1>
-          <div className=""></div>
       </div>
 
-      <div className="mag-dino">
+    <div className="mag-dino d-none d-md-block">
         <img src={trex} alt="Tyrannosaurus rex" />
       </div>
     </section>
