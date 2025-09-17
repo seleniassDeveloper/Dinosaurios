@@ -1,12 +1,12 @@
 {
   "name": "dinosaurios",
   "version": "1.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "deploy": "wrangler pages deploy dist --project-name dinosaurios-site"
-  },
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "version": "git add . && git commit -m \"update version\" && git push"
+},
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.0.0",
     "@fortawesome/free-brands-svg-icons": "^7.0.0",
