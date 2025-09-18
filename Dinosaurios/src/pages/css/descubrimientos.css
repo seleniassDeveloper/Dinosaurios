@@ -26,52 +26,22 @@
 }
 
 /* ===== Galería tipo polaroid ===== */
-
-
 .pd-gallery{ display:grid; gap:16px; position: relative; }
-.pd-polaroid {
-  background: var(--paper);
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 10px;
-  box-shadow: var(--shadow);
-  position: relative;
-  max-width: 100%;
+.pd-polaroid{
+  background: var(--paper); border:1px solid #e5e7eb; border-radius:12px;
+  padding:10px; box-shadow: var(--shadow); position: relative;
 }
-
-.pd-polaroid img {
-  width: 100%;
-  max-height: 280px;         /* <-- MÁS CONTROLADA que height fija */
-  aspect-ratio: 4 / 3;
-  object-fit: contain;       /* <-- CAMBIA de "cover" a "contain" */
-  border-radius: 8px;
-  background: #fff;          /* Por si hay margen transparente */
+.pd-polaroid img{
+  width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:8px;
 }
-
-.pd-polaroid figcaption,
-.pd-polaroid span {
-  margin-top: 8px;
-  font-size: 12px;
-  color: var(--slate);
-  text-align: center;
-  display: block;
+.pd-polaroid figcaption{
+  margin-top:8px; font-size:12px; color:var(--slate); text-align:center;
 }
-
-.pd-polaroid::before {
-  content: "";
-  position: absolute;
-  inset: auto 40% calc(100% + 6px) auto;
-  width: 120px;
-  height: 18px;
-  border-radius: 6px;
-  background: var(--tape);
-  transform: rotate(-4deg);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+.pd-polaroid::before{
+  content:""; position:absolute; inset:auto 40% calc(100% + 6px) auto;
+  width:120px; height:18px; border-radius:6px; background: var(--tape);
+  transform: rotate(-4deg); box-shadow: 0 4px 10px rgba(0,0,0,.12);
 }
-
-
-
-
 .tilt-l{ transform: rotate(-2deg); }
 .tilt-r{ transform: rotate(1.6deg); }
 .tilt-s{ transform: rotate(-0.6deg); }

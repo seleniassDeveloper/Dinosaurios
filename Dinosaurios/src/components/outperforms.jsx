@@ -18,46 +18,56 @@ export function Outperforms() {
       </header>
 
       {/* Top grid (image + right column) */}
-      <section className="sectionsss">
+      <section className="row g-4 align-items-start">
         {/* Left: hero + thumbs */}
-        <div className="col-lg-7">
-          <figure className="whyar-hero-img dino-card">
-            <img src={cuadro3} alt="Fieldwork main" loading="lazy" />
-          </figure>
+ <div className="col-lg-7">
+  <figure className="whyar-hero-img dino-card">
+    <img src={ cuadro3} alt="Fieldwork main" loading="lazy" />
+  </figure>
 
-          <div className="whyar-thumbs">
-            <img src={cuadro} alt="thumb 1" loading="lazy" />
-            <img src={cuadro2} alt="thumb 2" loading="lazy" />
-            <img src={mainImg} alt="thumb 3" loading="lazy" />
-            <span></span>
-          </div>
+  <div className="whyar-thumbs">
+    <img src={cuadro} alt="thumb 1" loading="lazy" />
+    <img src={cuadro2} alt="thumb 2" loading="lazy" />
+    <img src={mainImg} alt="thumb 3" loading="lazy" />
+    <span></span>
+  </div>
+</div>
+
+        {/* Right: text + pills + CTA */}
+        <div className="col-lg-5">
+       
+
+      
+
+          {/* <div className="d-flex align-items-center gap-2 mt-3">
+            <button className="btn-cta">{t("navbar.donate")}</button>
+          </div> */}
         </div>
-
       </section>
 
       {/* Bottom: Fun fact + compare */}
-      <section className=" d-none mt-5">
-        <div className="">
-          <div className="">
-            <div className="">
+      <section className=" d-none row g-4 align-items-start mt-5">
+        <div className="col-lg-12">
+          <div className="whyar-block dino-card">
+            <div className="whyar-funfact dino-funfact">
               <p className="m-0">
                 <b className="me-2">{t("outPerfoms.fun")}:</b>
                 {t("outPerfoms.factdes")}
               </p>
             </div>
 
-            <div className="">
+            <div className="whyar-columns">
               {/* US & Europe */}
-              <article className="" data-accent="us">
-                <header className="">
+              <article className="compare-card v2 dino-card" data-accent="us">
+                <header className="compare-head v2 dino-head">
                   <span className="flag">{t("compare.us_eu.flag")}</span>
                   <div className="head-text">
                     <h4>{t("compare.us_eu.title")}</h4>
                   </div>
                 </header>
 
-                <div className="">
-                  <div className="">
+                <div className="compare-body">
+                  <div className="stat">
                     <span className="clabel">{t("compare.us_eu.stats.cost.label")}</span>
                     <div className="chips">
                       <span className="chip">{t("compare.us_eu.stats.cost.chips.0")}</span>
@@ -86,8 +96,8 @@ export function Outperforms() {
               </article>
 
               {/* Patagonia */}
-              <article className="" data-accent="patagonia">
-                <header className="">
+              <article className="compare-card v2 dino-card" data-accent="patagonia">
+                <header className="compare-head v2 dino-head">
                   <span className="flag">{t("compare1.patagonia.flag")}</span>
                   <div className="head-text">
                     <h4>{t("compare1.patagonia.title")}</h4>

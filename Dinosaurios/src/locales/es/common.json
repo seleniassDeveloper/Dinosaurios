@@ -130,81 +130,9 @@
       }
     ]
 },
-"timeline": {
-  "title": "Campaña exitosa: 70–80% de nuevos descubrimientos",
-  "items": [
-    {
-      "year": "2016",
-      "title": "Taurovenator",
-      "description": "Depredador ápice de 11 metros. Hallado en Río Negro."
-    },
-    {
-      "year": "2017",
-      "title": "2 Nuevas Especies",
-      "description": "El trabajo de campo llevó al hallazgo de dos nuevas especies de dinosaurios."
-    },
-    {
-      "year": "2018",
-      "title": "6 Nuevas Especies",
-      "description": "Temporada récord con seis nuevas especies descubiertas."
-    },
-    {
-      "year": "2019",
-      "title": "4 Nuevas Especies",
-      "description": "Expedición en Patagonia reveló cuatro nuevas especies de vertebrados."
-    },
-    {
-      "year": "2020",
-      "title": "7 Nuevas Especies + Renacuajo",
-      "description": "Incluye el fósil de renacuajo más antiguo jamás encontrado."
-    },
-    {
-      "year": "2021",
-      "title": "Restos Adicionales",
-      "description": "Se confirmó la presencia de tres especies previamente no identificadas."
-    },
-    {
-      "year": "2022",
-      "title": "5 Nuevas Especies",
-      "description": "Hallazgos notables incluyen ornitópodos y terópodos."
-    },
-    {
-      "year": "2023",
-      "title": "5 Nuevas Especies",
-      "description": "Exploraciones continuas en la Patagonia Sur siguen arrojando resultados."
-    },
-    {
-      "year": "2024",
-      "title": "3 Especies + Nido",
-      "description": "Incluye el primer nido de terópodo hallado en Sudamérica."
-    },
-    {
-      "year": "2025",
-      "title": "3 Nuevas Especies",
-      "description": "Última campaña confirma tres nuevas especies de dinosaurios."
-    },
-    {
-      "year": "2025",
-      "title": "Proyecto Antártida",
-      "description": "Nuestro equipo descubre los primeros fósiles de vertebrados en la Antártida."
-    },
-    {
-      "year": "2027",
-      "title": "Próxima Expedición",
-      "description": "Nuevas zonas en la Patagonia Sur serán exploradas en 2027–2028."
-    },
-    {
-      "year": "2028",
-      "title": "Raptor de Alta Latitud",
-      "description": "Nueva especie de raptor; pistas clave sobre ecosistemas de latitudes extremas."
-    },
-    {
-      "year": "2029",
-      "title": "Nido de Terópodo",
-      "description": "Se publica el primer nido de terópodo hallado en Sudamérica."
-    }
-  ]
-},
+  "timeline": {
+    "title": "Campana Exitosa en un: 70-80% "
+  },
   "discovery": {
     "hero": {
       "title1": "",

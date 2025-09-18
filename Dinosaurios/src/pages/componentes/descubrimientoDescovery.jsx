@@ -34,7 +34,7 @@ export function DescubrimientoDescovery() {
         </aside>
 
         {/* Right column: text */}
-        <main className="pd-text mt-5 pt-5">
+        <main className="pd-text">
           <header className="pd-head">
             <span className="pd-label">{t("discoveries.0.subtitle")}</span>
             <h2 className="pd-title">{t("discoveries.0.name")}</h2>
