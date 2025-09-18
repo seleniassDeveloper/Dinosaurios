@@ -2,6 +2,7 @@
   "name": "dinosaurios",
   "version": "1.0.0",
   "scripts": {
+    "deploy": "npm run build && wrangler pages deploy dist --project-name=dinosaurios",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
