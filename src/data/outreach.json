@@ -1,0 +1,18 @@
+[
+  {
+    "kind":"Charla",
+    "title":"Los dinosaurios en el cine y la TV",
+    "host":"Honorable Senado de la Nación",
+    "year":2019,
+    "people":["M. Motta","M. Aranciaga Rolando"],
+    "url":"https://www.senado.gob.ar/...pdf"
+  },
+  {
+    "kind":"Taller",
+    "title":"Pequeños paleontólogos Internacional",
+    "host":"Museo de Historia Natural URP (Perú)",
+    "year":2021,
+    "people":["J. S. D'Angelo"],
+    "url":"https://www.facebook.com/..."
+  }
+]

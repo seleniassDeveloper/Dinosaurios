@@ -1,0 +1,39 @@
+/* src/css/sections/WhatWereDoing.css */
+
+.what-were-doing {
+  background-color: #f3efe5;
+  border-radius: 16px;
+  padding: 40px 24px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.what-were-doing .title {
+  font-size: 2rem;
+  color: #386641;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.what-were-doing .intro {
+  font-size: 1.1rem;
+  color: #4e3b2a;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.what-were-doing .btn-learn-more {
+  background-color: #386641;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.what-were-doing .btn-learn-more:hover {
+  background-color: #2f5436;
+  transform: scale(1.03);
+}

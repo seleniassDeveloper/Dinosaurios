@@ -1,0 +1,20 @@
+[
+  {
+    "type":"TV",
+    "title":"¿Qué es un fósil? (Zamba y Nina)",
+    "outlet":"Paka Paka",
+    "brief":"Dibujo animado para niños.",
+    "year":2024,
+    "authors":["F. Agnolín"],
+    "url":"https://www.youtube.com/watch?v=Wi9-OQ0hpP0"
+  },
+  {
+    "type":"Noticia",
+    "title":"New “gentle giant” dinosaur uncovered…",
+    "outlet":"National Geographic",
+    "brief":"Descubrimiento de Chadititan calvoi.",
+    "year":2024,
+    "authors":["F. Agnolín","LACEV"],
+    "url":"https://news.nationalgeographic.org/..."
+  }
+]
