@@ -17,36 +17,24 @@ export function Outperforms() {
         <h1 className="whyar-title">{t("outPerfoms.why")}</h1>
       </header>
 
-      {/* Top grid (image + right column) */}
+      {/* Top grid (una sola columna) */}
       <section className="row g-4 align-items-start">
-        {/* Left: hero + thumbs */}
- <div className="col-lg-7">
-  <figure className="whyar-hero-img dino-card">
-    <img src={ cuadro3} alt="Fieldwork main" loading="lazy" />
-  </figure>
+        <div className="col-12 col-lg-12">
+          <figure className="whyar-hero-img dino-card">
+            <img src={cuadro3} alt="Fieldwork main" loading="lazy" />
+          </figure>
 
-  <div className="whyar-thumbs">
-    <img src={cuadro} alt="thumb 1" loading="lazy" />
-    <img src={cuadro2} alt="thumb 2" loading="lazy" />
-    <img src={mainImg} alt="thumb 3" loading="lazy" />
-    <span></span>
-  </div>
-</div>
-
-        {/* Right: text + pills + CTA */}
-        <div className="col-lg-5">
-       
-
-      
-
-          {/* <div className="d-flex align-items-center gap-2 mt-3">
-            <button className="btn-cta">{t("navbar.donate")}</button>
-          </div> */}
+          <div className="whyar-thumbs">
+            <img src={cuadro} alt="thumb 1" loading="lazy" />
+            <img src={cuadro2} alt="thumb 2" loading="lazy" />
+            <img src={mainImg} alt="thumb 3" loading="lazy" />
+            <span></span>
+          </div>
         </div>
       </section>
 
-      {/* Bottom: Fun fact + compare */}
-      <section className=" d-none row g-4 align-items-start mt-5">
+      {/* Bottom: Fun fact + compare (oculto por ahora) */}
+      <section className="d-none row g-4 align-items-start mt-5">
         <div className="col-lg-12">
           <div className="whyar-block dino-card">
             <div className="whyar-funfact dino-funfact">
