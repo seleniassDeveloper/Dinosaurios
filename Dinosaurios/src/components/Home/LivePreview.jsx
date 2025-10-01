@@ -1,11 +1,9 @@
+// src/components/LivePreviewSection.jsx
 import React, { useMemo, useState } from "react";
 import "../../../src/css/sections/LivePreview.css";
 
 export default function LivePreviewSection() {
   const status = "live";
-  const provider = "youtube";
-  const streamId = "dQw4w9WgXcQ";
-
   const [chatOpen, setChatOpen] = useState(false);
 
   // Countdown (solo si upcoming)
@@ -21,7 +19,6 @@ export default function LivePreviewSection() {
     return { d, h, m, s };
   }, [startTime]);
 
-  const isLive = status === "live";
   const isUpcoming = status === "upcoming";
   const isOffline = status === "offline";
 
@@ -41,10 +38,12 @@ export default function LivePreviewSection() {
       </header>
 
       <div className="live-grid">
-        {/* Player principal */}
+        {/* 📺 Player principal - sin iframe */}
         <div className="player-card">
           <div className="player-wrap">
-            <EmbedYouTube id={streamId} isLive={isLive} />
+            <div className="ratio blank-player">
+              <p>🎥 Espacio reservado para tu video</p>
+            </div>
 
             {isUpcoming && countdown && (
               <div className="upcoming-overlay">
@@ -67,7 +66,7 @@ export default function LivePreviewSection() {
           </div>
         </div>
 
-        {/* Panel lateral */}
+        {/* 📅 Panel lateral */}
         <aside className="side-card">
           <h3 className="side-title">Today’s Schedule</h3>
           <ul className="agenda">
@@ -88,20 +87,22 @@ export default function LivePreviewSection() {
         </aside>
       </div>
 
-      {/* Clips */}
+      {/* 🦕 Clips vacíos sin imágenes */}
       <section className="clips">
         <h3 className="clips-title">Highlights</h3>
         <div className="clips-grid">
-          {mockClips.map((c) => (
-            <a key={c.id} className="clip" href={c.href}>
-              <img src={c.thumb} alt={c.alt} />
-              <span className="clip-label">{c.label}</span>
-            </a>
+          {[1, 2, 3, 4].map((id) => (
+            <div key={id} className="clip">
+              <div className="ratio blank-clip">
+                <p>🦴 Espacio para imagen o clip</p>
+              </div>
+              <span className="clip-label">Fossil highlight #{id}</span>
+            </div>
           ))}
         </div>
       </section>
 
-      {/* Overlay del chat */}
+      {/* 💬 Overlay del chat */}
       {chatOpen && (
         <div className="chat-overlay">
           <div className="chat-window">
@@ -113,13 +114,7 @@ export default function LivePreviewSection() {
               <div className="msg"><b>Ana:</b> Wow, amazing fossils!</div>
               <div className="msg"><b>Juan:</b> Sector B looking great 🔥</div>
             </div>
-            <form
-              className="chat-form"
-              onSubmit={(e) => {
-                e.preventDefault();
-                // aquí iría lógica para enviar el mensaje
-              }}
-            >
+            <form className="chat-form" onSubmit={(e) => e.preventDefault()}>
               <input type="text" placeholder="Escribe tu mensaje..." />
               <button type="submit" className="btn primary">Send</button>
             </form>
@@ -144,45 +139,3 @@ function StatusPill({ status }) {
     </span>
   );
 }
-
-/* ===== Embeds ===== */
-function EmbedYouTube({ id, isLive }) {
-  const src = isLive
-    ? `https://www.youtube.com/embed/${id}?autoplay=0&modestbranding=1&rel=0`
-    : `https://www.youtube.com/embed/${id}?modestbranding=1&rel=0`;
-  return (
-    <div className="ratio">
-      <iframe
-        title="YouTube player"
-        src={src}
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
-      />
-    </div>
-  );
-}
-function EmbedTwitch({ channel }) {
-  const src = `https://player.twitch.tv/?channel=${channel}&parent=localhost&muted=false`;
-  return (
-    <div className="ratio">
-      <iframe title="Twitch player" src={src} allowFullScreen frameBorder="0" scrolling="no" />
-    </div>
-  );
-}
-function EmbedMux({ playbackId }) {
-  const src = `https://stream.mux.com/${playbackId}.m3u8`;
-  return (
-    <div className="ratio">
-      <video controls playsInline>
-        <source src={src} type="application/x-mpegURL" />
-      </video>
-    </div>
-  );
-}
-
-const mockClips = [
-  { id: 1, href: "#", thumb: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80&auto=format&fit=crop", alt: "Field cam highlight", label: "Bone fragment reveal" },
-  { id: 2, href: "#", thumb: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80&auto=format&fit=crop", alt: "Ridge cam highlight", label: "Ridge time-lapse" },
-  { id: 3, href: "#", thumb: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&q=80&auto=format&fit=crop", alt: "Tools highlight", label: "Careful brushing" },
-  { id: 4, href: "#", thumb: "https://images.unsplash.com/photo-1520975922284-5f72f226c2a0?w=800&q=80&auto=format&fit=crop", alt: "Lab highlight", label: "Prepping in lab" },
-];
